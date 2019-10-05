@@ -1,13 +1,13 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }} - My Django Application</title>
     {% load staticfiles %}
-    <link rel="stylesheet" type="text/css" href="{% static 'app/content/bootstrap.min.css' %}" />
-    <link rel="stylesheet" type="text/css" href="{% static 'app/content/site.css' %}" />
-    <script src="{% static 'app/scripts/modernizr-2.6.2.js' %}"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'bookstore/content/bootstrap.min.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'bookstore/content/site.css' %}" />
+    <script src="{% static 'bookstore/scripts/modernizr-2.6.2.js' %}"></script>
 </head>
 
 <body>
@@ -23,11 +23,9 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="{% url 'home' %}">Home</a></li>
-                    <li><a href="{% url 'about' %}">About</a></li>
-                    <li><a href="{% url 'contact' %}">Contact</a></li>
+                    <li><a href="{% url 'index' %}">Home</a></li>
                 </ul>
-                {% include 'app/loginpartial.html' %}
+                {% include 'bookstore/loginpartial.html' %}
             </div>
         </div>
     </div>
@@ -40,9 +38,9 @@
         </footer>
     </div>
 
-    <script src="{% static 'app/scripts/jquery-1.10.2.js' %}"></script>
-    <script src="{% static 'app/scripts/bootstrap.js' %}"></script>
-    <script src="{% static 'app/scripts/respond.js' %}"></script>
+    <script src="{% static 'bookstore/scripts/jquery-1.10.2.js' %}"></script>
+    <script src="{% static 'bookstore/scripts/bootstrap.js' %}"></script>
+    <script src="{% static 'bookstore/scripts/respond.js' %}"></script>
 {% block scripts %}{% endblock %}
 
 </body>

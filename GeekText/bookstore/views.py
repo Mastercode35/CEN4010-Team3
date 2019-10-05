@@ -1,4 +1,8 @@
 from django.shortcuts import render
+
+from django.http import HttpRequest
+from django.template import RequestContext
+from datetime import datetime
 from django.http import HttpResponse
 from django.contrib.auth.models import User
 from django.views.generic.base import TemplateView
@@ -10,4 +14,12 @@ def feed(request):
     return render(request, 'feed.xml', {'posts': posts})
 
 def index(request):
-    return HttpResponse("Hello, you are viewing the BookStore index.")
+    assert isinstance(request, HttpRequest)
+    return render(
+        request,
+        'bookstore/index.html',
+        {
+            'title':'Home Page',
+            'year':datetime.now().year,
+        }
+    )
