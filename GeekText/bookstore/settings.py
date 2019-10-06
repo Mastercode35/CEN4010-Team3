@@ -14,10 +14,10 @@ MANAGERS = ADMINS
 
 DATABASES = {
 	'default': {
-        'ENGINE': 'django.db.backends.postgres',
-        'NAME': 'Bookstore_website_project',
-        'USER':'postgres',
-        'PASSWORD':'Nicole13',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'bookstore_website_project',
+        'USER':'team3',
+        'PASSWORD':'password',
         'PORT':'5432',
         'HOST': 'localhost',
     }
