@@ -1,33 +1,154 @@
-{% extends "bookstore/layout.html" %}
+<!--{% extends "bookstore/layout.html" %}
 
 {% block content %}
+    -->
+<head>
+    <title>Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-<div class="jumbotron">
-    <h1>Django</h1>
-    <p class="lead">Django is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://www.djangoproject.com/" class="btn btn-primary btn-large">Learn more &raquo;</a></p>
+
+    <style>
+        body, html {
+            height: 90%;
+        }
+
+        .cl {
+            background-color: black;
+            background-position: right;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+
+        .center {
+
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: auto;
+        
+        }
+        h2 {
+            font-family: "Times new roman";
+            font-size: 50px;
+            padding: 25px 10px;
+            text-align: left;
+            text-transform: capitalize;
+            text-rendering: optimizeLegibility;
+            color: white;
+        }
+
+        h3 {
+            font-family: "arial";
+            font-size: 12px;
+            padding: 10px 5px;
+            text-align: center;
+            text-rendering: optimizeLegibility;
+            text-transform: uppercase;
+            color: green;
+        }
+
+        h4 {
+            font-family: "arial";
+            font-size: 15px;
+            padding: 15px 5px;
+            text-align: left;
+            text-rendering: optimizeLegibility;
+            color: black;
+        }
+
+        span.navigationSpace {
+            margin-left: 150px;
+        }
+
+        .bg1 {
+            background-image: url("books.jpg");
+            height: 20%;
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+
+        .bg2 {
+            background-image: url("logo.png");
+            height: 20%;
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+    </style>
+</head>
+<div class=cl >
+    <img src="Logo.jpg" height=150 width=150 />
+  
 </div>
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            Django gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="http://www.djangobook.com/en/2.0/index.html">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>The Python Package Index is a repository of software for the Python programming language.</p>
-        <p><a class="btn btn-default" href="https://pypi.org/">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Microsoft Azure</h2>
-        <p>You can easily publish to Microsoft Azure using Visual Studio. Find out how you can host your application using a free trial today.</p>
-        <p><a class="btn btn-default" href="http://azure.microsoft.com">Learn more &raquo;</a></p>
-    </div>
-</div>
 
-{% endblock %}
+
+<body>
+
+    <!-- Menu -->
+    <nav class="navbar-inverse" style="height:60px;">
+        <div class="container-fluid">
+
+
+            <span class="navigationSpace" <li style="display:inline-block; vertical-align:text-bottom; font-size:medium;">
+                <a href="book.html" style="color:forestgreen">Home</a>
+            </li> </span>
+            <span class="navigationSpace" <li style="display:inline-block;">
+                <a href="book.html" style="color:forestgreen">Books</a>
+            </li> </span>
+            <span class="navigationSpace" <li style="display:inline-block;">
+                <a href="book.html" style="color:forestgreen">Log in</a>
+            </li> </span>
+            <span class="navigationSpace" <li style="display:inline-block;">
+            <a href="book.html" style="color:forestgreen">Profile</a>
+            </li> </span>
+            <span class="navigationSpace" <li style="display:inline-block;">
+                <a href="book.html" style="color:forestgreen">Wishlists</a>
+            </li> </span>
+            <span class="navigationSpace" <li style="display:inline-block;">
+                <a href="book.html" style="color:forestgreen">Shopping cart</a>
+            </li> </span>
+        </div>
+    </nav>
+
+    <div style="margin-top:40px; margin-left:400px; margin-right:400px;">
+        <!-- Search -->
+
+        <div class="row">
+            <div class="col-sm">
+                <div class="input-group input-group-sm">
+                    <input type="text" class="form-control" placeholder="Search" id="Searchtxt" />
+                    <div class="input-group-btn">
+                        <button class="btn btn-inverse" type="submit" onclick="search()">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="display:flex; margin-left:auto; margin-right:auto;"
+                <div>
+                    <img src="libraries.jpg" height=400 width=400 class="center" />
+
+
+                    <img src="books1.jpg" height=400 width=400 class="center" />
+
+
+                    <img src="books2.jpg" height=400 width=400 class="center" />
+                </div>
+            </div>
+
+</body>
+</html>
+<!--{% endblock %} -->
