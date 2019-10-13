@@ -10,6 +10,11 @@ Prerequisites:
 Downloads: 
 - django tutorial: https://docs.djangoproject.com/en/1.10/intro/tutorial01/
 - postgres  download: https://www.postgresql.org/
+- psycopg2 - `pip install psycopg2`
+
+EVERYTIME A SETTING IS CHAMGED IN settings.py YOU MUST MIGRATE THE SERVER TO MAKE SURE THE SETTINGS ARE APPLIED!
+- `python manage.py makemigrations`
+- `python manage.py migrate`
 
 
 Setting up the postgres server for use with the project:
