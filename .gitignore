@@ -257,5 +257,7 @@ paket-files/
 .cr/
 
 # Python Tools for Visual Studio (PTVS)
+GeekText/bookstore/__pycache__
+GeekText/GeekText/__pycache__
 __pycache__/
 *.pyc
