@@ -83,7 +83,7 @@ WSGI_APPLICATION = 'GeekText.wsgi.application'
 
 DATABASES = {
 	'default': {
-        'ENGINE': 'django.db.backends.postgresql',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'bookstore_website_project',
         'USER':'team3',
         'PASSWORD':'password',
