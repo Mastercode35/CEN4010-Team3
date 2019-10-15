@@ -1,8 +1,7 @@
-﻿<!--{% extends "bookstore/layout.html" %}
+<!--{% extends "bookstore/layout.html" %}
 
 {% block content %}
     -->
-<html>
 <head>
     <title>Home</title>
     <meta charset="utf-8">
@@ -15,56 +14,24 @@
     <style>
         body, html {
             height: 90%;
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
         }
 
         .cl {
             background-color: black;
+            background-position: right;
+            background-repeat: no-repeat;
             background-size: cover;
             position: relative;
-            height: 15%;
         }
 
-        .topnav {
-            overflow: hidden;
-            background-color: #333;
+        .center {
+
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: auto;
+        
         }
-
-            .topnav a {
-                float: left;
-                color: #f2f2f2;
-                text-align: center;
-                padding: 14px 16px;
-                text-decoration: none;
-                font-size: 14px;
-            }
-
-                .topnav a:hover {
-                    background-color: #ddd;
-                    color: black;
-                }
-
-                .topnav a.active {
-                    background-color: #4CAF50;
-                    color: white;
-                }
-
-        .topnav-right {
-            float: right;
-        }
-
-        .lowerimg {
-           
-            width: 40%;
-            height:90%
-
-        }
-        .lowerimglong {
-            width: 30%;
-            height: 100%
-        }
-
         h2 {
             font-family: "Times new roman";
             font-size: 50px;
@@ -94,6 +61,10 @@
             color: black;
         }
 
+        span.navigationSpace {
+            margin-left: 150px;
+        }
+
         .bg1 {
             background-image: url("books.jpg");
             height: 20%;
@@ -104,53 +75,80 @@
             position: relative;
         }
 
+        .bg2 {
+            background-image: url("logo.png");
+            height: 20%;
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
     </style>
-    
 </head>
+<div class=cl >
+    <img src="Logo.jpg" height=150 width=150 />
+  
+</div>
+
 
 
 <body>
-    <div id="logo" class=cl>
-        {% load staticfiles %}
-        <img src={% static "bookstore/Logo.jpg" %} style="width:7%; height:100%" />
 
-    </div>
     <!-- Menu -->
-   
-    <div class="topnav">
-        <a class="active" href="/bookstore">Home</a>
-        <a href="/bookstore">Books</a>
-        <div class="topnav-right">
-            <a href="/bookstore">Log in</a>
-            <a href="/bookstore">Profile</a>
-            <a href="/bookstore">Wishlists</a>
-            <a href="/bookstore">Shopping Cart</a>
-        </div>
-    </div>
-    
+    <nav class="navbar-inverse" style="height:60px;">
+        <div class="container-fluid">
 
-    <div style="margin-top:40px; margin-left:20%; margin-right:20%;">
-       
+
+            <span class="navigationSpace" <li style="display:inline-block; vertical-align:text-bottom; font-size:medium;">
+                <a href="index.html" style="color:forestgreen">Home</a>
+            </li> </span>
+            <span class="navigationSpace" <li style="display:inline-block;">
+                <a href="index.html" style="color:forestgreen">Books</a>
+            </li> </span>
+            <span class="navigationSpace" <li style="display:inline-block;">
+                <a href="index.html" style="color:forestgreen">Log in</a>
+            </li> </span>
+            <span class="navigationSpace" <li style="display:inline-block;">
+            <a href="index.html" style="color:forestgreen">Profile</a>
+            </li> </span>
+            <span class="navigationSpace" <li style="display:inline-block;">
+                <a href="index.html" style="color:forestgreen">Wishlists</a>
+            </li> </span>
+            <span class="navigationSpace" <li style="display:inline-block;">
+                <a href="index.html" style="color:forestgreen">Shopping cart</a>
+            </li> </span>
+        </div>
+    </nav>
+
+    <div style="margin-top:40px; margin-left:400px; margin-right:400px;">
         <!-- Search -->
-        <div style="display:flex; width:100%">
-            <input type="text" class="form-control" placeholder="Search" id="Searchtxt" />
 
-            <button class="btn btn-inverse" type="submit" onclick="search()">
-                <span class="glyphicon glyphicon-search"></span>
-            </button>
-
-        </div>
-    </div>
-    <div>
-        <div style=" margin-top:40px;margin-right:8px;margin-left:17px">
-            <div style="display:flex;width:90%; height:80%" {% load staticfiles %}>
-                {% load staticfiles %}
-                <img src={% static "bookstore/books3.jpg" %} class="lowerimg" />
-                <img src={% static "bookstore/books1.jpg" %} class="lowerimglong" />
-                <img src={% static "bookstore/books2.jpg" %} class="lowerimg" />
+        <div class="row">
+            <div class="col-sm">
+                <div class="input-group input-group-sm">
+                    <input type="text" class="form-control" placeholder="Search" id="Searchtxt" />
+                    <div class="input-group-btn">
+                        <button class="btn btn-inverse" type="submit" onclick="search()">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+    <div style="display:flex; margin-left:auto; margin-right:auto;"
+                <div>
+                    <img src="libraries.jpg" height=400 width=400 class="center" />
+
+
+                    <img src="books1.jpg" height=400 width=400 class="center" />
+
+
+                    <img src="books2.jpg" height=400 width=400 class="center" />
+                </div>
+            </div>
+
 </body>
 </html>
 <!--{% endblock %} -->
