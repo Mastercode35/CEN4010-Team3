@@ -14,6 +14,8 @@ ADMINS = (
 
 MANAGERS = ADMINS
 
+FIXTURE_DIRS = '/fixtures/'
+
 DATABASES = {
 	'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
