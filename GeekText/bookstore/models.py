@@ -74,7 +74,7 @@ class Author(models.Model):
 #Connects Each author in the DB with the books they wrote.
 #Foreign Key Tables: Book (book written by an author) and Author (author doing the writing)
 class Wrote(models.Model):
-    Book_id = models.ForeignKey(Book, on_delete=models.CASCADE)
+    book_id = models.ForeignKey(Book, on_delete=models.CASCADE)
     author_id = models.ForeignKey(Author, on_delete=models.CASCADE)
     sequence = models.IntegerField()
 
