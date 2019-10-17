@@ -1,0 +1,44 @@
+[
+  {
+    "model": "bookstore.Customer",
+    "pk" : 1,
+    "fields" : {
+      "username" : "cdelg004",
+      "first_name" : "Christian",
+      "last_name" : "Delgado",
+      "nickname" : "chris",
+      "email" : "cdelg004@fiu.edu",
+      "email_secondary" : "jfjfjfj@hotmail.com",
+      "password" : "helio123",
+      "start_date" : "01/23/2015"
+    }
+  },
+  {
+    "model": "bookstore.Customer",
+    "pk" : 2,
+    "fields" : {
+      "username": "knune015",
+      "first_name": "Katrina",
+      "last_name": "Nunez",
+      "nickname": "Kat",
+      "email": "knune015@fiu.edu",
+      "email_secondary": "seegrom@hotmail.com",
+      "password": "jasper13",
+      "start_date": "03/17/2017"
+    }
+  },
+  {
+    "model": "bookstore.Customer",
+    "pk" : 3,
+    "fields" : {
+      "username": "acoll009",
+      "first_name": "Andrew",
+      "last_name": "Collins",
+      "nickname": "andrew",
+      "email": "acoll009@fiu.edu",
+      "email_secondary": "rochester@hotmail.com",
+      "password": "garrison05",
+      "start_date": "11/05/2017"
+    }
+  }
+]
