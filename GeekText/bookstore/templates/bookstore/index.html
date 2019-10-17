@@ -23,7 +23,9 @@
             background-color: black;
             background-size: cover;
             position: relative;
-            height: 15%;
+            padding-left: 45%;
+            
+            height: 16%;
         }
 
         .topnav {
@@ -64,35 +66,6 @@
             height: 100%
         }
 
-        h2 {
-            font-family: "Times new roman";
-            font-size: 50px;
-            padding: 25px 10px;
-            text-align: left;
-            text-transform: capitalize;
-            text-rendering: optimizeLegibility;
-            color: white;
-        }
-
-        h3 {
-            font-family: "arial";
-            font-size: 12px;
-            padding: 10px 5px;
-            text-align: center;
-            text-rendering: optimizeLegibility;
-            text-transform: uppercase;
-            color: green;
-        }
-
-        h4 {
-            font-family: "arial";
-            font-size: 15px;
-            padding: 15px 5px;
-            text-align: left;
-            text-rendering: optimizeLegibility;
-            color: black;
-        }
-
         .bg1 {
             background-image: url("books.jpg");
             height: 20%;
@@ -110,7 +83,7 @@
 <body>
     <div id="logo" class=cl>
         {% load staticfiles %}
-        <img src={% static "bookstore/Logo.jpg" %} style="width:7%; height:100%" />
+        <a href="/bookstore"><img src={% static "bookstore/Logo.jpg" %} style="width:14%; height:100%"></a>
 
     </div>
     <!-- Menu -->
