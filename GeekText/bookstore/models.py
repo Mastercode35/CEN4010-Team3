@@ -45,14 +45,13 @@ class Genre(models.Model):
 #Book Table which contains all the information needed for book.
 #Foreign Key Tables: Genre, Publisher
 class Book(models.Model):
-    isbn = models.IntegerField()
+    isbn = models.CharField(max_length = 15)
     book_title = models.CharField(max_length = 100)
     book_genre = models.ForeignKey(Genre, on_delete=models.CASCADE, verbose_name = "book genre")
     book_description = models.CharField(max_length = 1000, blank = True)
     publisher_id = models.ForeignKey(Publisher, on_delete=models.CASCADE, verbose_name = "publisher")
     publish_date = models.DateField()
     image_url = models.CharField(max_length = 200, blank = True)
-    #file_path = models.CharField(max_length = 200, blank = True)
     price = models.DecimalField(max_digits = 4, decimal_places = 2)
     rating = models.DecimalField(max_digits = 1, decimal_places = 1)
     sales_rank = models.IntegerField()
