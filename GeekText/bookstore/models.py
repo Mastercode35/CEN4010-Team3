@@ -15,20 +15,20 @@ class Customer(models.Model):
 
 #Addresses Table which contains all addresses used by 'username'
 #Uses primarily Customer as a Foreign Key Table
-class Addresses(models.Model):
+class Address(models.Model):
     username = models.ForeignKey(Customer, on_delete=models.CASCADE, verbose_name = "user address is associated to")
-    address_street = models.CharField(max_length = 25)
-    address_street_secondary = models.CharField(max_length = 25, blank = True)
-    address_apt = models.CharField(max_length = 10, blank = True)
-    address_city = models.CharField(max_length = 15)
-    address_state = models.CharField(max_length = 15)
-    address_zip = models.IntegerField()
-    address_country = models.CharField(max_length = 25)
+    street = models.CharField(max_length = 25)
+    street_secondary = models.CharField(max_length = 25, blank = True)
+    apt = models.CharField(max_length = 10, blank = True)
+    city = models.CharField(max_length = 15)
+    state = models.CharField(max_length = 15)
+    zip_code = models.IntegerField()
+    country = models.CharField(max_length = 25)
     address_type = models.CharField(max_length = 25)
 
 #CreditCards Table which contains all credit cards used by 'username'
 #Uses primarily Customer as a Foreign Key Table
-class CreditCards(models.Model):
+class CreditCard(models.Model):
     username = models.ForeignKey(Customer, on_delete=models.CASCADE, verbose_name = "customer card is related to")
     card_number = models.IntegerField()
     expiration_date = models.DateField()
@@ -58,7 +58,7 @@ class Book(models.Model):
 
 #Comments and Ratings table which contain all the comments with their ratings for each book in Book that have comments/ratings
 #Foreign Key Tables: Book (Book being commented) and Customer (user doing the commenting)
-class Comments_Ratings(models.Model):
+class CommentRating(models.Model):
     book_id = models.ForeignKey(Book, on_delete=models.CASCADE, verbose_name = "book comment/rating is for")
     username = models.ForeignKey(Customer, on_delete=models.CASCADE, verbose_name = "customer doing the rating/commenting")
     comment = models.CharField(max_length = 2000)
@@ -99,7 +99,7 @@ class WishList(models.Model):
 
 #Wish List Items Tables which contains each book held within each wishlist
 #Foreign Key Tables: WisList (the list the books are connected to) and Book (Book inside the list)
-class WishListItems(models.Model):
+class WishListItem(models.Model):
     list_id = models.ForeignKey(WishList, on_delete=models.CASCADE, verbose_name = "wish list associated with this item")
     book_id = models.ForeignKey(Book, on_delete=models.CASCADE, verbose_name = "book in list")
 
@@ -111,16 +111,16 @@ class SavedForLater(models.Model):
 
 #Sales Table which contains each sale made on the site and their necessary information.
 #Foeign Key Tables: Customer (user who made the sale), Addresses (delivery address of sale), and CreditCards (card used for sale)
-class Sales(models.Model):
+class Sale(models.Model):
     username = models.ForeignKey(Customer, on_delete=models.CASCADE)
     sale_date = models.DateField(auto_now_add = True)
-    delivery_address = models.ForeignKey(Addresses, on_delete = models.CASCADE)
-    card_used = models.ForeignKey(CreditCards, on_delete = models.CASCADE)
+    delivery_address = models.ForeignKey(Address, on_delete = models.CASCADE)
+    card_used = models.ForeignKey(CreditCard, on_delete = models.CASCADE)
     sale_total = models.DecimalField(max_digits = 4, decimal_places = 2)
 
 #Sale Items Table which contains each book found within each sale made
 #Foreign Key Tables: Sales (sale made) and Book (book sold in that sale)
-class SaleItems(models.Model):
-    sale_id = models.ForeignKey(Sales, on_delete=models.CASCADE)
+class SaleItem(models.Model):
+    sale_id = models.ForeignKey(Sale, on_delete=models.CASCADE)
     book_id = models.ForeignKey(Book, on_delete=models.CASCADE)
     quantity = models.IntegerField()
