@@ -48,12 +48,12 @@ class Book(models.Model):
     isbn = models.CharField(max_length = 15)
     book_title = models.CharField(max_length = 100)
     book_genre = models.ForeignKey(Genre, on_delete=models.CASCADE, verbose_name = "book genre")
-    book_description = models.CharField(max_length = 1000, blank = True)
+    book_description = models.CharField(max_length = 2000, blank = True)
     publisher_id = models.ForeignKey(Publisher, on_delete=models.CASCADE, verbose_name = "publisher")
     publish_date = models.DateField()
     image_url = models.CharField(max_length = 200, blank = True)
     price = models.DecimalField(max_digits = 4, decimal_places = 2)
-    rating = models.DecimalField(max_digits = 1, decimal_places = 1)
+    rating = models.DecimalField(max_digits = 2, decimal_places = 1)
     sales_rank = models.IntegerField()
 
 #Comments and Ratings table which contain all the comments with their ratings for each book in Book that have comments/ratings
@@ -61,8 +61,8 @@ class Book(models.Model):
 class Comments_Ratings(models.Model):
     book_id = models.ForeignKey(Book, on_delete=models.CASCADE, verbose_name = "book comment/rating is for")
     username = models.ForeignKey(Customer, on_delete=models.CASCADE, verbose_name = "customer doing the rating/commenting")
-    comment = models.CharField(max_length = 1000)
-    rating = models.DecimalField(max_digits=1, decimal_places = 1)
+    comment = models.CharField(max_length = 2000)
+    rating = models.DecimalField(max_digits=2, decimal_places = 1)
 
 #Author Table
 class Author(models.Model):

@@ -1,0 +1,572 @@
+- model: bookstore.Genre
+  pk: 1
+  fields:
+    genre: Technology
+- model: bookstore.Genre
+  pk: 2
+  fields:
+    genre: Astronomy
+- model: bookstore.Genre
+  pk: 3
+  fields:
+    genre: Engineering
+- model: bookstore.Publisher
+  pk: 1
+  fields:
+    publisher_name: 'HarperCollins Publishers'
+- model: bookstore.Publisher
+  pk: 2
+  fields:
+    publisher_name: 'Grove/Atlantic, Inc.'
+- model: bookstore.Publisher
+  pk: 3
+  fields:
+    publisher_name: 'Penguin Publishing Group'
+- model: bookstore.Publisher
+  pk: 4
+  fields:
+    publisher_name: 'Guilford Publications, Inc.'
+- model: bookstore.Publisher
+  pk: 5
+  fields:
+    publisher_name: 'Norton, W. W. & Company, Inc.'
+- model: bookstore.Publisher
+  pk: 6
+  fields:
+    publisher_name: 'Random House Publishing Group'
+- model: bookstore.Publisher
+  pk: 7
+  fields:
+    publisher_name: 'Farrar, Straus and Giroux'
+- model: bookstore.Publisher
+  pk: 8
+  fields:
+    publisher_name: 'Dalkey Archive Press'
+- model: bookstore.Publisher
+  pk: 9
+  fields:
+    publisher_name: Picador
+- model: bookstore.Author
+  pk: 1
+  fields:
+    first_name: Seth
+    last_name: Stephens-Davidowitz
+- model: bookstore.Author
+  pk: 2
+  fields:
+    first_name: Lisa
+    last_name: Brennan-Jobs
+- model: bookstore.Author
+  pk: 3
+  fields:
+    first_name: Gretchen
+    last_name: McCulloch
+- model: bookstore.Author
+  pk: 4
+  fields:
+    first_name: Judith
+    last_name: Beck
+- model: bookstore.Author
+  pk: 5
+  fields:
+    first_name: Aaron
+    last_name: Beck
+- model: bookstore.Author
+  pk: 6
+  fields:
+    first_name: Nicholas
+    last_name: Carr
+- model: bookstore.Author
+  pk: 7
+  fields:
+    first_name: Neil
+    last_name: deGrasse-Tyson
+- model: bookstore.Author
+  pk: 8
+  fields:
+    first_name: Douglas
+    last_name: Brinkley
+- model: bookstore.Author
+  pk: 9
+  fields:
+    first_name: Stephen
+    last_name: Hawking
+- model: bookstore.Author
+  pk: 10
+  fields:
+    first_name: Michael
+    last_name: Collins
+- model: bookstore.Author
+  pk: 11
+  fields:
+    first_name: Charles
+    last_name: Lindbergh
+- model: bookstore.Author
+  pk: 12
+  fields:
+    first_name: Svetlana
+    last_name: Alexievich
+- model: bookstore.Author
+  pk: 13
+  fields:
+    first_name: Keith
+    last_name: Gessen
+- model: bookstore.Author
+  pk: 14
+  fields:
+    first_name: Tom
+    last_name: Wolfe
+- model: bookstore.Wrote
+  pk: 1
+  fields:
+    book_id: 1
+    author_id: 1
+    sequence: 1
+- model: bookstore.Wrote
+  pk: 2
+  fields:
+    book_id: 2
+    author_id: 2
+    sequence: 1
+- model: bookstore.Wrote
+  pk: 3
+  fields:
+    book_id: 3
+    author_id: 3
+    sequence: 1
+- model: bookstore.Wrote
+  pk: 4
+  fields:
+    book_id: 4
+    author_id: 4
+    sequence: 1
+- model: bookstore.Wrote
+  pk: 5
+  fields:
+    book_id: 4
+    author_id: 5
+    sequence: 2
+- model: bookstore.Wrote
+  pk: 6
+  fields:
+    book_id: 5
+    author_id: 6
+    sequence: 1
+- model: bookstore.Wrote
+  pk: 7
+  fields:
+    book_id: 6
+    author_id: 7
+    sequence: 1
+- model: bookstore.Wrote
+  pk: 8
+  fields:
+    book_id: 7
+    author_id: 8
+    sequence: 1
+- model: bookstore.Wrote
+  pk: 9
+  fields:
+    book_id: 8
+    author_id: 9
+    sequence: 1
+- model: bookstore.Wrote
+  pk: 10
+  fields:
+    book_id: 9
+    author_id: 10
+    sequence: 1
+- model: bookstore.Wrote
+  pk: 11
+  fields:
+    book_id: 9
+    author_id: 11
+    sequence: 2
+- model: bookstore.Wrote
+  pk: 12
+  fields:
+    book_id: 10
+    author_id: 7
+    sequence: 1
+- model: bookstore.Wrote
+  pk: 13
+  fields:
+    book_id: 11
+    author_id: 7
+    sequence: 1
+- model: bookstore.Wrote
+  pk: 14
+  fields:
+    book_id: 12
+    author_id: 12
+    sequence: 1
+- model: bookstore.Wrote
+  pk: 15
+  fields:
+    book_id: 12
+    author_id: 13
+    sequence: 2
+- model: bookstore.Wrote
+  pk: 16
+  fields:
+    book_id: 13
+    author_id: 14
+    sequence: 1
+- model: bookstore.Book
+  pk: 1
+  fields:
+    isbn: 9780062390868
+    book_title: 'Everybody Lies - Big Data, New Data, and What the Internet Can Tell Us About Who We Really Are'
+    book_genre: 1
+    book_description: 'By the end of an average day in the early twenty-first century, human beings searching the internet will amass eight trillion gigabytes of data. This staggering amount of information—unprecedented in history—can tell us a great deal about who we are—the fears, desires, and behaviors that drive us, and the conscious and unconscious decisions we make. From the profound to the mundane, we can gain astonishing knowledge about the human psyche that less than twenty years ago, seemed unfathomable.'
+    publisher_id: 1
+    publish_date: 2018-02-20
+    image_url: 'https://prodimage.images-bn.com/pimages/9780062390868_p0_v3_s550x406.jpg'
+    price: 15.29
+    rating: 4
+    sales_rank: 55265
+- model: bookstore.Book
+  pk: 2
+  fields:
+    isbn: 9780802147219
+    book_title: 'Small Fry'
+    book_genre: 1
+    book_description: 'Born on a farm and named in a field by her parents―artist Chrisann Brennan and Steve Jobs―Lisa Brennan-Jobs’s childhood unfolded in a rapidly changing Silicon Valley. When she was young, Lisa’s father was a mythical figure who was rarely present in her life. As she grew older, her father took an interest in her, ushering her into a new world of mansions, vacations, and private schools. His attention was thrilling, but he could also be cold, critical and unpredictable. When her relationship with her mother grew strained in high school, Lisa decided to move in with her father, hoping he’d become the parent she’d always wanted him to be. Part portrait of a complex family, part love letter to California in the seventies and eighties, Small Fry is a poignant coming-of-age story from one of our most exciting new literary voices.'
+    publisher_id: 2
+    publish_date: 2019-06-18
+    image_url: 'https://prodimage.images-bn.com/pimages/9780802147219_p0_v2_s550x406.jpg'
+    price: 13.6
+    rating: 4.8
+    sales_rank: 17094
+- model: bookstore.Book
+  pk: 3
+  fields:
+    isbn: 9780735210936
+    book_title: 'Because Internet - Understanding the New Rules of Language'
+    book_genre: 1
+    book_description: 'Language is humanity''s most spectacular open-source project, and the internet is making our language change faster and in more interesting ways than ever before. Internet conversations are structured by the shape of our apps and platforms, from the grammar of status updates to the protocols of comments and @replies. Linguistically inventive online communities spread new slang and jargon with dizzying speed. What''s more, social media is a vast laboratory of unedited, unfiltered words where we can watch language evolve in real time.'
+    publisher_id: 3
+    publish_date: 2019-07-23
+    image_url: 'https://prodimage.images-bn.com/pimages/9780735210936_p0_v3_s550x406.jpg'
+    price: 21.37
+    rating: 5
+    sales_rank: 16354
+- model: bookstore.Book
+  pk: 4
+  fields:
+    isbn: 9781609185046
+    book_title: 'Cognitive Behavioral Therapy - Basics and Beyond'
+    book_genre: 1
+    book_description: 'The leading text for students and practicing therapists who want to learn the fundamentals of cognitive behavior therapy (CBT), this book is eminently practical and authoritative. In a highly accessible, step-by-step style, master clinician Judith S. Beck demonstrates how to engage patients, develop a sound case conceptualization, plan treatment, and structure sessions effectively. Core cognitive, behavioral, and experiential techniques are explicated and strategies are presented for troubleshooting difficulties and preventing relapse. An extended case example and many vignettes and transcripts illustrate CBT in action. Reproducible clinical tools can be downloaded and printed in a convenient 8 1/2" x 11" size.'
+    publisher_id: 4
+    publish_date: 2011-07-13
+    image_url: 'https://prodimage.images-bn.com/pimages/9781609185046_p0_v5_s550x406.jpg'
+    price: 57
+    rating: 4
+    sales_rank: 16955
+- model: bookstore.Book
+  pk: 5
+  fields:
+    isbn: 9780393339758
+    'book_title:The Shallows': 'What the Internet Is Doing to Our Brains'
+    book_genre: 1
+    book_description: 'Now, Carr expands his argument into the most compelling exploration of the Internet’s intellectual and cultural consequences yet published. As he describes how human thought has been shaped through the centuries by “tools of the mind”—from the alphabet to maps, to the printing press, the clock, and the computer—Carr interweaves a fascinating account of recent discoveries in neuroscience by such pioneers as Michael Merzenich and Eric Kandel. Our brains, the historical and scientific evidence reveals, change in response to our experiences. The technologies we use to find, store, and share information can literally reroute our neural pathways.'
+    publisher_id: 5
+    publish_date: 2011-06-06
+    image_url: 'https://prodimage.images-bn.com/pimages/9780393339758_p0_v4_s550x406.jpg'
+    price: 12.76
+    rating: 4
+    sales_rank: 19575
+- model: bookstore.Book
+  pk: 6
+  fields:
+    isbn: 9780393609394
+    book_title: 'Astrophysics for People in a Hurry'
+    book_genre: 2
+    book_description: 'What is the nature of space and time? How do we fit within the universe? How does the universe fit within us? There’s no better guide through these mind-expanding questions than acclaimed astrophysicist and best-selling author Neil deGrasse Tyson. But today, few of us have time to contemplate the cosmos. So Tyson brings the universe down to Earth succinctly and clearly, with sparkling wit, in tasty chapters consumable anytime and anywhere in your busy day. While you wait for your morning coffee to brew, for the bus, the train, or a plane to arrive, Astrophysics for People in a Hurry will reveal just what you need to be fluent and ready for the next cosmic headlines - from the Big Bang to black holes, from quarks to quantum mechanics, and from the search for planets to the search for life in the universe.'
+    publisher_id: 5
+    publish_date: 2017-05-02
+    image_url: 'https://prodimage.images-bn.com/pimages/9780393609394_p0_v7_s550x406.jpg'
+    price: 15.16
+    rating: 4
+    sales_rank: 498
+- model: bookstore.Book
+  pk: 7
+  fields:
+    isbn: 9780062655066
+    book_title: 'American Moonshot - John F. Kennedy and the Great Space Race'
+    book_genre: 2
+    book_description: 'On May 25, 1961, JFK made an astonishing announcement - his goal of putting a man on the moon by the end of the decade. In this engrossing, fast-paced epic, Douglas Brinkley returns to the 1960s to recreate one of the most exciting and ambitious achievements in the history of humankind. American Moonshot brings together the extraordinary political, cultural, and scientific factors that fueled the birth and development of NASA and the Mercury, Gemini and Apollo projects, which shot the United States to victory in the space race against the Soviet Union at the height of the Cold War.'
+    publisher_id: 1
+    publish_date: 2019-04-02
+    image_url: 'https://prodimage.images-bn.com/pimages/9780062655066_p0_v4_s550x406.jpg'
+    price: 28
+    rating: 5
+    sales_rank: 5439
+- model: bookstore.Book
+  pk: 8
+  fields:
+    isbn: 9780553380163
+    book_title: 'A Brief History of Time - From the Big Bang to Black Holes'
+    book_genre: 2
+    book_description: 'ublished more than two decades ago to great critical acclaim and commercial success, A Brief History of Time has become a landmark volume in science writing. Stephen Hawking, one of the great minds of our time, explores such profound questions ask - How did the universe begin—and what made its start possible? Does time always flow forward? Is the universe unending—or are there boundaries? Are there other dimensions in space? What will happen when it all ends?'
+    publisher_id: 6
+    publish_date: 1998-09-28
+    image_url: 'https://prodimage.images-bn.com/pimages/9780553380163_p0_v2_s550x406.jpg'
+    price: 14.41
+    rating: 4
+    sales_rank: 11658
+- model: bookstore.Book
+  pk: 9
+  fields:
+    isbn: 9780374537760
+    book_title: 'Carrying the Fire - An Astronaut''s Journeys (50th Anniversary Edition)'
+    book_genre: 2
+    book_description: 'The years that have passed since Neil Armstrong, Buzz Aldrin, and Michael Collins piloted the Apollo 11 spacecraft to the moon in July 1969 have done nothing to alter the fundamental wonder of the event - man reaching the moon remains one of the great events—technical and spiritual—of our lifetime.'
+    publisher_id: 7
+    publish_date: 2019-04-16
+    image_url: 'https://prodimage.images-bn.com/pimages/9780374537760_p0_v1_s550x406.jpg'
+    price: 15.36
+    rating: 5
+    sales_rank: 26253
+- model: bookstore.Book
+  pk: 10
+  fields:
+    isbn: 9780393350388
+    book_title: 'Death by Black Hole - And Other Cosmic Quandaries'
+    book_genre: 2
+    book_description: 'Loyal readers of the monthly "Universe" essays in Natural History magazine have long recognized Neil deGrasse Tyson''s talent for guiding them through the mysteries of the cosmos with clarity and enthusiasm. Bringing together more than forty of Tyson''s favorite essays, Death by Black Hole explores a myriad of cosmic topics, from what it would be like to be inside a black hole to the movie industry''s feeble efforts to get its night skies right. One of America''s best-known astrophysicists, Tyson is a natural teacher who simplifies the complexities of astrophysics while sharing his infectious fascination for our universe.'
+    publisher_id: 5
+    publish_date: 2014-09-02
+    image_url: 'https://prodimage.images-bn.com/pimages/9780393350388_p0_v4_s550x406.jpg'
+    price: 14.83
+    rating: 4
+    sales_rank: 41264
+- model: bookstore.Book
+  pk: 11
+  fields:
+    isbn: 9780393350364
+    book_title: 'The Pluto Files - The Rise and Fall of America''s Favorite Planet'
+    book_genre: 2
+    book_description: 'When the Rose Center for Earth and Space at the American Museum of Natural History reclassified Pluto as an icy comet, the New York Times proclaimed on page one, "Pluto Not a Planet? Only in New York." Immediately, the public, professionals, and press were choosing sides over Pluto''s planethood. Pluto is entrenched in our cultural and emotional view of the cosmos, and Neil deGrasse Tyson, award-winning author and director of the Rose Center, is on a quest to discover why. He stood at the heart of the controversy over Pluto''s demotion, and consequently Plutophiles have freely shared their opinions with him, including endless hate mail from third-graders. With his inimitable wit, Tyson delivers a minihistory of planets, describes the oversized characters of the people who study them, and recounts how America''s favorite planet was ousted from the cosmic hub.'
+    publisher_id: 5
+    publish_date: 2014-09-02
+    image_url: 'https://prodimage.images-bn.com/pimages/9780393350364_p0_v4_s550x406.jpg'
+    price: 15.05
+    rating: 4
+    sales_rank: 238376
+- model: bookstore.Book
+  pk: 12
+  fields:
+    isbn: 9781628973303
+    book_title: 'Voices from Chernobyl - The Oral History of a Nuclear Disaster'
+    book_genre: 3
+    book_description: 'A journalist by trade, who now suffers from an immune deficiency developed while researching this book, presents personal accounts of what happened to the people of Belarus after the nuclear reactor accident in 1986, and the fear, anger, and uncertainty that they still live with. Chernobyl , the acclaimed HBO miniseries and winner of ten Emmy Awards, is based in large part on the personal recollections from Voices from Chernobyl.'
+    publisher_id: 8
+    publish_date: 2019-06-19
+    image_url: 'https://prodimage.images-bn.com/pimages/9781628973303_p0_v1_s550x406.jpg'
+    price: 17.5
+    rating: 4.5
+    sales_rank: 8406
+- model: bookstore.Book
+  pk: 13
+  fields:
+    isbn: 9780312427566
+    book_title: 'The Right Stuff'
+    book_genre: 3
+    book_description: 'Millions of words have poured forth about man''s trip to the moon, but until now few people have had a sense of the most engrossing side of the adventure; namely, what went on in the minds of the astronauts themselves - in space, on the moon, and even during certain odysseys on earth. It is this, the inner life of the astronauts, that Tom Wolfe describes with his almost uncanny empathetic powers, that made The Right Stuff a classic.'
+    publisher_id: 9
+    publish_date: 2008-03-04
+    image_url: 'https://prodimage.images-bn.com/pimages/9780312427566_p0_v2_s550x406.jpg'
+    price: 17.1
+    rating: 4
+    sales_rank: 38330
+- model: bookstore.Comments_Ratings
+  pk: 1
+  fields:
+    book_id: 1
+    username: Anonymous
+    comments: 'The author tells you about biases and ignores his own which are glaring. He warns of association vs. cause effect and ignores it in his book. The author consistently makes leaps of faithh and ponders on ignorantly. The assignation of science to behavioralsociology is fallacial. I have critically reviewed scientific papers for decades, this author is intoxicated with big data collated from Google and what association he makes with said data is erroneous. He is obsessed with the differences his brother and he have regarding baseball of all things and often uses that as a similie. Horrid treatise, I say and I finished every word, much to his prediction''s error.'
+    rating: 1
+- model: bookstore.Comments_Ratings
+  pk: 2
+  fields:
+    book_id: 1
+    username: Anonymous
+    comments: 'First of all, I finished the book (last chapter explains). I have always loved research to find out about people. This book shows how this is changing and will change dramatically. Great insight about &ldquo;why are all these companies tracking me&rdquo; and how Google has changed us more than you think.'
+    rating: 4
+- model: bookstore.Comments_Ratings
+  pk: 3
+  fields:
+    book_id: 1
+    username: mantramoon
+    comments: 'If you''d like to know the difference between what people say they do and what they really do, read this book. The author makes use of the exploding field of internet data to ferret out the truth about a wide range of subjects. If you liked Freakonomics, check this book out.'
+    rating: 5
+- model: bookstore.Comments_Ratings
+  pk: 4
+  fields:
+    book_id: 2
+    username: Anonymous
+    comments: 'I read this from start to finish in one sitting, I could relate to the author in so many ways because my father was like Lisa&rsquo;s in every way except rich and famous. She was definitely abused verbally growing up and how she still doesn&rsquo;t see that now floors me. How children services were never called in her own father or own mother baffles me. Th family that took her in were God sends and at the end she didn&rsquo;t acknowledge them.... why the hell not???? She wouldn&rsquo;t of graduated Harvard without them paying her tuition her senior year! I hope Lisa still sees a therapist , it&rsquo;s obvious she still suffers psychologically from the pain her father and mother caused her. The book was great but I feel like it should of been longer.'
+    rating: 5
+- model: bookstore.Comments_Ratings
+  pk: 5
+  fields:
+    book_id: 2
+    username: Anonymous
+    comments: 'The magnitude of both emotional cruelty and love experienced by the author is breathtaking. With the help of her mother and a few other key individuals, and, this reader suspects, an iron will, she became a strong, self-reliant, adult capable of creating a clear-eyed account of her tumultuous upbringing.'
+    rating: 5
+- model: bookstore.Comments_Ratings
+  pk: 6
+  fields:
+    book_id: 2
+    username: DanaLynne
+    comments: 'It was a struggle to read this book. The writing is brilliant and luminous, but the story is hard. Lisa Brennan-Jobs grew up as the unexpected and often unacknowledged daughter of Steve Jobs and artist Chrisann Brennan. I''ll admit, I''m not terribly interested in the personal lives of the rich and famous so I didn''t know much about Steve Jobs going into this book. To say he was a difficult man is an understatement, to say he was cruel, emotionally distant and often emotionally abusive towards his daughter is closer to the truth. In this book Lisa shares in exquisite and uncompromising detail, what it is like to grow up feeling abandoned and unwanted. Even her mother, who was a constant presence, was unable to provide the stability and emotional security a young child requires. Often as I was reading I wondered if Lisa was better off before her father acknowledged her rather than after she went to live with him. His ability to withdraw approval and affection were callous and calculated. He seems unable to connect emotionally with everyone around him, and his conversations and actions are often disconnected, if not wildly inappropriate. Lisa''s writing is poetic and filled with nostalgic images and experiences of what it was like to grow up in the 1980''s. Her memories are sharp and vibrant, evoking a visceral response from the reader. Even while she speaks of the ambivalence of her relationship with her father and the turbulence of her relationship with her mother, she remains firmly rooted in place and time in which she grew up. Her sense of place and time shine throughout the memoir and are as much a part of the story as the people who inhabit it. While this book isn''t an easy read by any means, it is a worthy one. Brennan-Jobs writing genius is certainly equal to her father''s techn'
+    rating: 4
+- model: bookstore.Comments_Ratings
+  pk: 7
+  fields:
+    book_id: 3
+    username: Anonymous
+    comments: 'I''ve never encountered another pop linguistics (or pop academic, in general) author who writes as clearly, informatively, and engagingly as Gretchen does. This book is an entertaining read for linguists and non-linguists alike, and not just for young people either; there are interest insights about how folks of all ages write online. I couldn''t recommend this book more highly!'
+    rating: 4
+- model: bookstore.Comments_Ratings
+  pk: 8
+  fields:
+    book_id: 3
+    username: JohnnyBollocks
+    comments: 'This book is a lot of fun. Gretchen''s voice comes through, as does her vast knowledge of the linguistics of digital life. Although I''m still reading it, I have already learned a lot, and some of the assertions have spurred me to look through text histories with friends of different ages. Have also had some interesting discussions (in person and via text) with younger family members that have caused me to change some habits (no more hard stops [periods] in text messages lol)'
+    rating: 5
+- model: bookstore.Comments_Ratings
+  pk: 9
+  fields:
+    book_id: 4
+    username: mahawk
+    comments: 'Very good book, refresher for CBT. Easy to read.'
+    rating: 3
+- model: bookstore.Comments_Ratings
+  pk: 10
+  fields:
+    book_id: 4
+    username: Katie14
+    comments: 'I found this book to be helpful and informative with regards to Cognitive Behavior Therapy. Any one who is going into the counseling field will want to read this book.'
+    rating: 5
+- model: bookstore.Comments_Ratings
+  pk: 11
+  fields:
+    book_id: 5
+    username: Ken_O
+    comments: 'I picked this up after reading a review in a local paper - which thought it was too "shallow" for business readers. WRONG! Carr pulls together several strands of research and findings, and brings in the findings from scholarly journals to present several important consequences of the widespread use of the internet. The ideas are not all his, but he puts them together in a very well-written and readily digestible short read. We should all take note of his conclusions. The internet is changing the way we think - and we need to comprehend exactly how.'
+    rating: 5
+- model: bookstore.Comments_Ratings
+  pk: 12
+  fields:
+    book_id: 5
+    username: Booknut62
+    comments: 'Before this book was published, I looked forward to getting a copy with anticipation. I have been fascinated with what researchers are saying about the effects of the Web on our brains and and thought processes. Disappointingly, this book offers no groundbreaking insights in this topic, and for that matter any other. Carr opens the first chapters of this book with a long tedious history of the printed word and how that has affected thought and information processing. While this might be vital to his argument about how the Internet is changing the brain, it seems to go on forever. Could this information not been condensed into a chapter or so? Once Carr gets to the research on how the Web is changing our brains, he seems to go into long-drawn out descriptions of chemical processes and descriptions of physiological descriptions of how the Web is basically making us shallow thinkers, unable to think deeply about what we read and see on the Net. I was just a bit disappointed by Carr''s treatment of a subject that has a great deal of merit, and a subject that needs to be discussed. In the end, this was one of those books that was difficult to finish. Plowing is the accurate term to describe how I moved through this book. While Carr does an adequate job of describing what the research says about how the Web is changing us, he does so in an uninspiring and didactic manner. This could have been an interesting book, but it reads too much like a diatribe against technology in general.'
+    rating: 3
+- model: bookstore.Comments_Ratings
+  pk: 13
+  fields:
+    book_id: 6
+    username: Anonymous
+    comments: 'So simple, so clear. Science and Space in a Nutshell. Just open it and fall in love.'
+    rating: 5
+- model: bookstore.Comments_Ratings
+  pk: 14
+  fields:
+    book_id: 6
+    username: Broseph27
+    comments: 'Enjoyable quick read.'
+    rating: 5
+- model: bookstore.Comments_Ratings
+  pk: 15
+  fields:
+    book_id: 6
+    username: Beasles
+    comments: 'Good easy read. Written for the non scientist. Good update from high school and college physics. Nicely put the universe back in perspective.'
+    rating: 5
+- model: bookstore.Comments_Ratings
+  pk: 16
+  fields:
+    book_id: 7
+    username: jmgallen
+    comments: 'The characters run the gamut of space lore from Jules Verne through Robert Goddard, Alan Shepherd, Yuri Gagarin, John Glenn, Neil Armstrong, Jim Web, Chris Kraft, John Kennedy, Lyndon Johnson and others too numerous to mention. The scene is set with Kennedy having been elected to get America moving again, a Soviet satellite in space, the Bay of Pigs fiasco and the President looking for something we can beat the Russians at. Told that that could be a race to the moon, Kennedy made the bold challenge that would invigorate the 60s.'
+    rating: 5
+- model: bookstore.Comments_Ratings
+  pk: 17
+  fields:
+    book_id: 8
+    username: ReadingRedHead
+    comments: 'When I started reading this book, I thought there is no way in the world I will be able to understand one of the greatest minds in physics today. How wrong I was! Dr. Hawking makes complicated theory understandable for the rest of us. This is a fascinating book that I would recommend to everyone.'
+    rating: 5
+- model: bookstore.Comments_Ratings
+  pk: 18
+  fields:
+    book_id: 8
+    username: CodyHunt
+    comments: 'Throughout his book, Stephen Hawking presents his outstanding observations and beliefs of the physics of our universe. Hawking presents information on the history of the universe, motion of the universe and most exhilarating of all, black holes. He includes his perception and opinions of the universe and its past as well as the physics acting upon it as time passes He presents the writing in reasonable short chapters that help you understand him and all of his reasoning as well as the tons of background information that he has researched and drawn his observations from. I would recommend this as a read for anyone that has even a slight interest in astronomy and the cosmos. Stephen Hawking teaches you about simple and general astronomy and from that draws major theories that are constantly changing as we learn more about our universe through technological innovations. There are many pages that will have to be read multiple times before you can really understand what he is even talking about. This isn''t really a book that you can skim through or you are bound to miss something vital to the theory of relativity or some function of quantum physics. Since it is so thorough, unlike some books, you WILL put it down. Chances are, you''ll throw it down in frustration with Hawking, but you will be rewarded in the end when you realize how blatantly he put some of the most complex thoughts and information accessible to humans. I enjoyed Hawkings sense of humor and voice in his writing. Before I read this book, physics seemed extremely dry and boring but he adds humor and feeling and made me captivated by concepts. I felt like I was sitting in a classroom while I read this, hearing the teachers voice rambling on and on and on about something I didn''t really care about until he cracked a joke that I just caught through the blur of boredom. I let out a little chuckle and grin then realize that the subject is exhilarating and fun. I had no dislike from this book, just shock and awe of a new subject that I knew very little about. Irate this book overall, four stars out five because I do not think this book is for everyone, but I loved it and believe that many people could capture some of the ideas in the writing and be surprised with an epiphany of your surroundings and how miniscule we are in the universe and how much else is out there in time and space.'
+    rating: 4
+- model: bookstore.Comments_Ratings
+  pk: 19
+  fields:
+    book_id: 9
+    username: MUT
+    comments: 'This book provides a great understanding of our nation''s space program from one of the men who actually was part of the first team of Astronauts to make it to the Moon, Michael Collins! Although Mr. Collins did not walk on the Moon, as he was the Astronaut who piloted the Command Module, he does an incredible job explaining the process leading up to this achievement of mankind and clearly articulates for the learned as well as the novice, the actions he, Neil Armstrong and Buzz Aldrin carried out on Apollo 11 to successfully make and complete the journey. The reader also gains new respect for the many, many people who were part of the process to bring this wonderful accomplishment to fruition; understanding too, there were those who lost their lives along the journey to success...I can''t help but think of the Apollo 1 Crew, Gus Grissom, Ed White and Roger Chaffee! I highly recommend this book for those seeking to learn of the early days of space exploration and for those seeking to understand the initial path to the Moon...you will not be disappointed!'
+    rating: 5
+- model: bookstore.Comments_Ratings
+  pk: 20
+  fields:
+    book_id: 9
+    username: Anonymous
+    comments: 'Collins’ writing can best be described as lyrical. Straightforward--as you’d expect from an engineer, test pilot, and astronaut, someone with with a strong technical background--yet captures the wonder and adventure of man’s first journey to the moon. Obviously completely accurate, without any of the annoying small inaccuracies that often creep into books such as this that describe complex past events. Yet, not so technical that you have have been a fanboy of the Apollo program to follow and understand his descriptions.'
+    rating: 5
+- model: bookstore.Comments_Ratings
+  pk: 21
+  fields:
+    book_id: 9
+    username: Polaris-on-LibraryThing
+    comments: 'Simply magnificent! As I''ve spent the last few days tearing through this engrossing book, I''ve been mindful of how I might be able to review it once I''d reached its end. Now that I have done so I find that I don''t really know quite how to express what it is about Michael Collins'' writing that moved me so much - except that I know this is most definitely one of the best memoirs I''ve ever read. It is truly a one-off, as the events it describes are so unique (most obviously the historic Apollo 11 mission) that they could only have been written by one of the members of 1960s NASA space program who was actually ''there''.Collins'' writing is very laid back and as informal as it is informative. I rarely read books (for pleasure at least) with quite so much scientific content - rocket propulsion, trajectories, inter-planetary navigation, and so forth, but he puts these topics into words that I found no problem in understanding. Not that these subjects really dominate the narrative - his tale is told in a very personal and humourous style. For an astronaut (& fighter pilot for that matter!) Collins is incredibly humble and self-effacing - he repeatedly reminds the reader of how poor a mechanic he is and how lazy he can be...The early chapters retell his experiences as a USAF test pilot while in the background NASA''s manned space program is underway. After some early setbacks he is eventually accepted into the astronaut staff at NASA in Houston, and begins the arduous training for the Gemini program. Amidst tales of geological field trips and survival training in inhospitable desert or jungle environments (in the event of any future re-entry going awry), and endless sickness inducing zero gravity dives, he gives a great sense to the day to day existence of an astronaut-in-waiting. As enjoyable as these pages are, the reader knows - as does the author of course - that it is all building up to the momentous day when he will finally sit at the ''tip of the pencil on the launch-pad'' at Cape Kennedy on his way into space.The Gemini 10 mission he flies along with John Young is covered in every breathtaking detail, none more so than Collins'' 2 EVAs (Extra Vehicular Activity - spacewalks to you and I). In the first, as he was taking star readings with his sextant whilst standing up in the hatch - head and shoulders out ''there'' in space - he writes that he felt at that moment "like a Roman god riding the skies in his chariot". The 2nd EVA, where he has to leave the Gemini altogether and cross the void to reach the adjacent Agena craft (sent up previously specifically for this planned rendezvous), for the purposes of removing and replacing an experiment installed on its outside, is altogether more terrifying. He finds himself grappling with zero gravity while attempting to ''climb'' aboard the rear end of a craft patently not designed for such an activity (there were no foot or handholds for his convenience) in bulky spacesuit complete with cumbersome gloves and yards of entangling umbilical line... There is no ''up'' and there is no ''down'' - talk about vertigo! All this while simultaneously reminding the Gemini pilot Young not to use whichever thruster may happen to be nearest to burning through either said umbilical lines or indeed Collins himself! It''s edge of your seat stuff.The final third of this terrific book covers the famous Apollo 11 mission to the moon itself. The quirks of fate that led him to this moment are not lost on Collins as he writes of the medical problem which was discovered while he was due to be assigned to the Apollo 8 mission. His flight status of ''grounded'' for several months inadvertently leads to his later inclusion on Apollo 11.I won''t retell all that happens, but the moments when he is truly as alone as any human being has ever been - Charles Lindbergh''s later congratulatory letter tells of relating to his experience more so than Armstrong''s or Aldrin''s - in lunar orbit while the landing module ''Eagle'' is away on the Mo'
+    rating: 5
+- model: bookstore.Comments_Ratings
+  pk: 22
+  fields:
+    book_id: 10
+    username: Calatelpe
+    comments: 'This book is very easy to read, even if you are not otherwise very interested in science. One of its stronger points is its accessibility to laypeople. If you''ve ever seen him speak on tv, then you know how capable he is of making everything he talks about incredibly interesting (even if it might otherwise come off as mundane by someone with even a little less enthusiasm). His writing style is no different, and his own love of science (and astrophysics in particular) is infectious.'
+    rating: 5
+- model: bookstore.Comments_Ratings
+  pk: 23
+  fields:
+    book_id: 10
+    username: Susan-Nord
+    comments: 'Neil deGrasse Tyson''s enthusiasm for the universe is really shown in this book. Filled with humor, Death by Black Hole takes complex subjects and exposes them to the reader in a way that is very easy to understand. I benifitted from reading this book twice to better understand some of the concepts. Enthralling!'
+    rating: 5
+- model: bookstore.Comments_Ratings
+  pk: 24
+  fields:
+    book_id: 11
+    username: gewurztraminer
+    comments: 'If you''re afraid of a dry science-y book, put your fears aside. The Pluto Files is a glimpse behind the scenes of museums and other scientific institutions and how they deal with the public and the changing status of their chosen field. There''s just enough straight science described so the reader can familiarize themselves with the topic. Nothing that can be handled by a high school student. Dr. Tyson found himself, unintentionally, in the middle of the controversy over the continuing planethood of far away Pluto. While I think he is a bit biased about the actual popularity of tiny, icy rock, the machinations of his fellow scientists are what really make this book worth reading. "All My Children" has nothing on feuding astrophysicists!'
+    rating: 4
+- model: bookstore.Comments_Ratings
+  pk: 25
+  fields:
+    book_id: 11
+    username: John2173
+    comments: 'What a fun light read, full of interesting facts and trivia. The subject matter is literally very "far out". Dr. Tyson seems to have his feet on the ground, perhaps surprising for an astrophysicist, in his handling of the controversy surrounding the demotion of Pluto from its status as a planet. The Pluto Files is full of great old and new illustrations. I particularly enjoyed the photos of Clyde Tombaugh (at ages 22 and 90), Pluto''s discoverer, and little Venetia Burney who suggested the name Pluto. The cartoons are great. It''s one of those books, that although I tried to maintain a quiet demeanor, I found myself LOL while reading it on the train.'
+    rating: 4
+- model: bookstore.Comments_Ratings
+  pk: 26
+  fields:
+    book_id: 12
+    username: lucy_the_dog
+    comments: 'What a chilling book! I highly recommend this book to anyone who wants to know what it was like for the survivors of the Chernobyl disaster. It''s not enough to learn the science of the disaster, but to read what some had to go through, is absolutely terrifying.'
+    rating: 5
+- model: bookstore.Comments_Ratings
+  pk: 27
+  fields:
+    book_id: 12
+    username: Anonymous
+    comments: 'I am someone who NEVER re-reads books. I just don''t. But Svetlana Alexievich''s Voices from Chernobyl is a book I can''t resist to read over and over. The stories are unbelievably touching. I felt the pain and I still do everytime I read it. I highly recommend this book. You will not regret it.'
+    rating: 4
