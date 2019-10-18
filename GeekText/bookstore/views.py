@@ -12,6 +12,17 @@ def feed(request):
     posts = Book.objects.all()
     return render(request, 'feed.xml', {'posts': posts})
 
+def login(request):
+    assert isinstance(request, HttpRequest)
+    return render(
+        request,
+        'bookstore/login.html',
+        {
+            'title':'Log in',
+            'year':datetime.now().year,
+        }
+    )
+
 def index(request):
     assert isinstance(request, HttpRequest)
     return render(
@@ -22,3 +33,6 @@ def index(request):
             'year':datetime.now().year,
         }
     )
+
+
+
