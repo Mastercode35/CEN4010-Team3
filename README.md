@@ -26,6 +26,10 @@ Setting up the postgres server for use with the project:
 - `CREATE USER team3 WITH PASSWORD 'password'; ` This will create the team3 user and password which we will all be using.
 - `CREATE DATABASE bookstore_website_project WITH OWNER team3; ` This will create the database that we will be using and assign our user to it. 
 
+How to Dump Data From the Database
+- This is needed if you have ADDED or REMOVED any records from the database. You do this so that everyone else can be on the same version of the database.
+- Type the command: `python manage.py dumpdata --natural-foreign --exclude auth.permission --exclude contenttypes --indent 4 > bookstore/fixtures/data.json` . This will create a data.json file in the fixtures directory so that everyone can LOAD the same database you dumped with the command below.
+
 How To Upload Data to the Database:
 - After you have migrated and after your user has been created in psql with the database table, you can upload data into the database using the fixture in /GeekText/bookstore/fixtures
 - Use the command `python manage.py loaddata data.json` to fill the database with the latest information currently in the database.
