@@ -49,7 +49,7 @@ class Book(models.Model):
     book_title = models.CharField(max_length = 100)
     book_genre = models.ForeignKey(Genre, on_delete=models.CASCADE, verbose_name = "book genre")
     book_description = models.CharField(max_length = 2000, blank = True)
-    publisher_id = models.ForeignKey(Publisher, on_delete=models.CASCADE, verbose_name = "publisher")
+    publisher = models.ForeignKey(Publisher, on_delete=models.CASCADE, verbose_name = "publisher")
     publish_date = models.DateField()
     image_url = models.CharField(max_length = 200, blank = True)
     price = models.DecimalField(max_digits = 4, decimal_places = 2)
@@ -59,7 +59,7 @@ class Book(models.Model):
 #Comments and Ratings table which contain all the comments with their ratings for each book in Book that have comments/ratings
 #Foreign Key Tables: Book (Book being commented) and Customer (user doing the commenting)
 class CommentRating(models.Model):
-    book_id = models.ForeignKey(Book, on_delete=models.CASCADE, verbose_name = "book comment/rating is for")
+    book = models.ForeignKey(Book, on_delete=models.CASCADE, verbose_name = "book comment/rating is for")
     username = models.ForeignKey(Customer, on_delete=models.CASCADE, verbose_name = "customer doing the rating/commenting")
     comment = models.CharField(max_length = 2000)
     rating = models.DecimalField(max_digits=2, decimal_places = 1)
@@ -73,21 +73,21 @@ class Author(models.Model):
 #Connects Each author in the DB with the books they wrote.
 #Foreign Key Tables: Book (book written by an author) and Author (author doing the writing)
 class Wrote(models.Model):
-    book_id = models.ForeignKey(Book, on_delete=models.CASCADE)
-    author_id = models.ForeignKey(Author, on_delete=models.CASCADE)
+    book = models.ForeignKey(Book, on_delete=models.CASCADE)
+    author = models.ForeignKey(Author, on_delete=models.CASCADE)
     sequence = models.IntegerField()
 
 #Inventory Table - Connects each book with how many we have in the store.
 #Foreign Key Tables: Book (book being counted)
 class Inventory(models.Model):
-    book_id = models.ForeignKey(Book, on_delete=models.CASCADE)
+    book = models.ForeignKey(Book, on_delete=models.CASCADE)
     quantity_on_hand = models.IntegerField()
 
 #Shopping Cart Table which contains the items in each shopping cart and which user they are owned by
 #Foreign Key Tables: Customer (user who owns the cart) and Book (book within that cart.)
 class ShoppingCart(models.Model):
     username = models.ForeignKey(Customer, on_delete=models.CASCADE, verbose_name = "user cart assosiated to")
-    book_id = models.ForeignKey(Book, on_delete=models.CASCADE, verbose_name = "book in cart")
+    book = models.ForeignKey(Book, on_delete=models.CASCADE, verbose_name = "book in cart")
     quantity = models.IntegerField()
 
 #Wish List Table which contains the names of each wish list and the user who owns them
@@ -101,13 +101,13 @@ class WishList(models.Model):
 #Foreign Key Tables: WisList (the list the books are connected to) and Book (Book inside the list)
 class WishListItem(models.Model):
     list_id = models.ForeignKey(WishList, on_delete=models.CASCADE, verbose_name = "wish list associated with this item")
-    book_id = models.ForeignKey(Book, on_delete=models.CASCADE, verbose_name = "book in list")
+    book = models.ForeignKey(Book, on_delete=models.CASCADE, verbose_name = "book in list")
 
 #SavedForLater Table which holds each book that will be saved for later by each user.
 #Foreign Key Tables: Customer (user saving books for later) and Book (book being saved for later)
 class SavedForLater(models.Model):
     username = models.ForeignKey(Customer, on_delete=models.CASCADE, verbose_name = "user item is assosiated to")
-    book_id = models.ForeignKey(Book, on_delete=models.CASCADE, verbose_name = "book in list")
+    book = models.ForeignKey(Book, on_delete=models.CASCADE, verbose_name = "book in list")
 
 #Sales Table which contains each sale made on the site and their necessary information.
 #Foeign Key Tables: Customer (user who made the sale), Addresses (delivery address of sale), and CreditCards (card used for sale)
@@ -121,6 +121,6 @@ class Sale(models.Model):
 #Sale Items Table which contains each book found within each sale made
 #Foreign Key Tables: Sales (sale made) and Book (book sold in that sale)
 class SaleItem(models.Model):
-    sale_id = models.ForeignKey(Sale, on_delete=models.CASCADE)
-    book_id = models.ForeignKey(Book, on_delete=models.CASCADE)
+    sale = models.ForeignKey(Sale, on_delete=models.CASCADE)
+    book = models.ForeignKey(Book, on_delete=models.CASCADE)
     quantity = models.IntegerField()
