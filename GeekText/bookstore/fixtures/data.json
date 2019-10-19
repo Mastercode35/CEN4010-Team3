@@ -1,0 +1,5019 @@
+[
+{
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$150000$bKkUF9C4gbS7$tMTPD1P9ZIoEnIBhd10uAycJn4zKdIjw/iGqBxS0fBs=",
+        "last_login": "2019-10-18T02:35:50.478Z",
+        "is_superuser": true,
+        "username": "team3",
+        "first_name": "",
+        "last_name": "",
+        "email": "welia002@fiu.edu",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2019-10-18T02:35:42.279Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "lt166q15trvi2yzucszxk2k5htv3wf8o",
+    "fields": {
+        "session_data": "ZjkxN2UyMDMzNWVkN2JlZGM0NzZkNGE3ZDA4MTM1MzdiZWMyYjMwYjp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJkZDhmYjVhMDY0NDljODhjYTQwNDgzZmM2MGUwZmFiZjllNmI0OTc0In0=",
+        "expire_date": "2019-11-01T02:35:50.491Z"
+    }
+},
+{
+    "model": "bookstore.customer",
+    "pk": "Anonymous",
+    "fields": {
+        "first_name": "_",
+        "last_name": "_",
+        "nickname": "_",
+        "email": "_",
+        "email_secondary": "_",
+        "password": "_",
+        "start_date": "2019-10-17"
+    }
+},
+{
+    "model": "bookstore.customer",
+    "pk": "Beasles",
+    "fields": {
+        "first_name": "Nicholas",
+        "last_name": "Beasley",
+        "nickname": "Beasleberru",
+        "email": "NickNick@gmail.com",
+        "email_secondary": "",
+        "password": "Iambetterthanyou",
+        "start_date": "2019-10-17"
+    }
+},
+{
+    "model": "bookstore.customer",
+    "pk": "Booknut62",
+    "fields": {
+        "first_name": "Book",
+        "last_name": "Nutt",
+        "nickname": "Booky",
+        "email": "Book_nut.geospace@myspace.com",
+        "email_secondary": "",
+        "password": "geospacenerdNutt",
+        "start_date": "2019-10-17"
+    }
+},
+{
+    "model": "bookstore.customer",
+    "pk": "Broseph27",
+    "fields": {
+        "first_name": "Bro",
+        "last_name": "Sepholous",
+        "nickname": "Broseph",
+        "email": "brosepholous27@myspace.com",
+        "email_secondary": "",
+        "password": "TheBigBro",
+        "start_date": "2019-10-17"
+    }
+},
+{
+    "model": "bookstore.customer",
+    "pk": "CodyHunt",
+    "fields": {
+        "first_name": "Cody",
+        "last_name": "Hunt",
+        "nickname": "IHuntBigGame",
+        "email": "BigGameHunter@thetrap.com",
+        "email_secondary": "",
+        "password": "yeehawbrother",
+        "start_date": "2019-10-17"
+    }
+},
+{
+    "model": "bookstore.customer",
+    "pk": "DanaLynne",
+    "fields": {
+        "first_name": "Dana",
+        "last_name": "Lynne",
+        "nickname": "Dana",
+        "email": "Danna.Lynne@hotmail.com",
+        "email_secondary": "",
+        "password": "Dan",
+        "start_date": "2019-10-17"
+    }
+},
+{
+    "model": "bookstore.customer",
+    "pk": "jmgallen",
+    "fields": {
+        "first_name": "JP",
+        "last_name": "Morgan",
+        "nickname": "Chase",
+        "email": "jpmchase@jpm.com",
+        "email_secondary": "",
+        "password": "ChaseWillHireMe",
+        "start_date": "2019-10-17"
+    }
+},
+{
+    "model": "bookstore.customer",
+    "pk": "JohnnyBollocks",
+    "fields": {
+        "first_name": "Johnny",
+        "last_name": "Bollocks",
+        "nickname": "John",
+        "email": "JohnHancock@gmail.com",
+        "email_secondary": "",
+        "password": "JohnnyBoi",
+        "start_date": "2019-10-17"
+    }
+},
+{
+    "model": "bookstore.customer",
+    "pk": "Katie14",
+    "fields": {
+        "first_name": "Katie",
+        "last_name": "Perry",
+        "nickname": "Kates",
+        "email": "Katie14@gmail.com",
+        "email_secondary": "",
+        "password": "Katesters",
+        "start_date": "2019-10-17"
+    }
+},
+{
+    "model": "bookstore.customer",
+    "pk": "Ken_O",
+    "fields": {
+        "first_name": "Ken",
+        "last_name": "Obryon",
+        "nickname": "Kenny",
+        "email": "Ken_Brian@icloud.com",
+        "email_secondary": "",
+        "password": "Kenster",
+        "start_date": "2019-10-17"
+    }
+},
+{
+    "model": "bookstore.customer",
+    "pk": "mahawk",
+    "fields": {
+        "first_name": "Mah",
+        "last_name": "Hawk",
+        "nickname": "Kawk",
+        "email": "JohnsonAndJohnson@yahoo.com",
+        "email_secondary": "",
+        "password": "MikeJohnson",
+        "start_date": "2019-10-17"
+    }
+},
+{
+    "model": "bookstore.customer",
+    "pk": "mantramoon",
+    "fields": {
+        "first_name": "Man",
+        "last_name": "Tramoon",
+        "nickname": "mantramoon",
+        "email": "Nah@yahoo.com",
+        "email_secondary": "",
+        "password": "easypassword",
+        "start_date": "2019-10-17"
+    }
+},
+{
+    "model": "bookstore.customer",
+    "pk": "McLovin",
+    "fields": {
+        "first_name": "Mister",
+        "last_name": "Loving",
+        "nickname": "Mcky",
+        "email": "McLovin@yahoo.com",
+        "email_secondary": "",
+        "password": "Iloveyakid",
+        "start_date": "2019-10-18"
+    }
+},
+{
+    "model": "bookstore.customer",
+    "pk": "MUT",
+    "fields": {
+        "first_name": "Muscular",
+        "last_name": "TinyMan",
+        "nickname": "Unstoppabe",
+        "email": "ImReallyBig@gmail.com",
+        "email_secondary": "",
+        "password": "BIGBOSS",
+        "start_date": "2019-10-17"
+    }
+},
+{
+    "model": "bookstore.customer",
+    "pk": "ReadingRedHead",
+    "fields": {
+        "first_name": "Red",
+        "last_name": "Head",
+        "nickname": "Reads",
+        "email": "ALot@myspace.com",
+        "email_secondary": "",
+        "password": "IReadALot",
+        "start_date": "2019-10-17"
+    }
+},
+{
+    "model": "bookstore.publisher",
+    "pk": 1,
+    "fields": {
+        "publisher_name": "HarperCollins Publishers"
+    }
+},
+{
+    "model": "bookstore.publisher",
+    "pk": 2,
+    "fields": {
+        "publisher_name": "Grove/Atlantic, Inc."
+    }
+},
+{
+    "model": "bookstore.publisher",
+    "pk": 3,
+    "fields": {
+        "publisher_name": "Penguin Publishing Group"
+    }
+},
+{
+    "model": "bookstore.publisher",
+    "pk": 4,
+    "fields": {
+        "publisher_name": "Guilford Publications, Inc."
+    }
+},
+{
+    "model": "bookstore.publisher",
+    "pk": 5,
+    "fields": {
+        "publisher_name": "Norton, W. W. & Company, Inc."
+    }
+},
+{
+    "model": "bookstore.publisher",
+    "pk": 6,
+    "fields": {
+        "publisher_name": "Random House Publishing Group"
+    }
+},
+{
+    "model": "bookstore.publisher",
+    "pk": 7,
+    "fields": {
+        "publisher_name": "Farrar, Straus and Giroux"
+    }
+},
+{
+    "model": "bookstore.publisher",
+    "pk": 8,
+    "fields": {
+        "publisher_name": "Dalkey Archive Press"
+    }
+},
+{
+    "model": "bookstore.publisher",
+    "pk": 9,
+    "fields": {
+        "publisher_name": "Picador"
+    }
+},
+{
+    "model": "bookstore.publisher",
+    "pk": 10,
+    "fields": {
+        "publisher_name": "Fall River Press"
+    }
+},
+{
+    "model": "bookstore.publisher",
+    "pk": 11,
+    "fields": {
+        "publisher_name": "St. Martin's Press"
+    }
+},
+{
+    "model": "bookstore.publisher",
+    "pk": 12,
+    "fields": {
+        "publisher_name": "Basic Books"
+    }
+},
+{
+    "model": "bookstore.publisher",
+    "pk": 13,
+    "fields": {
+        "publisher_name": "Crown/Archetype"
+    }
+},
+{
+    "model": "bookstore.publisher",
+    "pk": 14,
+    "fields": {
+        "publisher_name": "Hachette Books"
+    }
+},
+{
+    "model": "bookstore.publisher",
+    "pk": 15,
+    "fields": {
+        "publisher_name": "Wiley"
+    }
+},
+{
+    "model": "bookstore.publisher",
+    "pk": 16,
+    "fields": {
+        "publisher_name": "Chelsea Green Publishing"
+    }
+},
+{
+    "model": "bookstore.genre",
+    "pk": 1,
+    "fields": {
+        "genre": "Technology"
+    }
+},
+{
+    "model": "bookstore.genre",
+    "pk": 2,
+    "fields": {
+        "genre": "Astronomy"
+    }
+},
+{
+    "model": "bookstore.genre",
+    "pk": 3,
+    "fields": {
+        "genre": "Engineering"
+    }
+},
+{
+    "model": "bookstore.genre",
+    "pk": 4,
+    "fields": {
+        "genre": "Mathematics"
+    }
+},
+{
+    "model": "bookstore.book",
+    "pk": 1,
+    "fields": {
+        "isbn": "9780062390868",
+        "book_title": "Everybody Lies - Big Data, New Data, and What the Internet Can Tell Us About Who We Really Are",
+        "book_genre": 1,
+        "book_description": "By the end of an average day in the early twenty-first century, human beings searching the internet will amass eight trillion gigabytes of data. This staggering amount of information\u2014unprecedented in history\u2014can tell us a great deal about who we are\u2014the fears, desires, and behaviors that drive us, and the conscious and unconscious decisions we make. From the profound to the mundane, we can gain astonishing knowledge about the human psyche that less than twenty years ago, seemed unfathomable.",
+        "publisher_id": 1,
+        "publish_date": "2018-02-20",
+        "image_url": "https://prodimage.images-bn.com/pimages/9780062390868_p0_v3_s550x406.jpg",
+        "price": "15.29",
+        "rating": "4.0",
+        "sales_rank": 55265
+    }
+},
+{
+    "model": "bookstore.book",
+    "pk": 2,
+    "fields": {
+        "isbn": "9780802147219",
+        "book_title": "Small Fry",
+        "book_genre": 1,
+        "book_description": "Born on a farm and named in a field by her parents\u2015artist Chrisann Brennan and Steve Jobs\u2015Lisa Brennan-Jobs\u2019s childhood unfolded in a rapidly changing Silicon Valley. When she was young, Lisa\u2019s father was a mythical figure who was rarely present in her life. As she grew older, her father took an interest in her, ushering her into a new world of mansions, vacations, and private schools. His attention was thrilling, but he could also be cold, critical and unpredictable. When her relationship with her mother grew strained in high school, Lisa decided to move in with her father, hoping he\u2019d become the parent she\u2019d always wanted him to be. Part portrait of a complex family, part love letter to California in the seventies and eighties, Small Fry is a poignant coming-of-age story from one of our most exciting new literary voices.",
+        "publisher_id": 2,
+        "publish_date": "2019-06-18",
+        "image_url": "https://prodimage.images-bn.com/pimages/9780802147219_p0_v2_s550x406.jpg",
+        "price": "13.60",
+        "rating": "4.8",
+        "sales_rank": 17094
+    }
+},
+{
+    "model": "bookstore.book",
+    "pk": 3,
+    "fields": {
+        "isbn": "9780735210936",
+        "book_title": "Because Internet - Understanding the New Rules of Language",
+        "book_genre": 1,
+        "book_description": "Language is humanity''s most spectacular open-source project, and the internet is making our language change faster and in more interesting ways than ever before. Internet conversations are structured by the shape of our apps and platforms, from the grammar of status updates to the protocols of comments and @replies. Linguistically inventive online communities spread new slang and jargon with dizzying speed. What''s more, social media is a vast laboratory of unedited, unfiltered words where we can watch language evolve in real time.",
+        "publisher_id": 3,
+        "publish_date": "2019-07-23",
+        "image_url": "https://prodimage.images-bn.com/pimages/9780735210936_p0_v3_s550x406.jpg",
+        "price": "21.37",
+        "rating": "5.0",
+        "sales_rank": 16354
+    }
+},
+{
+    "model": "bookstore.book",
+    "pk": 4,
+    "fields": {
+        "isbn": "9781609185046",
+        "book_title": "Cognitive Behavioral Therapy - Basics and Beyond",
+        "book_genre": 1,
+        "book_description": "The leading text for students and practicing therapists who want to learn the fundamentals of cognitive behavior therapy (CBT), this book is eminently practical and authoritative. In a highly accessible, step-by-step style, master clinician Judith S. Beck demonstrates how to engage patients, develop a sound case conceptualization, plan treatment, and structure sessions effectively. Core cognitive, behavioral, and experiential techniques are explicated and strategies are presented for troubleshooting difficulties and preventing relapse. An extended case example and many vignettes and transcripts illustrate CBT in action. Reproducible clinical tools can be downloaded and printed in a convenient 8 1/2\" x 11\" size.",
+        "publisher_id": 4,
+        "publish_date": "2011-07-13",
+        "image_url": "https://prodimage.images-bn.com/pimages/9781609185046_p0_v5_s550x406.jpg",
+        "price": "57.00",
+        "rating": "4.0",
+        "sales_rank": 16955
+    }
+},
+{
+    "model": "bookstore.book",
+    "pk": 5,
+    "fields": {
+        "isbn": "9780393339758",
+        "book_title": "The Shallows - 'What the Internet Is Doing to Our Brains'",
+        "book_genre": 1,
+        "book_description": "Now, Carr expands his argument into the most compelling exploration of the Internet\u2019s intellectual and cultural consequences yet published. As he describes how human thought has been shaped through the centuries by \u201ctools of the mind\u201d\u2014from the alphabet to maps, to the printing press, the clock, and the computer\u2014Carr interweaves a fascinating account of recent discoveries in neuroscience by such pioneers as Michael Merzenich and Eric Kandel. Our brains, the historical and scientific evidence reveals, change in response to our experiences. The technologies we use to find, store, and share information can literally reroute our neural pathways.",
+        "publisher_id": 5,
+        "publish_date": "2011-06-06",
+        "image_url": "https://prodimage.images-bn.com/pimages/9780393339758_p0_v4_s550x406.jpg",
+        "price": "12.76",
+        "rating": "4.0",
+        "sales_rank": 19575
+    }
+},
+{
+    "model": "bookstore.book",
+    "pk": 6,
+    "fields": {
+        "isbn": "9780393609394",
+        "book_title": "Astrophysics for People in a Hurry",
+        "book_genre": 2,
+        "book_description": "What is the nature of space and time? How do we fit within the universe? How does the universe fit within us? There\u2019s no better guide through these mind-expanding questions than acclaimed astrophysicist and best-selling author Neil deGrasse Tyson. But today, few of us have time to contemplate the cosmos. So Tyson brings the universe down to Earth succinctly and clearly, with sparkling wit, in tasty chapters consumable anytime and anywhere in your busy day. While you wait for your morning coffee to brew, for the bus, the train, or a plane to arrive, Astrophysics for People in a Hurry will reveal just what you need to be fluent and ready for the next cosmic headlines - from the Big Bang to black holes, from quarks to quantum mechanics, and from the search for planets to the search for life in the universe.",
+        "publisher_id": 5,
+        "publish_date": "2017-05-02",
+        "image_url": "https://prodimage.images-bn.com/pimages/9780393609394_p0_v7_s550x406.jpg",
+        "price": "15.16",
+        "rating": "4.0",
+        "sales_rank": 498
+    }
+},
+{
+    "model": "bookstore.book",
+    "pk": 7,
+    "fields": {
+        "isbn": "9780062655066",
+        "book_title": "American Moonshot - John F. Kennedy and the Great Space Race",
+        "book_genre": 2,
+        "book_description": "On May 25, 1961, JFK made an astonishing announcement - his goal of putting a man on the moon by the end of the decade. In this engrossing, fast-paced epic, Douglas Brinkley returns to the 1960s to recreate one of the most exciting and ambitious achievements in the history of humankind. American Moonshot brings together the extraordinary political, cultural, and scientific factors that fueled the birth and development of NASA and the Mercury, Gemini and Apollo projects, which shot the United States to victory in the space race against the Soviet Union at the height of the Cold War.",
+        "publisher_id": 1,
+        "publish_date": "2019-04-02",
+        "image_url": "https://prodimage.images-bn.com/pimages/9780062655066_p0_v4_s550x406.jpg",
+        "price": "28.00",
+        "rating": "5.0",
+        "sales_rank": 5439
+    }
+},
+{
+    "model": "bookstore.book",
+    "pk": 8,
+    "fields": {
+        "isbn": "9780553380163",
+        "book_title": "A Brief History of Time - From the Big Bang to Black Holes",
+        "book_genre": 2,
+        "book_description": "Published more than two decades ago to great critical acclaim and commercial success, A Brief History of Time has become a landmark volume in science writing. Stephen Hawking, one of the great minds of our time, explores such profound questions ask - How did the universe begin\u2014and what made its start possible? Does time always flow forward? Is the universe unending\u2014or are there boundaries? Are there other dimensions in space? What will happen when it all ends?",
+        "publisher_id": 6,
+        "publish_date": "1998-09-28",
+        "image_url": "https://prodimage.images-bn.com/pimages/9780553380163_p0_v2_s550x406.jpg",
+        "price": "14.41",
+        "rating": "4.0",
+        "sales_rank": 11658
+    }
+},
+{
+    "model": "bookstore.book",
+    "pk": 9,
+    "fields": {
+        "isbn": "9780374537760",
+        "book_title": "Carrying the Fire - An Astronaut''s Journeys (50th Anniversary Edition)",
+        "book_genre": 2,
+        "book_description": "The years that have passed since Neil Armstrong, Buzz Aldrin, and Michael Collins piloted the Apollo 11 spacecraft to the moon in July 1969 have done nothing to alter the fundamental wonder of the event - man reaching the moon remains one of the great events\u2014technical and spiritual\u2014of our lifetime.",
+        "publisher_id": 7,
+        "publish_date": "2019-04-16",
+        "image_url": "https://prodimage.images-bn.com/pimages/9780374537760_p0_v1_s550x406.jpg",
+        "price": "15.36",
+        "rating": "5.0",
+        "sales_rank": 26253
+    }
+},
+{
+    "model": "bookstore.book",
+    "pk": 10,
+    "fields": {
+        "isbn": "9780393350388",
+        "book_title": "Death by Black Hole - And Other Cosmic Quandaries",
+        "book_genre": 2,
+        "book_description": "Loyal readers of the monthly \"Universe\" essays in Natural History magazine have long recognized Neil deGrasse Tyson''s talent for guiding them through the mysteries of the cosmos with clarity and enthusiasm. Bringing together more than forty of Tyson''s favorite essays, Death by Black Hole explores a myriad of cosmic topics, from what it would be like to be inside a black hole to the movie industry''s feeble efforts to get its night skies right. One of America''s best-known astrophysicists, Tyson is a natural teacher who simplifies the complexities of astrophysics while sharing his infectious fascination for our universe.",
+        "publisher_id": 5,
+        "publish_date": "2014-09-02",
+        "image_url": "https://prodimage.images-bn.com/pimages/9780393350388_p0_v4_s550x406.jpg",
+        "price": "14.83",
+        "rating": "4.0",
+        "sales_rank": 41264
+    }
+},
+{
+    "model": "bookstore.book",
+    "pk": 11,
+    "fields": {
+        "isbn": "9780393350364",
+        "book_title": "The Pluto Files - The Rise and Fall of America''s Favorite Planet",
+        "book_genre": 2,
+        "book_description": "When the Rose Center for Earth and Space at the American Museum of Natural History reclassified Pluto as an icy comet, the New York Times proclaimed on page one, \"Pluto Not a Planet? Only in New York.\" Immediately, the public, professionals, and press were choosing sides over Pluto''s planethood. Pluto is entrenched in our cultural and emotional view of the cosmos, and Neil deGrasse Tyson, award-winning author and director of the Rose Center, is on a quest to discover why. He stood at the heart of the controversy over Pluto''s demotion, and consequently Plutophiles have freely shared their opinions with him, including endless hate mail from third-graders. With his inimitable wit, Tyson delivers a minihistory of planets, describes the oversized characters of the people who study them, and recounts how America''s favorite planet was ousted from the cosmic hub.",
+        "publisher_id": 5,
+        "publish_date": "2014-09-02",
+        "image_url": "https://prodimage.images-bn.com/pimages/9780393350364_p0_v4_s550x406.jpg",
+        "price": "15.05",
+        "rating": "4.0",
+        "sales_rank": 238376
+    }
+},
+{
+    "model": "bookstore.book",
+    "pk": 12,
+    "fields": {
+        "isbn": "9781628973303",
+        "book_title": "Voices from Chernobyl - The Oral History of a Nuclear Disaster",
+        "book_genre": 3,
+        "book_description": "A journalist by trade, who now suffers from an immune deficiency developed while researching this book, presents personal accounts of what happened to the people of Belarus after the nuclear reactor accident in 1986, and the fear, anger, and uncertainty that they still live with. Chernobyl , the acclaimed HBO miniseries and winner of ten Emmy Awards, is based in large part on the personal recollections from Voices from Chernobyl.",
+        "publisher_id": 8,
+        "publish_date": "2019-06-19",
+        "image_url": "https://prodimage.images-bn.com/pimages/9781628973303_p0_v1_s550x406.jpg",
+        "price": "17.50",
+        "rating": "4.5",
+        "sales_rank": 8406
+    }
+},
+{
+    "model": "bookstore.book",
+    "pk": 13,
+    "fields": {
+        "isbn": "9780312427566",
+        "book_title": "The Right Stuff",
+        "book_genre": 3,
+        "book_description": "Millions of words have poured forth about man''s trip to the moon, but until now few people have had a sense of the most engrossing side of the adventure; namely, what went on in the minds of the astronauts themselves - in space, on the moon, and even during certain odysseys on earth. It is this, the inner life of the astronauts, that Tom Wolfe describes with his almost uncanny empathetic powers, that made The Right Stuff a classic.",
+        "publisher_id": 9,
+        "publish_date": "2008-03-04",
+        "image_url": "https://prodimage.images-bn.com/pimages/9780312427566_p0_v2_s550x406.jpg",
+        "price": "17.10",
+        "rating": "4.0",
+        "sales_rank": 38330
+    }
+},
+{
+    "model": "bookstore.book",
+    "pk": 14,
+    "fields": {
+        "isbn": "9781454910763",
+        "book_title": "The Inventions, Researches and Writings of Nikola Tesla",
+        "book_genre": 3,
+        "book_description": "During the early twentieth century, the eccentric and brilliant inventor Nikola Tesla blazed the path that electrical development followed for many years to come. This fascinating illustrated record of Tesla's pioneering work gathers many of his most famous findings and theories, allowing contemporary readers to experience the amazing range of his thinking. It includes lectures, articles, and discussions\u2014particularly those bearing on polyphase motors and the effects obtained with currents of high potential and high frequency\u2014and gives us a rare glimpse of a genius at work.",
+        "publisher_id": 10,
+        "publish_date": "2014-04-01",
+        "image_url": "https://prodimage.images-bn.com/pimages/9781454910763_p0_v1_s550x406.jpg",
+        "price": "13.46",
+        "rating": "4.5",
+        "sales_rank": 86659
+    }
+},
+{
+    "model": "bookstore.book",
+    "pk": 15,
+    "fields": {
+        "isbn": "9780312263515",
+        "book_title": "The Last Man on the Moon: Astronaut Eugene Cernan and America's Race in Space",
+        "book_genre": 3,
+        "book_description": "Eugene Cernan was a unique American who came of age as an astronaut during the most exciting and dangerous decade of spaceflight. His career spanned the entire Gemini and Apollo programs, from being the first person to spacewalk all the way around our world to the moment when he left man's last footprint on the Moon as commander of Apollo 17.  Between those two historic events lay more adventures than an ordinary person could imagine as Cernan repeatedly put his life, his family and everything he held dear on the altar of an obsessive desire. Written with New York Times bestselling author Don Davis, The Last Man on the Moon is the astronaut story never before told - about the fear, love and sacrifice demanded of the few men who dared to reach beyond the heavens for the biggest prize of all - the Moon.",
+        "publisher_id": 11,
+        "publish_date": "2000-01-07",
+        "image_url": "https://prodimage.images-bn.com/pimages/9780312263515_p0_v6_s550x406.jpg",
+        "price": "17.99",
+        "rating": "4.5",
+        "sales_rank": 189234
+    }
+},
+{
+    "model": "bookstore.book",
+    "pk": 16,
+    "fields": {
+        "isbn": "9780465050659",
+        "book_title": "The Design of Everyday Things: Revised and Expanded Edition",
+        "book_genre": 3,
+        "book_description": "The ultimate guide to human-centered design",
+        "publisher_id": 12,
+        "publish_date": "2013-05-11",
+        "image_url": "https://prodimage.images-bn.com/pimages/9780465050659_p0_v5_s550x406.jpg",
+        "price": "17.09",
+        "rating": "5.0",
+        "sales_rank": 26800
+    }
+},
+{
+    "model": "bookstore.book",
+    "pk": 17,
+    "fields": {
+        "isbn": "9780553418835",
+        "book_title": "Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy",
+        "book_genre": 3,
+        "book_description": "A former Wall Street quant sounds an alarm on the mathematical models that pervade modern life \u2014 and threaten to rip apart our social fabric",
+        "publisher_id": 13,
+        "publish_date": "2017-06-09",
+        "image_url": "https://prodimage.images-bn.com/pimages/9780553418835_p0_v1_s550x406.jpg",
+        "price": "14.83",
+        "rating": "5.0",
+        "sales_rank": 32168
+    }
+},
+{
+    "model": "bookstore.book",
+    "pk": 18,
+    "fields": {
+        "isbn": "9780316352543",
+        "book_title": "Code Girls: The Untold Story of the American Women Code Breakers of World War II",
+        "book_genre": 4,
+        "book_description": "Recruited by the U.S. Army and Navy from small towns and elite colleges, more than ten thousand women served as codebreakers during World War II. While their brothers and boyfriends took up arms, these women moved to Washington and learned the meticulous work of code-breaking. Their efforts shortened the war, saved countless lives, and gave them access to careers previously denied to them. A strict vow of secrecy nearly erased their efforts from history; now, through dazzling research and interviews with surviving code girls, bestselling author Liza Mundy brings to life this riveting and vital story of American courage, service, and scientific accomplishment.",
+        "publisher_id": 14,
+        "publish_date": "2018-10-02",
+        "image_url": "https://prodimage.images-bn.com/pimages/9780316352543_p0_v3_s550x406.jpg",
+        "price": "13.59",
+        "rating": "4.5",
+        "sales_rank": 15276
+    }
+},
+{
+    "model": "bookstore.book",
+    "pk": 19,
+    "fields": {
+        "isbn": "9780735224865",
+        "book_title": "Mind and Matter: A Life in Math and Football",
+        "book_genre": 4,
+        "book_description": "For John Urschel, what began as an insatiable appetite for puzzles as a child developed into mastery of the elegant systems and rules of mathematics. By the time he was thirteen, Urschel was auditing a college-level calculus course. But when he joined his high school football team, a new interest began to eclipse the thrill he felt in the classroom. Football challenged Urschel in an entirely different way, and he became addicted to the physical contact of the sport. After he accepted a scholarship to play at Penn State, his love of math was rekindled. As a Nittany Lion, he refused to sacrifice one passion for the other. Against the odds, Urschel found a way to manage his double life as a scholar and an athlete. While he was an offensive lineman for the Baltimore Ravens, he simultaneously pursued his PhD in mathematics at MIT.",
+        "publisher_id": 3,
+        "publish_date": "2019-05-14",
+        "image_url": "https://prodimage.images-bn.com/pimages/9780735224865_p0_v2_s550x406.jpg",
+        "price": "24.30",
+        "rating": "4.0",
+        "sales_rank": 29164
+    }
+},
+{
+    "model": "bookstore.book",
+    "pk": 20,
+    "fields": {
+        "isbn": "9780812973815",
+        "book_title": "The Black Swan: The Impact of the Highly Improbable (With a new section: \"On Robustness and Fragilit",
+        "book_genre": 4,
+        "book_description": "The Black Swan is a standalone book in Nassim Nicholas Taleb\u2019s landmark Incerto series, an investigation of opacity, luck, uncertainty, probability, human error, risk, and decision-making in a world we don\u2019t understand. The other books in the series are Fooled by Randomness, Antifragile, Skin in the Game, and The Bed of Procrustes.",
+        "publisher_id": 6,
+        "publish_date": "2011-05-11",
+        "image_url": "https://prodimage.images-bn.com/pimages/9780812973815_p0_v1_s550x406.jpg",
+        "price": "16.20",
+        "rating": "3.5",
+        "sales_rank": 31268
+    }
+},
+{
+    "model": "bookstore.book",
+    "pk": 21,
+    "fields": {
+        "isbn": "9781119293491",
+        "book_title": "Calculus For Dummies",
+        "book_genre": 4,
+        "book_description": "Calculus For Dummies, 2nd Edition makes calculus manageable\u2014even if you're one of the many students who sweat at the thought of it. By breaking down differentiation and integration into digestible concepts, this guide helps you build a stronger foundation with a solid understanding of the big ideas at work. This user-friendly math book leads you step-by-step through each concept, operation, and solution, explaining the \"how\" and \"why\" in plain English instead of math-speak. Through relevant instruction and practical examples, you'll soon learn that real-life calculus isn't nearly the monster it's made out to be.",
+        "publisher_id": 15,
+        "publish_date": "2016-06-07",
+        "image_url": "https://prodimage.images-bn.com/pimages/9781119293491_p0_v3_s550x406.jpg",
+        "price": "19.56",
+        "rating": "4.0",
+        "sales_rank": 40944
+    }
+},
+{
+    "model": "bookstore.book",
+    "pk": 22,
+    "fields": {
+        "isbn": "9780465026562",
+        "book_title": "Godel, Escher, Bach: An Eternal Golden Braid",
+        "book_genre": 4,
+        "book_description": "Douglas Hofstadter's book is concerned directly with the nature of \"maps\" or links between formal systems. However, according to Hofstadter, the formal system that underlies all mental activity transcends the system that supports it. If life can grow out of the formal chemical substrate of the cell, if consciousness can emerge out of a formal system of firing neurons, then so too will computers attain human intelligence. G\u00f6del, Escher, Bach is a wonderful exploration of fascinating ideas at the heart of cognitive science: meaning, reduction, recursion, and much more.",
+        "publisher_id": 12,
+        "publish_date": "1999-02-01",
+        "image_url": "https://prodimage.images-bn.com/pimages/9780465026562_p0_v3_s550x406.jpg",
+        "price": "22.49",
+        "rating": "4.5",
+        "sales_rank": 41641
+    }
+},
+{
+    "model": "bookstore.book",
+    "pk": 23,
+    "fields": {
+        "isbn": "9780393310726",
+        "book_title": "How to Lie with Statistics",
+        "book_genre": 4,
+        "book_description": "Darrell Huff runs the gamut of every popularly used type of statistic, probes such things as the sample study, the tabulation method, the interview technique, or the way the results are derived from the figures, and points up the countless number of dodges which are used to full rather than to inform.",
+        "publisher_id": 5,
+        "publish_date": "1993-10-28",
+        "image_url": "https://prodimage.images-bn.com/pimages/9780393310726_p0_v2_s550x406.jpg",
+        "price": "13.95",
+        "rating": "4.0",
+        "sales_rank": 40993
+    }
+},
+{
+    "model": "bookstore.book",
+    "pk": 24,
+    "fields": {
+        "isbn": "9781603580557",
+        "book_title": "Thinking in Systems: A Prime",
+        "book_genre": 4,
+        "book_description": "Thinking in Systems, is a concise and crucial book offering insight for problem solving on scales ranging from the personal to the global. Edited by the Sustainability Institute\u2019s Diana Wright, this essential primer brings systems thinking out of the realm of computers and equations and into the tangible world, showing readers how to develop the systems-thinking skills that thought leaders across the globe consider critical for 21st-century life.",
+        "publisher_id": 16,
+        "publish_date": "2008-12-03",
+        "image_url": "https://prodimage.images-bn.com/pimages/9781603580557_p0_v2_s550x406.jpg",
+        "price": "18.15",
+        "rating": "3.5",
+        "sales_rank": 48793
+    }
+},
+{
+    "model": "bookstore.commentrating",
+    "pk": 1,
+    "fields": {
+        "book_id": 1,
+        "username": "Anonymous",
+        "comment": "The author tells you about biases and ignores his own which are glaring. He warns of association vs. cause effect and ignores it in his book. The author consistently makes leaps of faithh and ponders on ignorantly. The assignation of science to behavioralsociology is fallacial. I have critically reviewed scientific papers for decades, this author is intoxicated with big data collated from Google and what association he makes with said data is erroneous. He is obsessed with the differences his brother and he have regarding baseball of all things and often uses that as a similie. Horrid treatise, I say and I finished every word, much to his prediction''s error.",
+        "rating": "1.0"
+    }
+},
+{
+    "model": "bookstore.commentrating",
+    "pk": 2,
+    "fields": {
+        "book_id": 1,
+        "username": "Anonymous",
+        "comment": "First of all, I finished the book (last chapter explains). I have always loved research to find out about people. This book shows how this is changing and will change dramatically. Great insight about &ldquo;why are all these companies tracking me&rdquo; and how Google has changed us more than you think.",
+        "rating": "4.0"
+    }
+},
+{
+    "model": "bookstore.commentrating",
+    "pk": 3,
+    "fields": {
+        "book_id": 1,
+        "username": "mantramoon",
+        "comment": "If you''d like to know the difference between what people say they do and what they really do, read this book. The author makes use of the exploding field of internet data to ferret out the truth about a wide range of subjects. If you liked Freakonomics, check this book out.",
+        "rating": "5.0"
+    }
+},
+{
+    "model": "bookstore.commentrating",
+    "pk": 4,
+    "fields": {
+        "book_id": 2,
+        "username": "Anonymous",
+        "comment": "I read this from start to finish in one sitting, I could relate to the author in so many ways because my father was like Lisa&rsquo;s in every way except rich and famous. She was definitely abused verbally growing up and how she still doesn&rsquo;t see that now floors me. How children services were never called in her own father or own mother baffles me. Th family that took her in were God sends and at the end she didn&rsquo;t acknowledge them.... why the hell not???? She wouldn&rsquo;t of graduated Harvard without them paying her tuition her senior year! I hope Lisa still sees a therapist , it&rsquo;s obvious she still suffers psychologically from the pain her father and mother caused her. The book was great but I feel like it should of been longer.",
+        "rating": "5.0"
+    }
+},
+{
+    "model": "bookstore.commentrating",
+    "pk": 5,
+    "fields": {
+        "book_id": 2,
+        "username": "Anonymous",
+        "comment": "The magnitude of both emotional cruelty and love experienced by the author is breathtaking. With the help of her mother and a few other key individuals, and, this reader suspects, an iron will, she became a strong, self-reliant, adult capable of creating a clear-eyed account of her tumultuous upbringing.",
+        "rating": "5.0"
+    }
+},
+{
+    "model": "bookstore.commentrating",
+    "pk": 6,
+    "fields": {
+        "book_id": 2,
+        "username": "DanaLynne",
+        "comment": "It was a struggle to read this book. The writing is brilliant and luminous, but the story is hard. Lisa Brennan-Jobs grew up as the unexpected and often unacknowledged daughter of Steve Jobs and artist Chrisann Brennan. I''ll admit, I''m not terribly interested in the personal lives of the rich and famous so I didn''t know much about Steve Jobs going into this book. To say he was a difficult man is an understatement, to say he was cruel, emotionally distant and often emotionally abusive towards his daughter is closer to the truth. In this book Lisa shares in exquisite and uncompromising detail, what it is like to grow up feeling abandoned and unwanted. Even her mother, who was a constant presence, was unable to provide the stability and emotional security a young child requires. Often as I was reading I wondered if Lisa was better off before her father acknowledged her rather than after she went to live with him. His ability to withdraw approval and affection were callous and calculated. He seems unable to connect emotionally with everyone around him, and his conversations and actions are often disconnected, if not wildly inappropriate. Lisa''s writing is poetic and filled with nostalgic images and experiences of what it was like to grow up in the 1980''s. Her memories are sharp and vibrant, evoking a visceral response from the reader. Even while she speaks of the ambivalence of her relationship with her father and the turbulence of her relationship with her mother, she remains firmly rooted in place and time in which she grew up. Her sense of place and time shine throughout the memoir and are as much a part of the story as the people who inhabit it. While this book isn''t an easy read by any means, it is a worthy one. Brennan-Jobs writing genius is certainly equal to her father's technique",
+        "rating": "4.0"
+    }
+},
+{
+    "model": "bookstore.commentrating",
+    "pk": 7,
+    "fields": {
+        "book_id": 3,
+        "username": "Anonymous",
+        "comment": "I''ve never encountered another pop linguistics (or pop academic, in general) author who writes as clearly, informatively, and engagingly as Gretchen does. This book is an entertaining read for linguists and non-linguists alike, and not just for young people either; there are interest insights about how folks of all ages write online. I couldn''t recommend this book more highly!",
+        "rating": "4.0"
+    }
+},
+{
+    "model": "bookstore.commentrating",
+    "pk": 8,
+    "fields": {
+        "book_id": 3,
+        "username": "JohnnyBollocks",
+        "comment": "This book is a lot of fun. Gretchen''s voice comes through, as does her vast knowledge of the linguistics of digital life. Although I''m still reading it, I have already learned a lot, and some of the assertions have spurred me to look through text histories with friends of different ages. Have also had some interesting discussions (in person and via text) with younger family members that have caused me to change some habits (no more hard stops [periods] in text messages lol)",
+        "rating": "5.0"
+    }
+},
+{
+    "model": "bookstore.commentrating",
+    "pk": 9,
+    "fields": {
+        "book_id": 4,
+        "username": "mahawk",
+        "comment": "Very good book, refresher for CBT. Easy to read.",
+        "rating": "3.0"
+    }
+},
+{
+    "model": "bookstore.commentrating",
+    "pk": 10,
+    "fields": {
+        "book_id": 4,
+        "username": "Katie14",
+        "comment": "I found this book to be helpful and informative with regards to Cognitive Behavior Therapy. Any one who is going into the counseling field will want to read this book.",
+        "rating": "5.0"
+    }
+},
+{
+    "model": "bookstore.commentrating",
+    "pk": 11,
+    "fields": {
+        "book_id": 5,
+        "username": "Ken_O",
+        "comment": "I picked this up after reading a review in a local paper - which thought it was too \"shallow\" for business readers. WRONG! Carr pulls together several strands of research and findings, and brings in the findings from scholarly journals to present several important consequences of the widespread use of the internet. The ideas are not all his, but he puts them together in a very well-written and readily digestible short read. We should all take note of his conclusions. The internet is changing the way we think - and we need to comprehend exactly how.",
+        "rating": "5.0"
+    }
+},
+{
+    "model": "bookstore.commentrating",
+    "pk": 12,
+    "fields": {
+        "book_id": 5,
+        "username": "Booknut62",
+        "comment": "Before this book was published, I looked forward to getting a copy with anticipation. I have been fascinated with what researchers are saying about the effects of the Web on our brains and and thought processes. Disappointingly, this book offers no groundbreaking insights in this topic, and for that matter any other. Carr opens the first chapters of this book with a long tedious history of the printed word and how that has affected thought and information processing. While this might be vital to his argument about how the Internet is changing the brain, it seems to go on forever. Could this information not been condensed into a chapter or so? Once Carr gets to the research on how the Web is changing our brains, he seems to go into long-drawn out descriptions of chemical processes and descriptions of physiological descriptions of how the Web is basically making us shallow thinkers, unable to think deeply about what we read and see on the Net. I was just a bit disappointed by Carr''s treatment of a subject that has a great deal of merit, and a subject that needs to be discussed. In the end, this was one of those books that was difficult to finish. Plowing is the accurate term to describe how I moved through this book. While Carr does an adequate job of describing what the research says about how the Web is changing us, he does so in an uninspiring and didactic manner. This could have been an interesting book, but it reads too much like a diatribe against technology in general.",
+        "rating": "3.0"
+    }
+},
+{
+    "model": "bookstore.commentrating",
+    "pk": 13,
+    "fields": {
+        "book_id": 6,
+        "username": "Anonymous",
+        "comment": "So simple, so clear. Science and Space in a Nutshell. Just open it and fall in love.",
+        "rating": "5.0"
+    }
+},
+{
+    "model": "bookstore.commentrating",
+    "pk": 14,
+    "fields": {
+        "book_id": 6,
+        "username": "Broseph27",
+        "comment": "Enjoyable quick read.",
+        "rating": "5.0"
+    }
+},
+{
+    "model": "bookstore.commentrating",
+    "pk": 15,
+    "fields": {
+        "book_id": 6,
+        "username": "Beasles",
+        "comment": "Good easy read. Written for the non scientist. Good update from high school and college physics. Nicely put the universe back in perspective.",
+        "rating": "5.0"
+    }
+},
+{
+    "model": "bookstore.commentrating",
+    "pk": 16,
+    "fields": {
+        "book_id": 7,
+        "username": "jmgallen",
+        "comment": "The characters run the gamut of space lore from Jules Verne through Robert Goddard, Alan Shepherd, Yuri Gagarin, John Glenn, Neil Armstrong, Jim Web, Chris Kraft, John Kennedy, Lyndon Johnson and others too numerous to mention. The scene is set with Kennedy having been elected to get America moving again, a Soviet satellite in space, the Bay of Pigs fiasco and the President looking for something we can beat the Russians at. Told that that could be a race to the moon, Kennedy made the bold challenge that would invigorate the 60s.",
+        "rating": "5.0"
+    }
+},
+{
+    "model": "bookstore.commentrating",
+    "pk": 17,
+    "fields": {
+        "book_id": 8,
+        "username": "ReadingRedHead",
+        "comment": "When I started reading this book, I thought there is no way in the world I will be able to understand one of the greatest minds in physics today. How wrong I was! Dr. Hawking makes complicated theory understandable for the rest of us. This is a fascinating book that I would recommend to everyone.",
+        "rating": "5.0"
+    }
+},
+{
+    "model": "bookstore.commentrating",
+    "pk": 18,
+    "fields": {
+        "book_id": 8,
+        "username": "CodyHunt",
+        "comment": "Throughout his book, Stephen Hawking presents his outstanding observations and beliefs of the physics of our universe. Hawking presents information on the history of the universe, motion of the universe and most exhilarating of all, black holes. He includes his perception and opinions of the universe and its past as well as the physics acting upon it as time passes He presents the writing in reasonable short chapters that help you understand him and all of his reasoning as well as the tons of background information that he has researched and drawn his observations from. I would recommend this as a read for anyone that has even a slight interest in astronomy and the cosmos. Stephen Hawking teaches you about simple and general astronomy and from that draws major theories that are constantly changing as we learn more about our universe through technological innovations. There are many pages that will have to be read multiple times before you can really understand what he is even talking about. This isn''t really a book that you can skim through or you are bound to miss something vital to the theory of relativity or some function of quantum physics. Since it is so thorough, unlike some books, you WILL put it down. Chances are, you''ll throw it down in frustration with Hawking, but you will be rewarded in the end when you realize how blatantly he put some of the most complex thoughts and information accessible to humans. I enjoyed Hawkings sense of humor and voice in his writing. Before I read this book, physics seemed extremely dry and boring but he adds humor and feeling and made me captivated by concepts. I felt like I was sitting in a classroom while I read this, hearing the teachers voice rambling on and on and on about something I didn''t really care about until he cracked a joke that I just caught through the blur of boredom. I let out a little chuckle and grin then realize that the subject is exhilarating and fun. I had no dislike from this book, just shock and a",
+        "rating": "4.0"
+    }
+},
+{
+    "model": "bookstore.commentrating",
+    "pk": 19,
+    "fields": {
+        "book_id": 9,
+        "username": "MUT",
+        "comment": "This book provides a great understanding of our nation''s space program from one of the men who actually was part of the first team of Astronauts to make it to the Moon, Michael Collins! Although Mr. Collins did not walk on the Moon, as he was the Astronaut who piloted the Command Module, he does an incredible job explaining the process leading up to this achievement of mankind and clearly articulates for the learned as well as the novice, the actions he, Neil Armstrong and Buzz Aldrin carried out on Apollo 11 to successfully make and complete the journey. The reader also gains new respect for the many, many people who were part of the process to bring this wonderful accomplishment to fruition; understanding too, there were those who lost their lives along the journey to success...I can''t help but think of the Apollo 1 Crew, Gus Grissom, Ed White and Roger Chaffee! I highly recommend this book for those seeking to learn of the early days of space exploration and for those seeking to understand the initial path to the Moon...you will not be disappointed!",
+        "rating": "5.0"
+    }
+},
+{
+    "model": "bookstore.commentrating",
+    "pk": 20,
+    "fields": {
+        "book_id": 9,
+        "username": "Anonymous",
+        "comment": "Collins\u2019 writing can best be described as lyrical. Straightforward--as you\u2019d expect from an engineer, test pilot, and astronaut, someone with with a strong technical background--yet captures the wonder and adventure of man\u2019s first journey to the moon. Obviously completely accurate, without any of the annoying small inaccuracies that often creep into books such as this that describe complex past events. Yet, not so technical that you have have been a fanboy of the Apollo program to follow and understand his descriptions.",
+        "rating": "5.0"
+    }
+},
+{
+    "model": "bookstore.commentrating",
+    "pk": 21,
+    "fields": {
+        "book_id": 9,
+        "username": "Anonymous",
+        "comment": "Simply magnificent! As I''ve spent the last few days tearing through this engrossing book, I''ve been mindful of how I might be able to review it once I''d reached its end. Now that I have done so I find that I don''t really know quite how to express what it is about Michael Collins'' writing that moved me so much - except that I know this is most definitely one of the best memoirs I''ve ever read. It is truly a one-off, as the events it describes are so unique (most obviously the historic Apollo 11 mission) that they could only have been written by one of the members of 1960s NASA space program who was actually ''there''.Collins'' writing is very laid back and as informal as it is informative. I rarely read books (for pleasure at least) with quite so much scientific content - rocket propulsion, trajectories, inter-planetary navigation, and so forth, but he puts these topics into words that I found no problem in understanding. Not that these subjects really dominate the narrative - his tale is told in a very personal and humourous style. For an astronaut (& fighter pilot for that matter!) Collins is incredibly humble and self-effacing - he repeatedly reminds the reader of how poor a mechanic he is and how lazy he can be...The early chapters retell his experiences as a USAF test pilot while in the background NASA''s manned space program is underway. After some early setbacks he is eventually accepted into the astronaut staff at NASA in Houston, and begins the arduous training for the Gemini program. Amidst tales of geological field trips and survival training in inhospitable desert or jungle environments (in the event of any future re-entry going awry), and endless sickness inducing zero gravity dives, he gives a great sense to the day to day existence of an astronaut-in-waiting. As enjoyable as these pages are, the reader knows - as does the author of course - that it is all building up to the momentous day when he will finally sit at the ''tip of the pencil on the",
+        "rating": "5.0"
+    }
+},
+{
+    "model": "bookstore.commentrating",
+    "pk": 22,
+    "fields": {
+        "book_id": 10,
+        "username": "Ken_O",
+        "comment": "This book is very easy to read, even if you are not otherwise very interested in science. One of its stronger points is its accessibility to laypeople. If you''ve ever seen him speak on tv, then you know how capable he is of making everything he talks about incredibly interesting (even if it might otherwise come off as mundane by someone with even a little less enthusiasm). His writing style is no different, and his own love of science (and astrophysics in particular) is infectious.",
+        "rating": "5.0"
+    }
+},
+{
+    "model": "bookstore.commentrating",
+    "pk": 23,
+    "fields": {
+        "book_id": 10,
+        "username": "DanaLynne",
+        "comment": "Neil deGrasse Tyson''s enthusiasm for the universe is really shown in this book. Filled with humor, Death by Black Hole takes complex subjects and exposes them to the reader in a way that is very easy to understand. I benifitted from reading this book twice to better understand some of the concepts. Enthralling!",
+        "rating": "5.0"
+    }
+},
+{
+    "model": "bookstore.commentrating",
+    "pk": 24,
+    "fields": {
+        "book_id": 11,
+        "username": "Katie14",
+        "comment": "If you''re afraid of a dry science-y book, put your fears aside. The Pluto Files is a glimpse behind the scenes of museums and other scientific institutions and how they deal with the public and the changing status of their chosen field. There''s just enough straight science described so the reader can familiarize themselves with the topic. Nothing that can be handled by a high school student. Dr. Tyson found himself, unintentionally, in the middle of the controversy over the continuing planethood of far away Pluto. While I think he is a bit biased about the actual popularity of tiny, icy rock, the machinations of his fellow scientists are what really make this book worth reading. \"All My Children\" has nothing on feuding astrophysicists!",
+        "rating": "4.0"
+    }
+},
+{
+    "model": "bookstore.commentrating",
+    "pk": 25,
+    "fields": {
+        "book_id": 11,
+        "username": "JohnnyBollocks",
+        "comment": "What a fun light read, full of interesting facts and trivia. The subject matter is literally very \"far out\". Dr. Tyson seems to have his feet on the ground, perhaps surprising for an astrophysicist, in his handling of the controversy surrounding the demotion of Pluto from its status as a planet. The Pluto Files is full of great old and new illustrations. I particularly enjoyed the photos of Clyde Tombaugh (at ages 22 and 90), Pluto''s discoverer, and little Venetia Burney who suggested the name Pluto. The cartoons are great. It''s one of those books, that although I tried to maintain a quiet demeanor, I found myself LOL while reading it on the train.",
+        "rating": "4.0"
+    }
+},
+{
+    "model": "bookstore.commentrating",
+    "pk": 26,
+    "fields": {
+        "book_id": 12,
+        "username": "mahawk",
+        "comment": "What a chilling book! I highly recommend this book to anyone who wants to know what it was like for the survivors of the Chernobyl disaster. It''s not enough to learn the science of the disaster, but to read what some had to go through, is absolutely terrifying.",
+        "rating": "5.0"
+    }
+},
+{
+    "model": "bookstore.commentrating",
+    "pk": 27,
+    "fields": {
+        "book_id": 12,
+        "username": "Anonymous",
+        "comment": "I am someone who NEVER re-reads books. I just don''t. But Svetlana Alexievich''s Voices from Chernobyl is a book I can''t resist to read over and over. The stories are unbelievably touching. I felt the pain and I still do everytime I read it. I highly recommend this book. You will not regret it.",
+        "rating": "4.0"
+    }
+},
+{
+    "model": "bookstore.commentrating",
+    "pk": 28,
+    "fields": {
+        "book_id": 13,
+        "username": "Beasles",
+        "comment": "Wonderful insight into the complex politics and personalities involved. Highly recommend.",
+        "rating": "5.0"
+    }
+},
+{
+    "model": "bookstore.commentrating",
+    "pk": 29,
+    "fields": {
+        "book_id": 13,
+        "username": "Anonymous",
+        "comment": "Much better than the movie- as usual...and the movie was very good.",
+        "rating": "4.0"
+    }
+},
+{
+    "model": "bookstore.commentrating",
+    "pk": 30,
+    "fields": {
+        "book_id": 14,
+        "username": "Anonymous",
+        "comment": "Great",
+        "rating": "5.0"
+    }
+},
+{
+    "model": "bookstore.commentrating",
+    "pk": 31,
+    "fields": {
+        "book_id": 14,
+        "username": "Anonymous",
+        "comment": "Loved it",
+        "rating": "4.0"
+    }
+},
+{
+    "model": "bookstore.commentrating",
+    "pk": 32,
+    "fields": {
+        "book_id": 15,
+        "username": "Anonymous",
+        "comment": "Cernan perspective is humbling and has a message for all those who seek excellence in their own quest, A must read, especially father's who must reconcile personal quests with the fundamental qualities of Life.",
+        "rating": "5.0"
+    }
+},
+{
+    "model": "bookstore.commentrating",
+    "pk": 33,
+    "fields": {
+        "book_id": 15,
+        "username": "Broseph27",
+        "comment": "Eugene Cernan was indeed the last man to walk on the moon, and in this memoir he talks about his life, his career, and his experiences in the Gemini and Apollo space programs. He (and his co-author) convey the grandeur and excitement of his journeys to the moon quite well, and that's something I never, ever get tired of reading, but his reminiscences also have a frank, earthy quality to them that's really rather refreshing.This is very much a personal memoir, focused primarily on Cernan's own experiences and perspectives, so if you're more interested in a general overview of the space race, there are much better books for that. (I recommend Andrew Chaikin's A Man on the Moon.) But if you want, for example, to read an almost painfully vivid first-hand account of what it's like to get stuck inside a spaceship hatch after making the \"spacewalk from hell,\" this is definitely the place.",
+        "rating": "4.0"
+    }
+},
+{
+    "model": "bookstore.commentrating",
+    "pk": 34,
+    "fields": {
+        "book_id": 16,
+        "username": "MUT",
+        "comment": "Very good book, would read it again. I don't read often and at the start of this book I was actually going to put it down and start another. Fortunately I kept going and this book did what it was designed to do. It enhanced the way I see things. There was one chapter in the book that I didn't particularly like, although that's not to say it was a bad chapter, it just wasn't as interesting. It was the one about mistakes and slips, and although it wasn't the most enjoyable chapter it was probably one of the most eye opening.",
+        "rating": "5.0"
+    }
+},
+{
+    "model": "bookstore.commentrating",
+    "pk": 35,
+    "fields": {
+        "book_id": 16,
+        "username": "Anonymous",
+        "comment": "5/5",
+        "rating": "5.0"
+    }
+},
+{
+    "model": "bookstore.commentrating",
+    "pk": 36,
+    "fields": {
+        "book_id": 17,
+        "username": "Anonymous",
+        "comment": "Worth the time to read it a second time and fully digest her key points. After the chapter on Wellness, look up the company Quizzify run by Al Lewis for further insight. There is no doubt these WMD programs alter society in ways explained in the book, but also in ways not fully understood. Quite glad I purchased the book.",
+        "rating": "5.0"
+    }
+},
+{
+    "model": "bookstore.commentrating",
+    "pk": 37,
+    "fields": {
+        "book_id": 17,
+        "username": "Katie14",
+        "comment": "Do yourself a favor and pick up this book!",
+        "rating": "5.0"
+    }
+},
+{
+    "model": "bookstore.commentrating",
+    "pk": 38,
+    "fields": {
+        "book_id": 18,
+        "username": "Anonymous",
+        "comment": "Fascinating.",
+        "rating": "4.0"
+    }
+},
+{
+    "model": "bookstore.commentrating",
+    "pk": 39,
+    "fields": {
+        "book_id": 18,
+        "username": "DanaLynne",
+        "comment": "Code Girls is far and away the BEST non-fiction I\u2019ve read this year, if not in the past five years. Following the style of Hidden Figures in showing just how much work women have done to make our country what it is today, Liza Mundy reveals the women behind the code-breaking operation during World War II. During her research, she asked for documents to be declassified (some successfully, some not), giving us access to a whole new world of information about the lives of women during the war that they were never allowed to talk about.",
+        "rating": "5.0"
+    }
+},
+{
+    "model": "bookstore.commentrating",
+    "pk": 40,
+    "fields": {
+        "book_id": 19,
+        "username": "McLovin",
+        "comment": "Certainly very different",
+        "rating": "3.0"
+    }
+},
+{
+    "model": "bookstore.commentrating",
+    "pk": 41,
+    "fields": {
+        "book_id": 19,
+        "username": "Anonymous",
+        "comment": "I am even more inspired about math after reading this book",
+        "rating": "5.0"
+    }
+},
+{
+    "model": "bookstore.commentrating",
+    "pk": 42,
+    "fields": {
+        "book_id": 19,
+        "username": "McLovin",
+        "comment": "Just as the negative space gives form to the objective in a work of art, so the unknown gives relevance to knowledge. In The Black Swan, Taleb shows that all human knowledge is but a collection of crude marks on a vast canvas of ignorance. We know much less than we think we know, and understand even that poorly. Further, our history, both personal and collective, is governed by events that we did not predict, could not have predicted, and really do not comprehend.",
+        "rating": "4.0"
+    }
+},
+{
+    "model": "bookstore.commentrating",
+    "pk": 43,
+    "fields": {
+        "book_id": 20,
+        "username": "McLovin",
+        "comment": "Easy enough to understand but rarely used in practice... Taleb's overwhelming point in this entertaining book is simple... 'Keep your eyes wide open'. Through his anecdotal reasoning Taleb illustrates case after case and historical reference after historical reference with a unique narrative style that is slightly fragmented yet nearly as entertaining as what you might expect from a work of fiction often leaving the reader with a discernable smile while mumbling to himself: 'Hmmm... You know this guy's got a point!\u00bf With an impressive understanding of the human social condition and our psychological tendencies, Taleb lays good claim to how we fail to anticipate, react to and make sense of the random events that have the greatest impact on our lives. In the end Taleb offers no specific solution or process by which one can profit or gain from the unexpected... however, the reader invariably learns the value of 'skepticism' and can easily see how this primarily philosophical dogma can be applicable to real life and of course, the financial markets! The Black Swan does more to re-align one's perspective than anything else, but few books do as good a job in this regard.",
+        "rating": "4.0"
+    }
+},
+{
+    "model": "bookstore.commentrating",
+    "pk": 44,
+    "fields": {
+        "book_id": 20,
+        "username": "Anonymous",
+        "comment": "According to critic Harold Bloom, Hamlet's predicament is not 'that he thinks too much' but rather that 'he thinks too well,' being ultimately 'unable to rest in illusions of any kind.' The same could be said for philosopher, essayist and trader Nassim Nicholas Taleb, who finds something rotten in misguided yet supremely confident investment gurus, traders, hedge fund managers, Wall Street bankers, M.B.A.s, CEOs, Nobel-winning economists and others who claim that they can predict the future and explain the past. Like everyone else, says Taleb, these so-called 'experts' fail to appreciate 'black swans': highly consequential but unlikely events that render predictions and standard explanations worse than worthless. Taleb's style is personal and literary, but his heterodox insights are rigorous (if sometimes jolted by authorial filigree). This combination makes for a thrilling, disturbing, contentious and unforgettable book on chance and randomness. While Taleb offers strong medicine some readers may find too bitter at times, we prescribe it to anyone who wants a powerful inoculation against gullibility.",
+        "rating": "5.0"
+    }
+},
+{
+    "model": "bookstore.commentrating",
+    "pk": 45,
+    "fields": {
+        "book_id": 20,
+        "username": "Anonymous",
+        "comment": "Despite the shortcomings of our primitive mental processors, the situation is not entirely as hopeless. Though we can know little of the events that most impact our lives, we can profit from the delusion of others. Financial markets are driven by a great many people that underestimate the impact and likelihood of Black Swan events. We can profit by betting on long shots, doing it a lot, but placing only small bets. That way, the losses will be bounded and you never suffer from catastrophic black swan events. Taleb cashed in this strategy, and retired to pursue his passion for philosophy.",
+        "rating": "4.0"
+    }
+},
+{
+    "model": "bookstore.commentrating",
+    "pk": 46,
+    "fields": {
+        "book_id": 21,
+        "username": "Anonymous",
+        "comment": "I'm currently in Algerba 1 and I'm also in the lowest math class at school. I have an interest for calculus and I started to read this book. I was surprised at how easily I understood this book. The author presents calculus with an easy mindset instead of a difficult one which greatly helps the reader to come at it at an easy approach. I would highly recommend this to ANYONE.",
+        "rating": "5.0"
+    }
+},
+{
+    "model": "bookstore.commentrating",
+    "pk": 47,
+    "fields": {
+        "book_id": 21,
+        "username": "McLovin",
+        "comment": "If you wonder: Why study calculus? What's it good for? What's the bottom line of all this mumbo-jumbo?  then this book's for you.  Offering excellent bird's-eye views of key calculus concepts, Mr. Ryan then develops them in a clear, easy-to-understand manner that will give you one \"Eureka!\" moment after another.  I recommend this book as an overview for the curious, a review for the rusty, or as introductory material prior to tackling Calculus I.  It includes an excellent summary of the highlights of pre-calculus material for review.  For more hands-on exercises, \"Calculus Workbook for Dummies\" is an excellent companion volume.",
+        "rating": "4.0"
+    }
+},
+{
+    "model": "bookstore.commentrating",
+    "pk": 48,
+    "fields": {
+        "book_id": 22,
+        "username": "Booknut62",
+        "comment": "The headline I just wrote might sound like a negative, but it's not. Hofstadter's book, which is literally in a class by itself, reaches out in thought to music, art, biology, writing, religion... and all the rest of it, all through the lens of the proof of Godel's incompleteness theorem, which is about the inability of proving something about a system from within the system. And that, to my mind, is pretty much everything there is to say about 'mind'. What else can I say? I was a 24-year-old with a B.A. in English and no math since High School algebra II when I read this book now I'm a PhD in mathematics, and I use this book in a first year seminar.",
+        "rating": "5.0"
+    }
+},
+{
+    "model": "bookstore.commentrating",
+    "pk": 49,
+    "fields": {
+        "book_id": 22,
+        "username": "Broseph27",
+        "comment": "applemcg on LibraryThing advice to other reviewers; if you've not read Hostader's 20th anniversary preface, please do. all he want[ed/s] to do [i/wa]s show how self-awareness, the sense of \"I\", grows out of self-reference. mathematically speaking, which H insists he is not about, observes in Bertrand Russell's Principia Mathematica, while trying to build a Maginot Line in math against \"self-reference\", lays the seeds for it's own refutation in favor of self-reference. in as few words as possible: it's not about the substance, but the patterns.",
+        "rating": "4.0"
+    }
+},
+{
+    "model": "bookstore.commentrating",
+    "pk": 50,
+    "fields": {
+        "book_id": 23,
+        "username": "CodyHunt",
+        "comment": "Even when it was made in the 1950s, it's still relevant today. Genius.",
+        "rating": "5.0"
+    }
+},
+{
+    "model": "bookstore.commentrating",
+    "pk": 51,
+    "fields": {
+        "book_id": 23,
+        "username": "jmgallen",
+        "comment": "I thought the book was very enjoyable. It allowed one to see the abilities of numbers and how deceiving they are. The book made me realize that even though you know you are looking at a certain number, you have no idea what it means. I loved the book, it was quite funny too in a sarcastic manner. It was very quick to read and contains many humorous illustrations;a great summer reading book.",
+        "rating": "4.0"
+    }
+},
+{
+    "model": "bookstore.commentrating",
+    "pk": 52,
+    "fields": {
+        "book_id": 23,
+        "username": "JohnnyBollocks",
+        "comment": "I read this book for summer reading in high school...Although I was not looking foward to reading it by the end of the book I found it to be very interesting and humerous along the way....The overall purpose of the book as stated in chapter 10 is,'How to look a phony statistic in the eye and face it down,' (Huff, 122). This book has really changed my point of view on how I look at surveys that the world uses to solidify faulty gimics....Great book!",
+        "rating": "4.0"
+    }
+},
+{
+    "model": "bookstore.commentrating",
+    "pk": 53,
+    "fields": {
+        "book_id": 24,
+        "username": "jmgallen",
+        "comment": "This is a nicely written and provocative introduction to systems.",
+        "rating": "5.0"
+    }
+},
+{
+    "model": "bookstore.commentrating",
+    "pk": 54,
+    "fields": {
+        "book_id": 24,
+        "username": "Katie14",
+        "comment": "A concise introduction to systems thinking. It starts with diagrams (supported by a technical appendix) to illustrate key relationships, like feedback dynamics. Then the author tries to extract some basic insights from systems analysis that might be useful to businesses, policy-makers, and even personal lives. These are expressed in simple English with catchy sounding rules of thumb. Finally, the book turns to a spiritual guide (\"Dance with the system.\") The book was intended for a wide audience and has attractive features to that end. However, it is rather heavy on the mysticism and spirituality and rather thin on the connection between cases of systems analysis and the rules of thumb for decision-making issues. Also, it is always surprising to see how systems analysts ignore their own devices when studying the economy. They assume away incentives and prices and model behavior as mechanical rules, such as always invest x percent of profits. Naturally, when mechanical rules of behavior are combined with presumed delays in perception or adjustment, there will arise nonlinear responses to shocks. Systems analysts ought to be the first to recognize that behavioral responses will adjust rather than mechanically march on. This failure stems from the engineering and computer science backgrounds of systems analysts, such as Dr. Meadows herself, where human behavior is coded as constants of proportionality, rather than (semi) rational behavior. All in all, however, I did enjoy this short book, and, at the very least, it conveys some fundamental and important insights resulting from decades of systems analysis.",
+        "rating": "3.0"
+    }
+},
+{
+    "model": "bookstore.author",
+    "pk": 2,
+    "fields": {
+        "first_name": "Seth",
+        "last_name": "Stephens-Davidowitz"
+    }
+},
+{
+    "model": "bookstore.author",
+    "pk": 3,
+    "fields": {
+        "first_name": "Lisa",
+        "last_name": "Brennan-Jobs"
+    }
+},
+{
+    "model": "bookstore.author",
+    "pk": 4,
+    "fields": {
+        "first_name": "Gretchen",
+        "last_name": "McCulloch"
+    }
+},
+{
+    "model": "bookstore.author",
+    "pk": 5,
+    "fields": {
+        "first_name": "Judith",
+        "last_name": "Beck"
+    }
+},
+{
+    "model": "bookstore.author",
+    "pk": 6,
+    "fields": {
+        "first_name": "Aaron",
+        "last_name": "Beck"
+    }
+},
+{
+    "model": "bookstore.author",
+    "pk": 7,
+    "fields": {
+        "first_name": "Nicholas",
+        "last_name": "Carr"
+    }
+},
+{
+    "model": "bookstore.author",
+    "pk": 8,
+    "fields": {
+        "first_name": "Neil",
+        "last_name": "deGrasse-Tyson"
+    }
+},
+{
+    "model": "bookstore.author",
+    "pk": 9,
+    "fields": {
+        "first_name": "Douglas",
+        "last_name": "Brinkley"
+    }
+},
+{
+    "model": "bookstore.author",
+    "pk": 10,
+    "fields": {
+        "first_name": "Stephen",
+        "last_name": "Hawking"
+    }
+},
+{
+    "model": "bookstore.author",
+    "pk": 11,
+    "fields": {
+        "first_name": "Michael",
+        "last_name": "Collins"
+    }
+},
+{
+    "model": "bookstore.author",
+    "pk": 12,
+    "fields": {
+        "first_name": "Charles",
+        "last_name": "Lindbergh"
+    }
+},
+{
+    "model": "bookstore.author",
+    "pk": 13,
+    "fields": {
+        "first_name": "Svetlana",
+        "last_name": "Alexievich"
+    }
+},
+{
+    "model": "bookstore.author",
+    "pk": 14,
+    "fields": {
+        "first_name": "Keith",
+        "last_name": "Gessen"
+    }
+},
+{
+    "model": "bookstore.author",
+    "pk": 15,
+    "fields": {
+        "first_name": "Tom",
+        "last_name": "Wolfe"
+    }
+},
+{
+    "model": "bookstore.author",
+    "pk": 16,
+    "fields": {
+        "first_name": "Nikola",
+        "last_name": "Tesla"
+    }
+},
+{
+    "model": "bookstore.author",
+    "pk": 17,
+    "fields": {
+        "first_name": "Thomas",
+        "last_name": "Commerford"
+    }
+},
+{
+    "model": "bookstore.author",
+    "pk": 18,
+    "fields": {
+        "first_name": "Eugene",
+        "last_name": "Cernan"
+    }
+},
+{
+    "model": "bookstore.author",
+    "pk": 19,
+    "fields": {
+        "first_name": "Don",
+        "last_name": "Davis"
+    }
+},
+{
+    "model": "bookstore.author",
+    "pk": 20,
+    "fields": {
+        "first_name": "Don",
+        "last_name": "Norman"
+    }
+},
+{
+    "model": "bookstore.author",
+    "pk": 21,
+    "fields": {
+        "first_name": "Cathy",
+        "last_name": "O'Neil"
+    }
+},
+{
+    "model": "bookstore.author",
+    "pk": 22,
+    "fields": {
+        "first_name": "Lizay",
+        "last_name": "Mundy"
+    }
+},
+{
+    "model": "bookstore.author",
+    "pk": 23,
+    "fields": {
+        "first_name": "John",
+        "last_name": "Urschel"
+    }
+},
+{
+    "model": "bookstore.author",
+    "pk": 24,
+    "fields": {
+        "first_name": "Louisa",
+        "last_name": "Thomas"
+    }
+},
+{
+    "model": "bookstore.author",
+    "pk": 25,
+    "fields": {
+        "first_name": "Nassim",
+        "last_name": "Taleb"
+    }
+},
+{
+    "model": "bookstore.author",
+    "pk": 26,
+    "fields": {
+        "first_name": "Mark",
+        "last_name": "Ryan"
+    }
+},
+{
+    "model": "bookstore.author",
+    "pk": 27,
+    "fields": {
+        "first_name": "Douglas",
+        "last_name": "Hofstadter"
+    }
+},
+{
+    "model": "bookstore.author",
+    "pk": 28,
+    "fields": {
+        "first_name": "Darrell",
+        "last_name": "Huff"
+    }
+},
+{
+    "model": "bookstore.author",
+    "pk": 29,
+    "fields": {
+        "first_name": "Irving",
+        "last_name": "Geis"
+    }
+},
+{
+    "model": "bookstore.author",
+    "pk": 30,
+    "fields": {
+        "first_name": "Donella",
+        "last_name": "Meadows"
+    }
+},
+{
+    "model": "bookstore.author",
+    "pk": 31,
+    "fields": {
+        "first_name": "Diana",
+        "last_name": "Wright"
+    }
+},
+{
+    "model": "bookstore.wrote",
+    "pk": 1,
+    "fields": {
+        "book_id": 1,
+        "author_id": 2,
+        "sequence": 1
+    }
+},
+{
+    "model": "bookstore.wrote",
+    "pk": 2,
+    "fields": {
+        "book_id": 2,
+        "author_id": 3,
+        "sequence": 1
+    }
+},
+{
+    "model": "bookstore.wrote",
+    "pk": 3,
+    "fields": {
+        "book_id": 3,
+        "author_id": 4,
+        "sequence": 1
+    }
+},
+{
+    "model": "bookstore.wrote",
+    "pk": 4,
+    "fields": {
+        "book_id": 4,
+        "author_id": 5,
+        "sequence": 1
+    }
+},
+{
+    "model": "bookstore.wrote",
+    "pk": 5,
+    "fields": {
+        "book_id": 4,
+        "author_id": 6,
+        "sequence": 2
+    }
+},
+{
+    "model": "bookstore.wrote",
+    "pk": 6,
+    "fields": {
+        "book_id": 5,
+        "author_id": 7,
+        "sequence": 1
+    }
+},
+{
+    "model": "bookstore.wrote",
+    "pk": 7,
+    "fields": {
+        "book_id": 6,
+        "author_id": 8,
+        "sequence": 1
+    }
+},
+{
+    "model": "bookstore.wrote",
+    "pk": 8,
+    "fields": {
+        "book_id": 7,
+        "author_id": 9,
+        "sequence": 1
+    }
+},
+{
+    "model": "bookstore.wrote",
+    "pk": 9,
+    "fields": {
+        "book_id": 8,
+        "author_id": 10,
+        "sequence": 1
+    }
+},
+{
+    "model": "bookstore.wrote",
+    "pk": 10,
+    "fields": {
+        "book_id": 9,
+        "author_id": 11,
+        "sequence": 1
+    }
+},
+{
+    "model": "bookstore.wrote",
+    "pk": 11,
+    "fields": {
+        "book_id": 9,
+        "author_id": 12,
+        "sequence": 2
+    }
+},
+{
+    "model": "bookstore.wrote",
+    "pk": 12,
+    "fields": {
+        "book_id": 10,
+        "author_id": 8,
+        "sequence": 1
+    }
+},
+{
+    "model": "bookstore.wrote",
+    "pk": 13,
+    "fields": {
+        "book_id": 11,
+        "author_id": 8,
+        "sequence": 1
+    }
+},
+{
+    "model": "bookstore.wrote",
+    "pk": 14,
+    "fields": {
+        "book_id": 12,
+        "author_id": 13,
+        "sequence": 1
+    }
+},
+{
+    "model": "bookstore.wrote",
+    "pk": 15,
+    "fields": {
+        "book_id": 12,
+        "author_id": 14,
+        "sequence": 2
+    }
+},
+{
+    "model": "bookstore.wrote",
+    "pk": 16,
+    "fields": {
+        "book_id": 13,
+        "author_id": 15,
+        "sequence": 1
+    }
+},
+{
+    "model": "bookstore.wrote",
+    "pk": 17,
+    "fields": {
+        "book_id": 14,
+        "author_id": 16,
+        "sequence": 1
+    }
+},
+{
+    "model": "bookstore.wrote",
+    "pk": 18,
+    "fields": {
+        "book_id": 14,
+        "author_id": 17,
+        "sequence": 2
+    }
+},
+{
+    "model": "bookstore.wrote",
+    "pk": 19,
+    "fields": {
+        "book_id": 15,
+        "author_id": 18,
+        "sequence": 1
+    }
+},
+{
+    "model": "bookstore.wrote",
+    "pk": 20,
+    "fields": {
+        "book_id": 15,
+        "author_id": 19,
+        "sequence": 2
+    }
+},
+{
+    "model": "bookstore.wrote",
+    "pk": 21,
+    "fields": {
+        "book_id": 16,
+        "author_id": 20,
+        "sequence": 1
+    }
+},
+{
+    "model": "bookstore.wrote",
+    "pk": 22,
+    "fields": {
+        "book_id": 18,
+        "author_id": 22,
+        "sequence": 1
+    }
+},
+{
+    "model": "bookstore.wrote",
+    "pk": 23,
+    "fields": {
+        "book_id": 20,
+        "author_id": 25,
+        "sequence": 1
+    }
+},
+{
+    "model": "bookstore.wrote",
+    "pk": 24,
+    "fields": {
+        "book_id": 21,
+        "author_id": 26,
+        "sequence": 1
+    }
+},
+{
+    "model": "bookstore.wrote",
+    "pk": 25,
+    "fields": {
+        "book_id": 19,
+        "author_id": 24,
+        "sequence": 1
+    }
+},
+{
+    "model": "bookstore.wrote",
+    "pk": 26,
+    "fields": {
+        "book_id": 22,
+        "author_id": 27,
+        "sequence": 1
+    }
+},
+{
+    "model": "bookstore.wrote",
+    "pk": 27,
+    "fields": {
+        "book_id": 23,
+        "author_id": 28,
+        "sequence": 1
+    }
+},
+{
+    "model": "bookstore.wrote",
+    "pk": 28,
+    "fields": {
+        "book_id": 23,
+        "author_id": 29,
+        "sequence": 2
+    }
+},
+{
+    "model": "bookstore.wrote",
+    "pk": 29,
+    "fields": {
+        "book_id": 24,
+        "author_id": 30,
+        "sequence": 1
+    }
+},
+{
+    "model": "bookstore.wrote",
+    "pk": 30,
+    "fields": {
+        "book_id": 24,
+        "author_id": 31,
+        "sequence": 2
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2019-10-18T02:36:36.618Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "author"
+        ],
+        "object_id": "1",
+        "object_repr": "Author object (1)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2019-10-18T02:59:42.618Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "genre"
+        ],
+        "object_id": "1",
+        "object_repr": "Genre object (1)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2019-10-18T02:59:47.185Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "genre"
+        ],
+        "object_id": "2",
+        "object_repr": "Genre object (2)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2019-10-18T02:59:54.434Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "genre"
+        ],
+        "object_id": "3",
+        "object_repr": "Genre object (3)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2019-10-18T03:00:16.233Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "publisher"
+        ],
+        "object_id": "1",
+        "object_repr": "Publisher object (1)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2019-10-18T03:00:21.120Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "publisher"
+        ],
+        "object_id": "2",
+        "object_repr": "Publisher object (2)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2019-10-18T03:00:27.298Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "publisher"
+        ],
+        "object_id": "3",
+        "object_repr": "Publisher object (3)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2019-10-18T03:00:32.105Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "publisher"
+        ],
+        "object_id": "4",
+        "object_repr": "Publisher object (4)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2019-10-18T03:00:36.247Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "publisher"
+        ],
+        "object_id": "5",
+        "object_repr": "Publisher object (5)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+        "action_time": "2019-10-18T03:00:40.942Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "publisher"
+        ],
+        "object_id": "6",
+        "object_repr": "Publisher object (6)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+        "action_time": "2019-10-18T03:00:44.660Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "publisher"
+        ],
+        "object_id": "7",
+        "object_repr": "Publisher object (7)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+        "action_time": "2019-10-18T03:00:50.770Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "publisher"
+        ],
+        "object_id": "8",
+        "object_repr": "Publisher object (8)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+        "action_time": "2019-10-18T03:00:58.021Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "publisher"
+        ],
+        "object_id": "9",
+        "object_repr": "Publisher object (9)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+        "action_time": "2019-10-18T03:01:27.480Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "author"
+        ],
+        "object_id": "1",
+        "object_repr": "Author object (1)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+        "action_time": "2019-10-18T03:01:37.784Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "author"
+        ],
+        "object_id": "2",
+        "object_repr": "Author object (2)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+        "action_time": "2019-10-18T03:01:46.487Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "author"
+        ],
+        "object_id": "3",
+        "object_repr": "Author object (3)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+        "action_time": "2019-10-18T03:01:55.183Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "author"
+        ],
+        "object_id": "4",
+        "object_repr": "Author object (4)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+        "action_time": "2019-10-18T03:02:02.716Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "author"
+        ],
+        "object_id": "5",
+        "object_repr": "Author object (5)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+        "action_time": "2019-10-18T03:02:07.559Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "author"
+        ],
+        "object_id": "6",
+        "object_repr": "Author object (6)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+        "action_time": "2019-10-18T03:02:15.999Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "author"
+        ],
+        "object_id": "7",
+        "object_repr": "Author object (7)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+        "action_time": "2019-10-18T03:02:23.150Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "author"
+        ],
+        "object_id": "8",
+        "object_repr": "Author object (8)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+        "action_time": "2019-10-18T03:02:28.418Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "author"
+        ],
+        "object_id": "9",
+        "object_repr": "Author object (9)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+        "action_time": "2019-10-18T03:02:36.142Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "author"
+        ],
+        "object_id": "10",
+        "object_repr": "Author object (10)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 24,
+    "fields": {
+        "action_time": "2019-10-18T03:02:41.433Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "author"
+        ],
+        "object_id": "11",
+        "object_repr": "Author object (11)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 25,
+    "fields": {
+        "action_time": "2019-10-18T03:02:48.281Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "author"
+        ],
+        "object_id": "12",
+        "object_repr": "Author object (12)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 26,
+    "fields": {
+        "action_time": "2019-10-18T03:02:51.600Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "author"
+        ],
+        "object_id": "13",
+        "object_repr": "Author object (13)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 27,
+    "fields": {
+        "action_time": "2019-10-18T03:02:57.643Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "author"
+        ],
+        "object_id": "14",
+        "object_repr": "Author object (14)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 28,
+    "fields": {
+        "action_time": "2019-10-18T03:03:02.297Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "author"
+        ],
+        "object_id": "15",
+        "object_repr": "Author object (15)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 29,
+    "fields": {
+        "action_time": "2019-10-18T03:06:58.630Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "book"
+        ],
+        "object_id": "1",
+        "object_repr": "Book object (1)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 30,
+    "fields": {
+        "action_time": "2019-10-18T03:10:12.350Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "book"
+        ],
+        "object_id": "2",
+        "object_repr": "Book object (2)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 31,
+    "fields": {
+        "action_time": "2019-10-18T03:11:05.523Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "book"
+        ],
+        "object_id": "3",
+        "object_repr": "Book object (3)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 32,
+    "fields": {
+        "action_time": "2019-10-18T03:12:27.739Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "book"
+        ],
+        "object_id": "4",
+        "object_repr": "Book object (4)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 33,
+    "fields": {
+        "action_time": "2019-10-18T03:13:28.882Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "book"
+        ],
+        "object_id": "5",
+        "object_repr": "Book object (5)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 34,
+    "fields": {
+        "action_time": "2019-10-18T03:16:31.476Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "book"
+        ],
+        "object_id": "6",
+        "object_repr": "Book object (6)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 35,
+    "fields": {
+        "action_time": "2019-10-18T03:17:12.846Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "book"
+        ],
+        "object_id": "7",
+        "object_repr": "Book object (7)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 36,
+    "fields": {
+        "action_time": "2019-10-18T03:17:51.024Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "book"
+        ],
+        "object_id": "8",
+        "object_repr": "Book object (8)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 37,
+    "fields": {
+        "action_time": "2019-10-18T03:18:38.406Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "book"
+        ],
+        "object_id": "9",
+        "object_repr": "Book object (9)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 38,
+    "fields": {
+        "action_time": "2019-10-18T03:19:29.597Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "book"
+        ],
+        "object_id": "10",
+        "object_repr": "Book object (10)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 39,
+    "fields": {
+        "action_time": "2019-10-18T03:20:08.842Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "book"
+        ],
+        "object_id": "11",
+        "object_repr": "Book object (11)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 40,
+    "fields": {
+        "action_time": "2019-10-18T03:20:42.726Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "book"
+        ],
+        "object_id": "12",
+        "object_repr": "Book object (12)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 41,
+    "fields": {
+        "action_time": "2019-10-18T03:21:20.530Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "book"
+        ],
+        "object_id": "13",
+        "object_repr": "Book object (13)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 42,
+    "fields": {
+        "action_time": "2019-10-18T03:22:49.943Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "wrote"
+        ],
+        "object_id": "1",
+        "object_repr": "Wrote object (1)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 43,
+    "fields": {
+        "action_time": "2019-10-18T03:22:57.479Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "wrote"
+        ],
+        "object_id": "2",
+        "object_repr": "Wrote object (2)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 44,
+    "fields": {
+        "action_time": "2019-10-18T03:23:08.948Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "wrote"
+        ],
+        "object_id": "3",
+        "object_repr": "Wrote object (3)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 45,
+    "fields": {
+        "action_time": "2019-10-18T03:23:16.471Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "wrote"
+        ],
+        "object_id": "4",
+        "object_repr": "Wrote object (4)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 46,
+    "fields": {
+        "action_time": "2019-10-18T03:23:25.692Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "wrote"
+        ],
+        "object_id": "5",
+        "object_repr": "Wrote object (5)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 47,
+    "fields": {
+        "action_time": "2019-10-18T03:23:32.298Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "wrote"
+        ],
+        "object_id": "6",
+        "object_repr": "Wrote object (6)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 48,
+    "fields": {
+        "action_time": "2019-10-18T03:23:38.416Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "wrote"
+        ],
+        "object_id": "7",
+        "object_repr": "Wrote object (7)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 49,
+    "fields": {
+        "action_time": "2019-10-18T03:23:44.582Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "wrote"
+        ],
+        "object_id": "8",
+        "object_repr": "Wrote object (8)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 50,
+    "fields": {
+        "action_time": "2019-10-18T03:23:55.443Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "wrote"
+        ],
+        "object_id": "9",
+        "object_repr": "Wrote object (9)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 51,
+    "fields": {
+        "action_time": "2019-10-18T03:24:01.983Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "wrote"
+        ],
+        "object_id": "10",
+        "object_repr": "Wrote object (10)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 52,
+    "fields": {
+        "action_time": "2019-10-18T03:24:08.316Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "wrote"
+        ],
+        "object_id": "11",
+        "object_repr": "Wrote object (11)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 53,
+    "fields": {
+        "action_time": "2019-10-18T03:24:17.322Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "wrote"
+        ],
+        "object_id": "12",
+        "object_repr": "Wrote object (12)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 54,
+    "fields": {
+        "action_time": "2019-10-18T03:24:25.257Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "wrote"
+        ],
+        "object_id": "13",
+        "object_repr": "Wrote object (13)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 55,
+    "fields": {
+        "action_time": "2019-10-18T03:24:31.844Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "wrote"
+        ],
+        "object_id": "14",
+        "object_repr": "Wrote object (14)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 56,
+    "fields": {
+        "action_time": "2019-10-18T03:24:42.895Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "wrote"
+        ],
+        "object_id": "14",
+        "object_repr": "Wrote object (14)",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 57,
+    "fields": {
+        "action_time": "2019-10-18T03:24:52.310Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "wrote"
+        ],
+        "object_id": "14",
+        "object_repr": "Wrote object (14)",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 58,
+    "fields": {
+        "action_time": "2019-10-18T03:25:02.386Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "wrote"
+        ],
+        "object_id": "15",
+        "object_repr": "Wrote object (15)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 59,
+    "fields": {
+        "action_time": "2019-10-18T03:25:14.007Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "wrote"
+        ],
+        "object_id": "16",
+        "object_repr": "Wrote object (16)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 60,
+    "fields": {
+        "action_time": "2019-10-18T03:36:49.398Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "customer"
+        ],
+        "object_id": "Anonymous",
+        "object_repr": "Customer object (Anonymous)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 61,
+    "fields": {
+        "action_time": "2019-10-18T03:37:34.005Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "customer"
+        ],
+        "object_id": "mantramoon",
+        "object_repr": "Customer object (mantramoon)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 62,
+    "fields": {
+        "action_time": "2019-10-18T03:38:05.970Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "customer"
+        ],
+        "object_id": "DanaLynne",
+        "object_repr": "Customer object (DanaLynne)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 63,
+    "fields": {
+        "action_time": "2019-10-18T03:38:34.130Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "customer"
+        ],
+        "object_id": "JohnnyBollocks",
+        "object_repr": "Customer object (JohnnyBollocks)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 64,
+    "fields": {
+        "action_time": "2019-10-18T03:39:04.812Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "customer"
+        ],
+        "object_id": "mahawk",
+        "object_repr": "Customer object (mahawk)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 65,
+    "fields": {
+        "action_time": "2019-10-18T03:39:24.652Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "customer"
+        ],
+        "object_id": "Katie14",
+        "object_repr": "Customer object (Katie14)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 66,
+    "fields": {
+        "action_time": "2019-10-18T03:39:54.616Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "customer"
+        ],
+        "object_id": "Ken_O",
+        "object_repr": "Customer object (Ken_O)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 67,
+    "fields": {
+        "action_time": "2019-10-18T03:42:18.600Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "customer"
+        ],
+        "object_id": "Booknut62",
+        "object_repr": "Customer object (Booknut62)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 68,
+    "fields": {
+        "action_time": "2019-10-18T03:42:47.398Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "customer"
+        ],
+        "object_id": "Broseph27",
+        "object_repr": "Customer object (Broseph27)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 69,
+    "fields": {
+        "action_time": "2019-10-18T03:43:28.119Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "customer"
+        ],
+        "object_id": "Beasles",
+        "object_repr": "Customer object (Beasles)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 70,
+    "fields": {
+        "action_time": "2019-10-18T03:43:50.381Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "customer"
+        ],
+        "object_id": "jmgallen",
+        "object_repr": "Customer object (jmgallen)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 71,
+    "fields": {
+        "action_time": "2019-10-18T03:44:07.753Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "customer"
+        ],
+        "object_id": "ReadingRedHead",
+        "object_repr": "Customer object (ReadingRedHead)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 72,
+    "fields": {
+        "action_time": "2019-10-18T03:44:48.207Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "customer"
+        ],
+        "object_id": "CodyHunt",
+        "object_repr": "Customer object (CodyHunt)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 73,
+    "fields": {
+        "action_time": "2019-10-18T03:45:14.966Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "customer"
+        ],
+        "object_id": "MUT",
+        "object_repr": "Customer object (MUT)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 74,
+    "fields": {
+        "action_time": "2019-10-18T03:46:12.670Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "commentrating"
+        ],
+        "object_id": "1",
+        "object_repr": "CommentRating object (1)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 75,
+    "fields": {
+        "action_time": "2019-10-18T03:46:28.426Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "commentrating"
+        ],
+        "object_id": "2",
+        "object_repr": "CommentRating object (2)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 76,
+    "fields": {
+        "action_time": "2019-10-18T03:46:40.457Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "commentrating"
+        ],
+        "object_id": "3",
+        "object_repr": "CommentRating object (3)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 77,
+    "fields": {
+        "action_time": "2019-10-18T03:47:13.532Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "commentrating"
+        ],
+        "object_id": "4",
+        "object_repr": "CommentRating object (4)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 78,
+    "fields": {
+        "action_time": "2019-10-18T03:47:36.048Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "commentrating"
+        ],
+        "object_id": "5",
+        "object_repr": "CommentRating object (5)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 79,
+    "fields": {
+        "action_time": "2019-10-18T03:48:07.171Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "commentrating"
+        ],
+        "object_id": "6",
+        "object_repr": "CommentRating object (6)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 80,
+    "fields": {
+        "action_time": "2019-10-18T03:48:22.073Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "commentrating"
+        ],
+        "object_id": "7",
+        "object_repr": "CommentRating object (7)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 81,
+    "fields": {
+        "action_time": "2019-10-18T03:48:44.318Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "commentrating"
+        ],
+        "object_id": "8",
+        "object_repr": "CommentRating object (8)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 82,
+    "fields": {
+        "action_time": "2019-10-18T03:48:56.912Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "commentrating"
+        ],
+        "object_id": "9",
+        "object_repr": "CommentRating object (9)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 83,
+    "fields": {
+        "action_time": "2019-10-18T03:49:35.914Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "commentrating"
+        ],
+        "object_id": "10",
+        "object_repr": "CommentRating object (10)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 84,
+    "fields": {
+        "action_time": "2019-10-18T03:49:54.041Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "commentrating"
+        ],
+        "object_id": "11",
+        "object_repr": "CommentRating object (11)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 85,
+    "fields": {
+        "action_time": "2019-10-18T03:50:13.655Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "commentrating"
+        ],
+        "object_id": "12",
+        "object_repr": "CommentRating object (12)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 86,
+    "fields": {
+        "action_time": "2019-10-18T03:50:32.096Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "commentrating"
+        ],
+        "object_id": "13",
+        "object_repr": "CommentRating object (13)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 87,
+    "fields": {
+        "action_time": "2019-10-18T03:50:46.043Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "commentrating"
+        ],
+        "object_id": "14",
+        "object_repr": "CommentRating object (14)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 88,
+    "fields": {
+        "action_time": "2019-10-18T03:51:07.583Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "customer"
+        ],
+        "object_id": "Beasles",
+        "object_repr": "Customer object (Beasles)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"email\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 89,
+    "fields": {
+        "action_time": "2019-10-18T03:51:21.236Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "commentrating"
+        ],
+        "object_id": "15",
+        "object_repr": "CommentRating object (15)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 90,
+    "fields": {
+        "action_time": "2019-10-18T03:51:40.154Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "commentrating"
+        ],
+        "object_id": "16",
+        "object_repr": "CommentRating object (16)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 91,
+    "fields": {
+        "action_time": "2019-10-18T03:53:53.007Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "commentrating"
+        ],
+        "object_id": "17",
+        "object_repr": "CommentRating object (17)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 92,
+    "fields": {
+        "action_time": "2019-10-18T03:54:51.995Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "commentrating"
+        ],
+        "object_id": "18",
+        "object_repr": "CommentRating object (18)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 93,
+    "fields": {
+        "action_time": "2019-10-18T03:55:05.213Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "commentrating"
+        ],
+        "object_id": "19",
+        "object_repr": "CommentRating object (19)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 94,
+    "fields": {
+        "action_time": "2019-10-18T03:55:20.953Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "commentrating"
+        ],
+        "object_id": "20",
+        "object_repr": "CommentRating object (20)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 95,
+    "fields": {
+        "action_time": "2019-10-18T03:55:39.354Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "commentrating"
+        ],
+        "object_id": "21",
+        "object_repr": "CommentRating object (21)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 96,
+    "fields": {
+        "action_time": "2019-10-18T03:55:54.825Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "commentrating"
+        ],
+        "object_id": "22",
+        "object_repr": "CommentRating object (22)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 97,
+    "fields": {
+        "action_time": "2019-10-18T03:56:06.817Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "commentrating"
+        ],
+        "object_id": "23",
+        "object_repr": "CommentRating object (23)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 98,
+    "fields": {
+        "action_time": "2019-10-18T03:56:21.795Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "commentrating"
+        ],
+        "object_id": "24",
+        "object_repr": "CommentRating object (24)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 99,
+    "fields": {
+        "action_time": "2019-10-18T03:56:35.006Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "commentrating"
+        ],
+        "object_id": "25",
+        "object_repr": "CommentRating object (25)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 100,
+    "fields": {
+        "action_time": "2019-10-18T03:56:47.736Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "commentrating"
+        ],
+        "object_id": "26",
+        "object_repr": "CommentRating object (26)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 101,
+    "fields": {
+        "action_time": "2019-10-18T03:57:02.326Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "commentrating"
+        ],
+        "object_id": "27",
+        "object_repr": "CommentRating object (27)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 102,
+    "fields": {
+        "action_time": "2019-10-18T03:59:26.060Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "commentrating"
+        ],
+        "object_id": "28",
+        "object_repr": "CommentRating object (28)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 103,
+    "fields": {
+        "action_time": "2019-10-18T03:59:34.972Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "commentrating"
+        ],
+        "object_id": "29",
+        "object_repr": "CommentRating object (29)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 104,
+    "fields": {
+        "action_time": "2019-10-18T04:01:01.777Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "author"
+        ],
+        "object_id": "16",
+        "object_repr": "Author object (16)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 105,
+    "fields": {
+        "action_time": "2019-10-18T04:01:13.078Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "author"
+        ],
+        "object_id": "17",
+        "object_repr": "Author object (17)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 106,
+    "fields": {
+        "action_time": "2019-10-18T04:01:25.001Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "publisher"
+        ],
+        "object_id": "10",
+        "object_repr": "Publisher object (10)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 107,
+    "fields": {
+        "action_time": "2019-10-18T04:02:24.309Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "book"
+        ],
+        "object_id": "14",
+        "object_repr": "Book object (14)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 108,
+    "fields": {
+        "action_time": "2019-10-18T04:02:37.637Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "wrote"
+        ],
+        "object_id": "17",
+        "object_repr": "Wrote object (17)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 109,
+    "fields": {
+        "action_time": "2019-10-18T04:02:41.744Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "wrote"
+        ],
+        "object_id": "18",
+        "object_repr": "Wrote object (18)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 110,
+    "fields": {
+        "action_time": "2019-10-18T04:02:59.693Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "commentrating"
+        ],
+        "object_id": "30",
+        "object_repr": "CommentRating object (30)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 111,
+    "fields": {
+        "action_time": "2019-10-18T04:03:07.267Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "commentrating"
+        ],
+        "object_id": "31",
+        "object_repr": "CommentRating object (31)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 112,
+    "fields": {
+        "action_time": "2019-10-18T04:05:08.945Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "author"
+        ],
+        "object_id": "18",
+        "object_repr": "Author object (18)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 113,
+    "fields": {
+        "action_time": "2019-10-18T04:05:14.433Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "author"
+        ],
+        "object_id": "19",
+        "object_repr": "Author object (19)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 114,
+    "fields": {
+        "action_time": "2019-10-18T04:05:26.970Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "publisher"
+        ],
+        "object_id": "11",
+        "object_repr": "Publisher object (11)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 115,
+    "fields": {
+        "action_time": "2019-10-18T04:06:24.928Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "book"
+        ],
+        "object_id": "15",
+        "object_repr": "Book object (15)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 116,
+    "fields": {
+        "action_time": "2019-10-18T04:06:33.598Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "wrote"
+        ],
+        "object_id": "19",
+        "object_repr": "Wrote object (19)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 117,
+    "fields": {
+        "action_time": "2019-10-18T04:06:38.552Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "wrote"
+        ],
+        "object_id": "20",
+        "object_repr": "Wrote object (20)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 118,
+    "fields": {
+        "action_time": "2019-10-18T04:06:58.991Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "commentrating"
+        ],
+        "object_id": "32",
+        "object_repr": "CommentRating object (32)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 119,
+    "fields": {
+        "action_time": "2019-10-18T04:07:19.674Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "commentrating"
+        ],
+        "object_id": "33",
+        "object_repr": "CommentRating object (33)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 120,
+    "fields": {
+        "action_time": "2019-10-18T04:10:44.424Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "author"
+        ],
+        "object_id": "20",
+        "object_repr": "Author object (20)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 121,
+    "fields": {
+        "action_time": "2019-10-18T04:10:55.204Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "publisher"
+        ],
+        "object_id": "12",
+        "object_repr": "Publisher object (12)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 122,
+    "fields": {
+        "action_time": "2019-10-18T04:11:38.380Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "book"
+        ],
+        "object_id": "16",
+        "object_repr": "Book object (16)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 123,
+    "fields": {
+        "action_time": "2019-10-18T04:11:50.684Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "wrote"
+        ],
+        "object_id": "21",
+        "object_repr": "Wrote object (21)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 124,
+    "fields": {
+        "action_time": "2019-10-18T04:12:07.229Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "commentrating"
+        ],
+        "object_id": "34",
+        "object_repr": "CommentRating object (34)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 125,
+    "fields": {
+        "action_time": "2019-10-18T04:12:16.404Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "commentrating"
+        ],
+        "object_id": "35",
+        "object_repr": "CommentRating object (35)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 126,
+    "fields": {
+        "action_time": "2019-10-18T04:12:57.771Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "author"
+        ],
+        "object_id": "21",
+        "object_repr": "Author object (21)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 127,
+    "fields": {
+        "action_time": "2019-10-18T04:13:06.281Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "publisher"
+        ],
+        "object_id": "13",
+        "object_repr": "Publisher object (13)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 128,
+    "fields": {
+        "action_time": "2019-10-18T04:13:54.001Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "book"
+        ],
+        "object_id": "17",
+        "object_repr": "Book object (17)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 129,
+    "fields": {
+        "action_time": "2019-10-18T04:14:09.940Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "commentrating"
+        ],
+        "object_id": "36",
+        "object_repr": "CommentRating object (36)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 130,
+    "fields": {
+        "action_time": "2019-10-18T04:14:20.267Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "commentrating"
+        ],
+        "object_id": "37",
+        "object_repr": "CommentRating object (37)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 131,
+    "fields": {
+        "action_time": "2019-10-18T04:14:46.267Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "genre"
+        ],
+        "object_id": "4",
+        "object_repr": "Genre object (4)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 132,
+    "fields": {
+        "action_time": "2019-10-18T04:17:17.929Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "author"
+        ],
+        "object_id": "22",
+        "object_repr": "Author object (22)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 133,
+    "fields": {
+        "action_time": "2019-10-18T04:17:33.485Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "publisher"
+        ],
+        "object_id": "14",
+        "object_repr": "Publisher object (14)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 134,
+    "fields": {
+        "action_time": "2019-10-18T04:18:30.451Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "book"
+        ],
+        "object_id": "18",
+        "object_repr": "Book object (18)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 135,
+    "fields": {
+        "action_time": "2019-10-18T04:18:45.216Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "wrote"
+        ],
+        "object_id": "22",
+        "object_repr": "Wrote object (22)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 136,
+    "fields": {
+        "action_time": "2019-10-18T04:19:21.524Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "commentrating"
+        ],
+        "object_id": "38",
+        "object_repr": "CommentRating object (38)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 137,
+    "fields": {
+        "action_time": "2019-10-18T04:19:34.707Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "commentrating"
+        ],
+        "object_id": "39",
+        "object_repr": "CommentRating object (39)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 138,
+    "fields": {
+        "action_time": "2019-10-18T04:20:07.508Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "customer"
+        ],
+        "object_id": "McLovin",
+        "object_repr": "Customer object (McLovin)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 139,
+    "fields": {
+        "action_time": "2019-10-18T04:21:28.776Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "author"
+        ],
+        "object_id": "23",
+        "object_repr": "Author object (23)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 140,
+    "fields": {
+        "action_time": "2019-10-18T04:21:36.366Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "author"
+        ],
+        "object_id": "24",
+        "object_repr": "Author object (24)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 141,
+    "fields": {
+        "action_time": "2019-10-18T04:22:41.960Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "book"
+        ],
+        "object_id": "19",
+        "object_repr": "Book object (19)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 142,
+    "fields": {
+        "action_time": "2019-10-18T04:22:57.204Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "commentrating"
+        ],
+        "object_id": "40",
+        "object_repr": "CommentRating object (40)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 143,
+    "fields": {
+        "action_time": "2019-10-18T04:23:14.329Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "commentrating"
+        ],
+        "object_id": "41",
+        "object_repr": "CommentRating object (41)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 144,
+    "fields": {
+        "action_time": "2019-10-18T04:24:34.684Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "author"
+        ],
+        "object_id": "25",
+        "object_repr": "Author object (25)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 145,
+    "fields": {
+        "action_time": "2019-10-18T04:25:34.441Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "book"
+        ],
+        "object_id": "20",
+        "object_repr": "Book object (20)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 146,
+    "fields": {
+        "action_time": "2019-10-18T04:25:45.958Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "wrote"
+        ],
+        "object_id": "23",
+        "object_repr": "Wrote object (23)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 147,
+    "fields": {
+        "action_time": "2019-10-18T04:26:02.122Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "commentrating"
+        ],
+        "object_id": "42",
+        "object_repr": "CommentRating object (42)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 148,
+    "fields": {
+        "action_time": "2019-10-18T04:26:18.078Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "commentrating"
+        ],
+        "object_id": "43",
+        "object_repr": "CommentRating object (43)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 149,
+    "fields": {
+        "action_time": "2019-10-18T04:26:28.300Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "commentrating"
+        ],
+        "object_id": "44",
+        "object_repr": "CommentRating object (44)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 150,
+    "fields": {
+        "action_time": "2019-10-18T04:26:42.667Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "commentrating"
+        ],
+        "object_id": "45",
+        "object_repr": "CommentRating object (45)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 151,
+    "fields": {
+        "action_time": "2019-10-18T04:27:21.669Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "author"
+        ],
+        "object_id": "26",
+        "object_repr": "Author object (26)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 152,
+    "fields": {
+        "action_time": "2019-10-18T04:27:31.408Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "publisher"
+        ],
+        "object_id": "15",
+        "object_repr": "Publisher object (15)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 153,
+    "fields": {
+        "action_time": "2019-10-18T04:28:17.709Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "book"
+        ],
+        "object_id": "21",
+        "object_repr": "Book object (21)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 154,
+    "fields": {
+        "action_time": "2019-10-18T04:28:31.208Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "wrote"
+        ],
+        "object_id": "24",
+        "object_repr": "Wrote object (24)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 155,
+    "fields": {
+        "action_time": "2019-10-18T04:28:53.398Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "wrote"
+        ],
+        "object_id": "23",
+        "object_repr": "Wrote object (23)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"book_id\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 156,
+    "fields": {
+        "action_time": "2019-10-18T04:29:10.154Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "wrote"
+        ],
+        "object_id": "25",
+        "object_repr": "Wrote object (25)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 157,
+    "fields": {
+        "action_time": "2019-10-18T04:29:39.243Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "commentrating"
+        ],
+        "object_id": "46",
+        "object_repr": "CommentRating object (46)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 158,
+    "fields": {
+        "action_time": "2019-10-18T04:29:52.955Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "commentrating"
+        ],
+        "object_id": "47",
+        "object_repr": "CommentRating object (47)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 159,
+    "fields": {
+        "action_time": "2019-10-18T04:30:29.921Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "author"
+        ],
+        "object_id": "27",
+        "object_repr": "Author object (27)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 160,
+    "fields": {
+        "action_time": "2019-10-18T04:31:20.258Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "book"
+        ],
+        "object_id": "22",
+        "object_repr": "Book object (22)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 161,
+    "fields": {
+        "action_time": "2019-10-18T04:31:31.272Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "wrote"
+        ],
+        "object_id": "26",
+        "object_repr": "Wrote object (26)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 162,
+    "fields": {
+        "action_time": "2019-10-18T04:31:47.703Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "commentrating"
+        ],
+        "object_id": "48",
+        "object_repr": "CommentRating object (48)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 163,
+    "fields": {
+        "action_time": "2019-10-18T04:32:05.144Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "commentrating"
+        ],
+        "object_id": "49",
+        "object_repr": "CommentRating object (49)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 164,
+    "fields": {
+        "action_time": "2019-10-18T04:33:06.247Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "author"
+        ],
+        "object_id": "28",
+        "object_repr": "Author object (28)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 165,
+    "fields": {
+        "action_time": "2019-10-18T04:33:12.580Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "author"
+        ],
+        "object_id": "29",
+        "object_repr": "Author object (29)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 166,
+    "fields": {
+        "action_time": "2019-10-18T04:34:04.471Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "book"
+        ],
+        "object_id": "23",
+        "object_repr": "Book object (23)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 167,
+    "fields": {
+        "action_time": "2019-10-18T04:34:13.000Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "wrote"
+        ],
+        "object_id": "27",
+        "object_repr": "Wrote object (27)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 168,
+    "fields": {
+        "action_time": "2019-10-18T04:34:17.912Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "wrote"
+        ],
+        "object_id": "28",
+        "object_repr": "Wrote object (28)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 169,
+    "fields": {
+        "action_time": "2019-10-18T04:34:36.902Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "commentrating"
+        ],
+        "object_id": "50",
+        "object_repr": "CommentRating object (50)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 170,
+    "fields": {
+        "action_time": "2019-10-18T04:34:44.695Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "commentrating"
+        ],
+        "object_id": "51",
+        "object_repr": "CommentRating object (51)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 171,
+    "fields": {
+        "action_time": "2019-10-18T04:34:55.875Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "commentrating"
+        ],
+        "object_id": "52",
+        "object_repr": "CommentRating object (52)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 172,
+    "fields": {
+        "action_time": "2019-10-18T04:36:25.057Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "author"
+        ],
+        "object_id": "30",
+        "object_repr": "Author object (30)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 173,
+    "fields": {
+        "action_time": "2019-10-18T04:36:30.105Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "author"
+        ],
+        "object_id": "31",
+        "object_repr": "Author object (31)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 174,
+    "fields": {
+        "action_time": "2019-10-18T04:36:45.344Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "publisher"
+        ],
+        "object_id": "16",
+        "object_repr": "Publisher object (16)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 175,
+    "fields": {
+        "action_time": "2019-10-18T04:37:28.360Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "book"
+        ],
+        "object_id": "24",
+        "object_repr": "Book object (24)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 176,
+    "fields": {
+        "action_time": "2019-10-18T04:37:37.453Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "wrote"
+        ],
+        "object_id": "29",
+        "object_repr": "Wrote object (29)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 177,
+    "fields": {
+        "action_time": "2019-10-18T04:37:42.742Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "wrote"
+        ],
+        "object_id": "30",
+        "object_repr": "Wrote object (30)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 178,
+    "fields": {
+        "action_time": "2019-10-18T04:38:12.551Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "commentrating"
+        ],
+        "object_id": "53",
+        "object_repr": "CommentRating object (53)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 179,
+    "fields": {
+        "action_time": "2019-10-18T04:38:36.636Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "commentrating"
+        ],
+        "object_id": "54",
+        "object_repr": "CommentRating object (54)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}
+]
