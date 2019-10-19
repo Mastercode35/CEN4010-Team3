@@ -28,6 +28,6 @@ Setting up the postgres server for use with the project:
 
 How To Upload Data to the Database:
 - After you have migrated and after your user has been created in psql with the database table, you can upload data into the database using the fixture in /GeekText/bookstore/fixtures
-- Use the command `python manage.py loaddata current_data.json` to fill the database with the latest information currently in the database.
+- Use the command `python manage.py loaddata data.json` to fill the database with the latest information currently in the database.
 
 If you receive this warning: `The file will have its original line endings in your working directory. warning: LF will be replaced by CRLF in <file>` then use this command in your git repo`git config core.autocrlf true` to surpess that warning.
