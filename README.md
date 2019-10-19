@@ -16,6 +16,10 @@ EVERYTIME A SETTING IS CHAMGED IN settings.py YOU MUST MIGRATE THE SERVER TO MAK
 - `python manage.py makemigrations`
 - `python manage.py migrate`
 
+EVERYTIME YOU MAKE A PULL, USE THESE COMMANDS BEFORE WORKING ON THE SITE:
+- `python manage.py makemigrations`
+- `python manage.py migrate`
+- `python manage.py loaddata data.json`
 
 Setting up the postgres server for use with the project:
 - Download Postgresql and go through the process of setting it up. Leave the default user to postgres, have an easy to remember password,  and leave the default port to 5432.
