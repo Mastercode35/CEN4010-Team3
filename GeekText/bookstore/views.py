@@ -8,9 +8,20 @@ from django.views.generic.base import TemplateView
 from django.views.generic.list import ListView
 from django.views.generic.edit import FormView
 
+#Model Imports for Database Extraction
+from .models import Book
+
 def feed(request):
     posts = Book.objects.all()
     return render(request, 'feed.xml', {'posts': posts})
+
+def book_search(request):
+    books_list = Book.objects.all()
+    return render(request, 'bookstore/book_search.html', 
+        {'books': books_list,
+         'title':'Book Search Page',
+         'year':datetime.now().year,}
+    )
 
 def login(request):
     assert isinstance(request, HttpRequest)
