@@ -9,16 +9,25 @@ from django.views.generic.list import ListView
 from django.views.generic.edit import FormView
 
 #Model Imports for Database Extraction
-from .models import Book
+from django.db import connection
+from .models import Book, Genre
 
 def feed(request):
     posts = Book.objects.all()
     return render(request, 'feed.xml', {'posts': posts})
 
 def book_search(request):
-    books_list = Book.objects.all()
+    books_list = Book.objects.raw(
+            'SELECT * FROM bookstore_book b, bookstore_wrote w, bookstore_author a WHERE (w.author_id = a.id) AND (w.book_id = b.id)'
+        )
+
+    genre_list = Genre.objects.raw(
+            'SELECT * FROM bookstore_genre'
+    )
+
     return render(request, 'bookstore/book_search.html', 
         {'books': books_list,
+         'genres': genre_list,
          'title':'Book Search Page',
          'year':datetime.now().year,}
     )

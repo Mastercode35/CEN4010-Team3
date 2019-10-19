@@ -92,9 +92,9 @@
 
     <div class="topnav">
         <a class="active" href="/bookstore">Home</a>
-        <a href="/books">Books</a>
+        <a href="/bookstore/books">Books</a>
         <div class="topnav-right">
-            <a href="/login">Log in</a>
+            <a href="/bookstore/login">Log in</a>
             <a href="/bookstore">Profile</a>
             <a href="/bookstore">Wishlists</a>
             <a href="/bookstore">Shopping Cart</a>
@@ -116,31 +116,141 @@
 
     </div>
 
-    
-    <body>
+    <!-- THIS IS THE BOOK LIST OUPUT-->
+
+    <style>
+        .column {
+            float: left;
+            padding: 10px;
+            height: 300px;
+            /* Should be removed. Only for demonstration */
+        }
+
+        .left {
+            width: 30%;
+            padding-left: 100px;
+            padding-top: 100px;
+        }
+
+        .right {
+            width: 70%;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .sortfield {
+            font-size: 100%;
+            padding-bottom: 30px;
+        }
+    </style>
+
+
+    <div class="row">
+
+        <div class="column left">
+            <table>
+                <tr>
+                    <th style="font-size: 150%; padding-bottom:50px">Order By</th>
+                </tr>
+                <tr>
+                    <td class="sortfield"><li>Price (Highest to Lowest)</li></td>
+                </tr>
+                <tr>
+                    <td class="sortfield"><li>Price (Lowest to Highest)</li></td>
+                </tr>
+                <tr>
+                    <td class="sortfield"><li>Top Rated</li></td>
+                </tr>
+                <tr>
+                    <td style="font-size: 150%; padding-top: 50px; padding-bottom:50px">Genres</td>
+                </tr>
+                {% if genres %}
+                {% for genre in genres %}
+                <tr>
+                    <td class="sortfield"><li>{{genre.genre}}</li></td>
+                </tr>
+                {% endfor %}
+                {% endif %}
+            </table>
+        </div>
+
+        <div class="column right">
             {% if books %}
-            <ol>
+            <table style="width:55%;margin-top:50px;">
+                {% for book in books %}
+
+                <tr>
+                    <th style="text-align:center;padding:5px; font-size:125%">{{book.book_title}}</th>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><img src={{book.image_url}} style="height:300px;width:200px" /></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">Written By: {{book.first_name}} {{book.last_name}}</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center; font-size:125%; padding:7px">{{book.rating}} STAR RATING! </td>
+                </tr>
+                <tr>
+                    <td style="text-align:center; font-size:125%">${{book.price}} </td>
+                </tr>
+                <tr>
+                    <td style="padding-bottom:5px; padding-top:10px; text-align:center; font-size:125%">
+                        <a href="/bookstore/{{book.id}}"> Learn More </a>
+                    </td>
+                </tr>
+                <tr>
+                    <th style="padding-bottom:30px; padding-top:10px; text-align:center; font-size:125%">
+                        <a href="/bookstore/{{book.id}}"> Add To Cart </a>
+                    </th>
+                </tr>
+
+
+                {% endfor %}
+            </table>
+            {% endif %}
+        </div>
+
+    </div>
+
+
+    <!--
+<var>count</var> = 2
+<ol>
+    <div style=" margin-top:40px;margin-right:8px;margin-left:17px">
+        <div style="display:flex;width:90%; height:80%"">
+            <body>
                 {% for book in books %}
                 <li>Book Name: {{book.book_title}} Book Price: {{book.price}}</li>
-                {% endfor %}
-            </ol>
-            {% endif %}
-        </body>
+                {% endfor %}   
+            </body>
+        </div>
+    </div>
+    
+</ol>
+
+-->
+
 
 
     <!--
     <div>
         <div style=" margin-top:40px;margin-right:8px;margin-left:17px">
-            <div style="display:flex;width:90%; height:80%" {% load staticfiles %}>
-                {% load staticfiles %}
-                <img src={% static "bookstore/books3.jpg" %} class="lowerimg" />
-                <img src={% static "bookstore/books1.jpg" %} class="lowerimglong" />
-                <img src={% static "bookstore/books2.jpg" %} class="lowerimg" />
+                <div style="display:flex;width:90%; height:80%" {% load staticfiles %}>
+                    {% load staticfiles %}
+                    <img src={% static "bookstore/books3.jpg" %} class="lowerimg" />
+                    <img src={% static "bookstore/books1.jpg" %} class="lowerimglong" />
+                    <img src={% static "bookstore/books2.jpg" %} class="lowerimg" />
+                </div>
             </div>
         </div>
-    </div>
 
-    -->
+        -->
 </body>
 
 </html>
