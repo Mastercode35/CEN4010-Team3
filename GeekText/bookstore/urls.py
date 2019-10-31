@@ -9,13 +9,11 @@ urlpatterns = [
     path('', views.index, name='index'),
     #Login Page
     path('login', views.login, name = 'login'),
-    #Book Search Page
-    path('books', views.book_search, name='Book Search'),
+    #Individual Book Pages
+    path('books/book_info/<book_id>', views.book_info, name = "Book Info"),
     #Book Search for Top Sellers
     path('books/top', views.book_search_top, name='Book Search Top Sellers'),
-    #Book Search by Genre
-    path('books/<genre>', views.genre_search, name='Genre Search'),
-    #Book Search by Genre and Sort
-    path('books/<genre>/<sort>', views.genre_search_sort, name='Genre Search and Sort'),
+    #Book Search by Genre and Sorting Factor
+    path('books/<books_page>/<genre>/<sort>', views.genre_search_sort, name='Genre Search and Sort'),
     
 ]

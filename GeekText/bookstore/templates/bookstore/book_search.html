@@ -92,7 +92,7 @@
 
     <div class="topnav">
         <a class="active" href="/bookstore">Home</a>
-        <a href="/bookstore/books/All">Books</a>
+        <a href="/bookstore/books/10-1/All/Featured">Books</a>
         <a href="/bookstore/books/top">Top Sellers</a>
         <div class="topnav-right">
             <a href="/bookstore/login">Log in</a>
@@ -102,10 +102,11 @@
         </div>
     </div>
 
+<!--  THIS IS THE SEARCH BAR
 
     <div style="margin-top:40px; margin-left:20%; margin-right:20%;">
 
-        <!-- Search -->
+
         <div style="display:flex; width:100%">
             <input type="text" class="form-control" placeholder="Search" id="Searchtxt" />
 
@@ -117,7 +118,21 @@
 
     </div>
 
+-->
     <!-- THIS IS THE BOOK LIST OUPUT-->
+
+    <div style="text-align: right; padding-right: 5%;">
+        <h3>Books Per Page: <a style="padding-right:1%;" href="/bookstore/books/10-1/{{genre}}/{{sort}}">10</a> <a style="padding-right: 1%;" href="/bookstore/books/20-1/{{genre}}/{{sort}}">20</a> </h3>
+    </div>
+
+    <div style="text-align: center;">
+        {% if page != 1 %}
+        <a style="font-size: 180%; padding:5%;" href="/bookstore/books/{{bpp}}-{{page|add:'-1'}}/{{genre}}/{{sort}}">Previous Page</a>
+        {% endif %}
+        {% if page != total_pages %}
+        <a style="font-size: 180%; padding:5%;" href="/bookstore/books/{{bpp}}-{{page|add:'1'}}/{{genre}}/{{sort}}">Next Page</a>
+        {% endif %}
+    </div>
 
     <style>
         .column {
@@ -155,54 +170,54 @@
         <div class="column left">
             <table>
                 <tr>
-                    <th style="font-size: 150%; padding-bottom:50px">Ratings</th>
+                    <th style="font-size: 150%; padding-bottom:20px">Ratings</th>
                 </tr>
                 <tr>
-                    <td class="sortfield"><li><a href="/bookstore/books/{{genre|default:'All'}}/5Star">4+ Star Rating</a></li></td>
+                    <td class="sortfield"><li><a href="/bookstore/books/{{bpp}}-1/{{genre|default:'All'}}/5Star">4+ Star Rating</a></li></td>
                 </tr>
                 <tr>
-                    <td class="sortfield"><li><a href="/bookstore/books/{{genre|default:'All'}}/4Star">3+ Star Rating</a></li></td>
+                    <td class="sortfield"><li><a href="/bookstore/books/{{bpp}}-1/{{genre|default:'All'}}/4Star">3+ Star Rating</a></li></td>
                 </tr>
                 <tr>
-                    <td class="sortfield"><li><a href="/bookstore/books/{{genre|default:'All'}}/3Star">2+ Star Rating</a></li></td>
+                    <td class="sortfield"><li><a href="/bookstore/books/{{bpp}}-1/{{genre|default:'All'}}/3Star">2+ Star Rating</a></li></td>
                 </tr>
                 <tr>
-                    <td class="sortfield"><li><a href="/bookstore/books/{{genre|default:'All'}}/2Star">1+ Star Rating</a></li></td>
+                    <td class="sortfield"><li><a href="/bookstore/books/{{bpp}}-1/{{genre|default:'All'}}/2Star">1+ Star Rating</a></li></td>
                 </tr>
                 <tr>
-                    <td class="sortfield"><li><a href="/bookstore/books/{{genre|default:'All'}}/1Star">0+ Star Rating</a></li></td>
+                    <td class="sortfield"><li><a href="/bookstore/books/{{bpp}}-1/{{genre|default:'All'}}/1Star">0+ Star Rating</a></li></td>
                 </tr>
                 <tr>
-                    <th style="font-size: 150%; padding-top:20px; padding-bottom:50px">Sort By</th>
+                    <th style="font-size: 150%; padding-top:20px; padding-bottom:20px">Sort By</th>
                 </tr>
                 <tr>
-                    <td class="sortfield"><li><a href="/bookstore/books/{{genre|default:'All'}}/Title">Title</a></li></td>
+                    <td class="sortfield"><li><a href="/bookstore/books/{{bpp}}-1/{{genre|default:'All'}}/Title">Title</a></li></td>
                 </tr>
                 <tr>
-                    <td class="sortfield"><li><a href="/bookstore/books/{{genre|default:'All'}}/Author">Author</a></li></td>
+                    <td class="sortfield"><li><a href="/bookstore/books/{{bpp}}-1/{{genre|default:'All'}}/Author">Author</a></li></td>
                 </tr>
                 <tr>
-                    <td class="sortfield"><li><a href="/bookstore/books/{{genre|default:'All'}}/PriceDesc">Price (Highest to Lowest)</a></li></td>
+                    <td class="sortfield"><li><a href="/bookstore/books/{{bpp}}-1/{{genre|default:'All'}}/PriceDesc">Price (Highest to Lowest)</a></li></td>
                 </tr>
                 <tr>
-                    <td class="sortfield"><li><a href="/bookstore/books/{{genre|default:'All'}}/PriceAsc">Price (Lowest to Highest)</a></li></td>
+                    <td class="sortfield"><li><a href="/bookstore/books/{{bpp}}-1/{{genre|default:'All'}}/PriceAsc">Price (Lowest to Highest)</a></li></td>
                 </tr>
                 <tr>
-                    <td class="sortfield"><li><a href="/bookstore/books/{{genre|default:'All'}}/Rating">Rating</a></li></td>
+                    <td class="sortfield"><li><a href="/bookstore/books/{{bpp}}-1/{{genre|default:'All'}}/Rating">Rating</a></li></td>
                 </tr>
                 <tr>
-                    <td class="sortfield"><li><a href="/bookstore/books/{{genre|default:'All'}}/PublishDate">Date Published</a></li></td>
+                    <td class="sortfield"><li><a href="/bookstore/books/{{bpp}}-1/{{genre|default:'All'}}/PublishDate">Date Published</a></li></td>
                 </tr>
                 <tr>
-                    <td class="sortfield"><li><a href="/bookstore/books/{{genre|default:'All'}}">Featured</a></li></td>
+                    <td class="sortfield"><li><a href="/bookstore/books/{{bpp}}-1/{{genre|default:'All'}}/Featured">Featured</a></li></td>
                 </tr>
                 <tr>
-                    <th style="font-size: 150%; padding-top: 20px; padding-bottom:50px">Genres</th>
+                    <th style="font-size: 150%; padding-top: 20px; padding-bottom:20px">Genres</th>
                 </tr>
                 {% if genres %}
                 {% for genre in genres %}
                 <tr>
-                    <td class="sortfield"><li><a href="/bookstore/books/{{genre.id}}">{{genre.genre}}</a></li></td>
+                    <td class="sortfield"><li><a href="/bookstore/books/{{bpp}}-1/{{genre.id}}/Featured">{{genre.genre}}</a></li></td>
                 </tr>
                 {% endfor %}
                 {% endif %}
@@ -231,12 +246,12 @@
                 </tr>
                 <tr>
                     <td style="padding-bottom:5px; padding-top:10px; text-align:center; font-size:125%">
-                        <a href="/bookstore/{{book.id}}"> Learn More </a>
+                        <a href="/bookstore/book_info/{{book.id}}"> Learn More </a>
                     </td>
                 </tr>
                 <tr>
                     <th style="padding-bottom:30px; padding-top:10px; text-align:center; font-size:125%">
-                        <a href="/bookstore/{{book.id}}"> Add To Cart </a>
+                        <a href="/bookstore/something"> Add To Cart </a>
                     </th>
                 </tr>
 

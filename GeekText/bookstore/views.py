@@ -1,3 +1,4 @@
+import math
 from django.shortcuts import render
 from django.http import HttpRequest
 from django.template import RequestContext
@@ -16,22 +17,10 @@ def feed(request):
     posts = Book.objects.all()
     return render(request, 'feed.xml', {'posts': posts})
 
-def book_search(request):
-    books_list = Book.objects.raw(
-            'SELECT * FROM bookstore_book b, bookstore_wrote w, bookstore_author a WHERE (w.author_id = a.id) AND (w.book_id = b.id) AND (w.sequence = 1)'
-        )
+#This function will render the book_info page for individual books
+def book_info(request, book_id):
+    return None
 
-    genre_list = Genre.objects.raw(
-            'SELECT * FROM bookstore_genre'
-    )
-
-    return render(request, 'bookstore/book_search.html', 
-        {'books': books_list,
-         'genres': genre_list,
-         'currnet_genre': 'All',
-         'title':'Book Search Page',
-         'year':datetime.now().year,}
-    )
 
 def book_search_top(request):
     books_list = Book.objects.raw(
@@ -45,36 +34,13 @@ def book_search_top(request):
     return render(request, 'bookstore/book_search.html', 
         {'books': books_list,
          'genres': genre_list,
-         'currnet_genre': 'All',
          'title':'Book Search Page',
          'top': True,
          'year':datetime.now().year,}
     )
 
-def genre_search(request, genre):
-    
-    if genre == 'All':
-        temp = ''
-    else:
-        temp = 'AND (b.book_genre_id = {})'.format(genre)
 
-    books_list = Book.objects.raw(
-        'SELECT * FROM bookstore_book b, bookstore_wrote w, bookstore_author a WHERE (w.author_id = a.id) AND (w.book_id = b.id) AND (w.sequence = 1) {}'.format(temp)
-    )
-
-    genre_list = Genre.objects.raw(
-            'SELECT * FROM bookstore_genre'
-    )
-
-    return render(request, 'bookstore/book_search.html', 
-        {'books': books_list,
-         'genres': genre_list,
-         'genre':genre,
-         'title':'Book Search Page',
-         'year':datetime.now().year,}
-    )
-
-def genre_search_sort(request, genre, sort):
+def genre_search_sort(request, books_page, genre, sort):
 
     temp = "SELECT * FROM bookstore_book b, bookstore_wrote w, bookstore_author a WHERE (w.author_id = a.id) AND (w.book_id = b.id) AND (w.sequence = 1) "
 
@@ -113,10 +79,36 @@ def genre_search_sort(request, genre, sort):
     elif sort == 'PublishDate':
         temp = temp + "Order By b.publish_date ASC"
 
+    parts = books_page.split('-')
+    bpp = int(parts[0])
+    page = int(parts[1])
+
+    limit_start = bpp * (page - 1)
+
+    all_books = Book.objects.raw('{0}'.format(temp))
+
+    #Add the LIMIT and OFFSET keywords to limit for pagination
+    temp = temp + " LIMIT {0} OFFSET {1}".format(bpp, limit_start)
+
+    #This query grabs all the books needed to display
     books_list = Book.objects.raw(
         '{0}'.format(temp)
     )
 
+    
+    #Grab the total number of books to figure out how many total pages are possible to display
+    total_books = len(all_books)
+    total_pages =  math.ceil(total_books / bpp)
+    first_page = False
+    last_page = False
+
+    if page == 1:
+        first_page == True
+    if page == total_pages:
+        last_page == True
+
+
+    #Make the query for all the genres
     genre_list = Genre.objects.raw(
             'SELECT * FROM bookstore_genre'
     )
@@ -125,6 +117,14 @@ def genre_search_sort(request, genre, sort):
         {'books': books_list,
          'genres': genre_list,
          'genre':genre,
+         'sort': sort,
+         'bpp': bpp,
+         'page': page,
+         'first_page': first_page,
+         'last_page': last_page,
+         'current_page': page,
+         'total_pages': total_pages,
+         'total_books': total_books,
          'title':'Book Search Page',
          'year':datetime.now().year,}
     )
