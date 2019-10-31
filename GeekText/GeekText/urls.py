@@ -23,4 +23,5 @@ urlpatterns = [
     path(r'bookstore/', include('bookstore.urls')),
     path('admin/', admin.site.urls),
     path(r'', include('bookstore.urls')),
+
 ]

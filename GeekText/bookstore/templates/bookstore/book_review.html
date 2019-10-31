@@ -1,0 +1,211 @@
+﻿<!--{% extends "bookstore/layout.html" %}
+
+{% block content %}
+    -->
+<html>
+
+<head>
+    <title>Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+    <style>
+        body,
+        html {
+            height: 90%;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            
+        }
+
+        .cl {
+            background-color: black;
+            background-size: cover;
+            position: relative;
+            padding-left: 45%;
+            height: 16%;
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+            .topnav a {
+                float: left;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 14px;
+            }
+
+                .topnav a:hover {
+                    background-color: #ddd;
+                    color: black;
+                }
+
+                .topnav a.active {
+                    background-color: #4CAF50;
+                    color: white;
+                }
+
+        .topnav-right {
+            float: right;
+        }
+
+        .lowerimg {
+            width: 40%;
+            height: 90%
+        }
+
+        .lowerimglong {
+            width: 30%;
+            height: 100%
+        }
+
+        .bg1 {
+            background-image: url("books.jpg");
+            height: 20%;
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+    </style>
+
+</head>
+
+
+<body style="background-color:mintcream">
+    <div id="logo" class=cl>
+        {% load staticfiles %}
+        <a href="/bookstore"><img src={% static "bookstore/Logo.jpg" %} style="width:14%; height:100%"></a>
+
+    </div>
+    <!-- Menu -->
+
+    <div class="topnav">
+        <a href="/bookstore">Home</a>
+        <a href="/bookstore/books/10-1/All/Featured">Books</a>
+        <a href="/bookstore/books/top">Top Sellers</a>
+
+
+
+        <div class="topnav-right">
+            <a href="/bookstore/login">Log in</a>
+            <a href="/bookstore">Profile</a>
+            <a href="/bookstore">Wishlists</a>
+            <a href="/bookstore">Shopping Cart</a>
+        </div>
+    </div>
+
+    <!--  THIS IS THE SEARCH BAR
+
+        <div style="margin-top:40px; margin-left:20%; margin-right:20%;">
+
+
+            <div style="display:flex; width:100%">
+                <input type="text" class="form-control" placeholder="Search" id="Searchtxt" />
+
+                <button class="btn btn-inverse" type="submit" onclick="search()">
+                    <span class="glyphicon glyphicon-search"></span>
+                </button>
+
+            </div>
+
+        </div>
+
+    -->
+    <!-- THIS IS THE BOOK LIST OUPUT-->
+    
+    <div style="text-align: center;margin-top:3%">
+        <p style="font-size:200%; font-weight:bold; top">Rate and Review</p>
+    </div>
+
+    <style>
+        .column {
+            float: left;
+            padding: 10px;
+            height: 300px;
+            /* Should be removed. Only for demonstration */
+        }
+
+        .left {
+            width: 30%;
+            padding-left: 100px;
+            padding-top: 100px;
+        }
+
+        .right {
+            width: 70%;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .sortfield {
+            font-size: 100%;
+            padding-bottom: 30px;
+        }
+    </style>
+
+    <div class="row">
+
+        <div style=" position:center" >
+            {% if books %}
+            <table style="width:100%;">
+                {% for book in books %}
+                <tr>
+                    <th style="text-align:center; font-size:125%">{{book.book_title}}</th>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><img src={{book.image_url}} style="height:300px;width:200px" /></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">Written By: {{book.last_name}}, {{book.first_name}}</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center; font-size:125%; padding:7px">{{book.rating}} STAR RATING! </td>
+
+                </tr>
+                <tr>
+                    <td style="text-align:center; font-size:125%">${{book.price}} </td>
+                </tr>
+                <tr>
+                    <td style="padding-bottom:5px; padding-top:10px; text-align:center; font-size:125%">
+                        <a href="/bookstore/book_info/{{book.id}}"> Learn More </a>
+                    </td>
+                </tr>
+                <tr>
+                    <th style="padding-bottom:30px; padding-top:10px; text-align:center; font-size:125%">
+                        <a href="/bookstore/something"> Add To Cart </a>
+                    </th>
+                </tr>
+                {% endfor %}
+            </table>
+            {% endif %}
+        </div>
+        <div class="row" >
+            <div style="margin-left:10%;margin-bottom:3%; font-size:125%">
+                COMMENTS COMING SOON
+            </div>
+            
+        </div>
+
+    </div>
+</body>
+
+</html>
+<!--{% endblock %} -->

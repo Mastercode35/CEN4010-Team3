@@ -82,7 +82,7 @@
 </head>
 
 
-<body>
+<body >
     <div id="logo" class=cl>
         {% load staticfiles %}
         <a href="/bookstore"><img src={% static "bookstore/Logo.jpg" %} style="width:14%; height:100%"></a>
@@ -247,7 +247,10 @@
                     <td style="text-align: center;">Written By: {{book.last_name}}, {{book.first_name}}</td>
                 </tr>
                 <tr>
-                    <td style="text-align:center; font-size:125%; padding:7px">{{book.rating}} STAR RATING! </td>
+                    <td style="text-align:center; font-size:125%; padding:7px">{{book.rating}} STAR RATING!
+                        <a href="/bookstore/book_review/{{book.id}}"> Rate/Review</a>
+                    </td>
+
                 </tr>
                 <tr>
                     <td style="text-align:center; font-size:125%">${{book.price}} </td>
