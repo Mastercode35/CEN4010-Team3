@@ -2,7 +2,7 @@
 
 {% block content %}
     -->
-<html>
+<!DOCTYPE html>
 
 <head>
     <title>Home</title>
@@ -20,10 +20,6 @@
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
         }
-        h1{
-            
-        }
-
         .cl {
             background-color: black;
             background-size: cover;
@@ -83,7 +79,14 @@
 
 </head>
 
+<script>
+    var rev = true;
+    function write() {
 
+        var rev = true
+    }
+
+</script>
 <body style="background-color:mintcream">
     <div id="logo" class=cl>
         {% load staticfiles %}
@@ -125,7 +128,7 @@
 
     -->
     <!-- THIS IS THE BOOK LIST OUPUT-->
-    
+
     <div style="text-align: center;margin-top:3%">
         <p style="font-size:200%; font-weight:bold; top">Rate and Review</p>
     </div>
@@ -163,10 +166,11 @@
 
     <div class="row">
 
-        <div style=" position:center" >
-            {% if books %}
+        {% for book in books %}
+        <div style=" position:center">
+
             <table style="width:100%;">
-                {% for book in books %}
+
                 <tr>
                     <th style="text-align:center; font-size:125%">{{book.book_title}}</th>
                 </tr>
@@ -193,19 +197,32 @@
                         <a href="/bookstore/something"> Add To Cart </a>
                     </th>
                 </tr>
-                {% endfor %}
+
             </table>
-            {% endif %}
+
         </div>
-        <div class="row" >
+        <div class="row">
             <div style="margin-left:10%;margin-bottom:3%; font-size:125%">
-                COMMENTS COMING SOON
+
+                <button style="font-size:18px ; color:white; background-color:darkslategray" class="btn glyphicon glyphicon-inverse" type="submit" onclick="location.href='/book/{{book.id}}/review';">
+                    Review
+                    <span class="glyphicon glyphicon-pencil"></span>
+                </button>
+                 {% if review %}
+                  <form action="/review_message_field/" method="post">
+                    {% csrf_token %}
+                    {{ form }}
+                    <input type="submit" value="Submit">
+                  </form>
+                {%endif%}
+
             </div>
-            
+
         </div>
 
     </div>
+    {% endfor %}
 </body>
 
-</html>
+</!html>
 <!--{% endblock %} -->

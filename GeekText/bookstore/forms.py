@@ -16,3 +16,5 @@ class BootstrapAuthenticationForm(AuthenticationForm):
                                widget=PasswordInput({
                                    'class': 'form-control',
                                    'placeholder':'Password'}))
+class ReviewFrom (forms.Form):
+    review_message_field=forms.CharField(label='review_message_field', max_length=300)
