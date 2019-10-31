@@ -91,9 +91,17 @@
     <!-- Menu -->
 
     <div class="topnav">
-        <a class="active" href="/bookstore">Home</a>
+        <a href="/bookstore">Home</a>
+        {% if top  %}
         <a href="/bookstore/books/10-1/All/Featured">Books</a>
+        <a class="active" href="/bookstore/books/top">Top Sellers</a>
+        {% endif %}
+        {% if not top  %}
+        <a class="active" href="/bookstore/books/10-1/All/Featured">Books</a>
         <a href="/bookstore/books/top">Top Sellers</a>
+        {% endif %}
+
+
         <div class="topnav-right">
             <a href="/bookstore/login">Log in</a>
             <a href="/bookstore">Profile</a>
