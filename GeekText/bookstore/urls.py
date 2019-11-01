@@ -18,5 +18,7 @@ urlpatterns = [
     #Book Reviews Page
     path('book_review/<book_id>', views.rate_review, name='Rate and Review Book'),
     #Book review field
+    path('book/<book_id>/review_message_field', views.get_review_message_field, name='Review Field'),
+
     path('book/<book_id>/review', views.rate_review_field, name='Review Field'),
 ]

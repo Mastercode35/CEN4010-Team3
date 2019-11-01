@@ -12,7 +12,7 @@ from django.views.generic.edit import FormView
 #Model Imports for Database Extraction
 from django.db import connection
 from .models import Book ,Genre
-from .forms import ReviewFrom
+from .forms import ReviewForm
 
 def feed(request):
     posts = Book.objects.all()
@@ -154,13 +154,13 @@ def rate_review_field(request,book_id):
 def get_review_message_field(request):
      if request.method == 'POST':
         # create a form instance and populate it with data from the request:
-        form = ReviewFrom(request.POST)
+        form = ReviewFrom (request.POST)
         # check whether it's valid:
         if form.is_valid():
             # process the data in form.cleaned_data as required
             # ...
             # redirect to a new URL:
-            return HttpResponseRedirect('/thanks/')
+            return HttpResponseRedirect ('/thanks/')
 
     # if a GET (or any other method) we'll create a blank form
      else:
