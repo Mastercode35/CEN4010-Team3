@@ -17,4 +17,4 @@ class BootstrapAuthenticationForm(AuthenticationForm):
                                    'class': 'form-control',
                                    'placeholder':'Password'}))
 class ReviewFrom (forms.Form):
-    review_message_field=forms.CharField(label='review_message_field', max_length=300)
+    review_message_field=fields.CharField(label='review_message_field', max_length=300)
