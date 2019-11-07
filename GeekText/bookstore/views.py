@@ -129,6 +129,8 @@ def genre_search_sort(request, books_page, genre, sort):
          'title':'Book Search Page',
          'year':datetime.now().year,}
     )
+
+
 def rate_review(request,book_id):
 
     book=Book.objects.raw(
@@ -141,6 +143,8 @@ def rate_review(request,book_id):
          'title':'Book Review Page',
          'year':datetime.now().year,}
     )
+
+
 def rate_review_field(request,book_id):
      book=Book.objects.raw(
             'SELECT * FROM bookstore_book b, bookstore_wrote w, bookstore_author a WHERE (w.author_id = a.id) AND (w.book_id = b.id) AND (w.sequence = 1) AND (b.id ={0})'.format(book_id)
@@ -151,6 +155,8 @@ def rate_review_field(request,book_id):
          'review': True,
          'year':datetime.now().year,}
     )
+
+    
 def get_review_message_field(request):
      if request.method == 'POST':
         # create a form instance and populate it with data from the request:
