@@ -32,8 +32,20 @@ def book_search_top(request):
             'SELECT * FROM bookstore_genre'
     )
 
+    books = []
+    temp = []
+
+    for book in books_list:
+        if len(temp) == 3:
+            books.append(temp)
+            temp = []
+        
+        temp.append(book)
+
+    books.append(temp)
+
     return render(request, 'bookstore/book_search.html', 
-        {'books': books_list,
+        {'books': books,
          'genres': genre_list,
          'title':'Book Search Page',
          'top': True,
@@ -114,8 +126,20 @@ def genre_search_sort(request, books_page, genre, sort):
             'SELECT * FROM bookstore_genre'
     )
 
+    books = []
+    temp = []
+
+    for book in books_list:
+        if len(temp) == 3:
+            books.append(temp)
+            temp = []
+        
+        temp.append(book)
+
+    books.append(temp)
+
     return render(request, 'bookstore/book_search.html', 
-        {'books': books_list,
+        {'books': books,
          'genres': genre_list,
          'genre':genre,
          'sort': sort,
