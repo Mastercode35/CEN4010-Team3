@@ -1,6 +1,5 @@
 import math
 from django.shortcuts import render
-from django.db import connection
 from django.http import HttpRequest
 from django.template import RequestContext
 from datetime import datetime
@@ -11,9 +10,7 @@ from django.views.generic.list import ListView
 from django.views.generic.edit import FormView
 
 #Model Imports for Database Extraction
-from django.db import connection
 from .models import Book ,Genre,CommentRating
-from .forms import ReviewForm
 
 def feed(request):
     posts = Book.objects.all()
