@@ -52,7 +52,7 @@ class Book(models.Model):
     publisher = models.ForeignKey(Publisher, on_delete=models.CASCADE, verbose_name = "publisher")
     publish_date = models.DateField()
     image_url = models.CharField(max_length = 200, blank = True)
-    price = models.DecimalField(max_digits = 4, decimal_places = 2)
+    price = models.DecimalField(max_digits = 5, decimal_places = 2)
     rating = models.DecimalField(max_digits = 2, decimal_places = 1)
     sales_rank = models.IntegerField()
 
