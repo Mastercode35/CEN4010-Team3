@@ -170,8 +170,9 @@ def rate_review(request,book_id):
          'title':'Book Review Page',
          'year':datetime.now().year,}
     )
-def rate_review_field(request,book_id):
-     book=Book.objects.raw(
+def rate_review_field(request,book_id, username):
+    
+    book=Book.objects.raw(
             'SELECT * FROM bookstore_book b, bookstore_wrote w, bookstore_author a WHERE (w.author_id = a.id) AND (w.book_id = b.id) AND (w.sequence = 1) AND (b.id ={0})'.format(book_id)
         )
    
@@ -191,21 +192,6 @@ def rate_review_field(request,book_id):
         'review': True,
         'year':datetime.now().year,}
     )
-def get_review_message_field(request):
-     if request.method == 'POST':
-        # create a form instance and populate it with data from the request:
-        form = ReviewFrom(request.POST)
-        # check whether it's valid:
-        if form.is_valid():
-            # process the data in form.cleaned_data as required
-            # ...
-            # redirect to a new URL:
-            return HttpResponseRedirect('/thanks/')
-
-    # if a GET (or any other method) we'll create a blank form
-     else:
-        form = ReviewFrom()
-     return render(request, 'book_review.html', {'form': form})
 
 
 def login(request):
