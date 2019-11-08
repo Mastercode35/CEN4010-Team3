@@ -2,7 +2,7 @@
 
 {% block content %}
     -->
-<!DOCTYPE html>
+<html>
 
 <head>
     <title>Home</title>
@@ -79,15 +79,7 @@
 
 </head>
 
-<script>
-    var rev = true;
-    function write() {
-
-        var rev = true
-    }
-
-</script>
-<body style="background-color:mintcream">
+<body style="background-color:white">
     <div id="logo" class=cl>
         {% load staticfiles %}
         <a href="/bookstore"><img src={% static "bookstore/Logo.jpg" %} style="width:14%; height:100%"></a>
@@ -142,13 +134,13 @@
         }
 
         .left {
-            width: 30%;
+            width: 50%;
             padding-left: 100px;
-            padding-top: 100px;
         }
 
         .right {
-            width: 70%;
+            width: 50%;
+            padding-top: 70px;
         }
 
         /* Clear floats after the columns */
@@ -164,9 +156,8 @@
         }
     </style>
 
+    {% for book in book %}
     <div class="row">
-
-        {% for book in books %}
         <div style=" position:center">
 
             <table style="width:100%;">
@@ -199,34 +190,69 @@
                 </tr>
 
             </table>
-
         </div>
-        <div class="row">
-            <div style="margin-left:3%;margin-bottom:3%; font-size:125%">
-                <div class="column left">                
-                   <button style="font-size:18px ; color:white; background-color:darkslategray" class="btn glyphicon glyphicon-inverse" type="submit" onclick="location.href='/book/{{book.id}}/review';">
-                    Review
-                    <span class="glyphicon glyphicon-pencil"></span>
-                  </button>
-                    {% if review %}
-                    <form action="/book/{{book.id}}/review_message_field" method="post">
-                        {% csrf_token %}
-                        {{ ReviewForm }}
-                        <div style="width:30%; height:70%">
-                            <label for="review_message_field">Message: </label>
-                            <input id="review_message_field" type="text" maxlength="500" style="width:100%; height:100%">
-                            <input id="review_message_field" type="submit" />
-                        </div>
-                    </form>
-                    {%endif%}
-
-                </div>
-
-            </div>
 
     </div>
+    <div class="row">
+        <div style="margin-left:3%;margin-bottom:3%; font-size:125%">
+            <div class="column left">
+                {% if review %}
+                <form action="/book/{{book.id}}/review/{{"Anonymous"}}" method="post" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <div style="width:100%; height:100%">
+                        <b style="color:blue; font-size:200%">What did you think?!</b>
+                        <div>
+                            Rate
+                            <input type="radio" name="rating" value="5">5
+                            <input type="radio" name="rating" value="4">4
+                            <input type="radio" name="rating" value="3">3
+                            <input type="radio" name="rating" value="2">2
+                            <input type="radio" name="rating" value="1">1
+                        </div>
+                        <div><label for="review_message_field">Message: </label></div>
+                        <textarea name="review_message_field" maxlength="300" style="background-color:gainsboro; width:100%; height:70%">
+                         </textarea>
+                        <div><input id="review_message_field" type="submit" /></div>
+                    </div>
+                </form>
+                {%endif%}
+                {% if not review %}
+                <div>
+                    <div> <b style="color:blue; font-size:200%">What did you think?!</b></div>
+                    <button style="font-size:18px ; color:white; background-color:darkslategray" class="btn glyphicon glyphicon-inverse" type="submit" onclick="location.href='/book/{{book.id}}/review/{{"Anonymous"}}';">
+                        Review
+                        <span class="glyphicon glyphicon-pencil"></span>
+                    </button>
+                </div>
+                {%endif%}
+            </div>
+            {%if comments %}
+
+            <div class="column right">
+                <form>
+                    <fieldset>
+                        <legend>Reviews:</legend>
+                        {% for comment in comments %}
+                        <fieldset>
+                            <legend></legend>
+                            <div style="outline:solid">
+                                <div style="background-color:lightgrey">
+                                    <div style="text-align:left;padding:5px;font-size:90%"> {{comment.rating}} rating</div>
+                                    <div style="text-align:left;padding-left:5px;  font-size:90%; text-wrap:normal">user:{{comment.username_id}}</div>
+                                </div>
+                                <div style="text-align:left;padding-left:5px; font-size:100%">{{comment.comment}}</div>
+                            </div>
+                        </fieldset>
+                        {%endfor%}
+                    </fieldset>
+                </form>
+            </div>
+            {%endif%}
+        </div>
+    </div>
     {% endfor %}
+
 </body>
 
-</!html>
+</html>
 <!--{% endblock %} -->
