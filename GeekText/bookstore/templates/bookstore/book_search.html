@@ -180,8 +180,10 @@
     </style>
 
     <div class="row">
-        {% if not top %}
         <div class="column left" >
+
+            <!-- IF NOT TOP SELLERS PAGE-->
+            {% if not top %}
             <table>
                 <tr>
                     <th style="font-size: 150%; padding-bottom:20px">Ratings</th>
@@ -265,22 +267,14 @@
                 {% endfor %}
                 {% endif %}
             </table>
+            {% endif %}
         </div>
-        {% endif %}
 
-        {% if not top %}
         <div class="column right">
-        {% endif %}
 
             {% if books %}
             
-            {% if not top %}
             <table style="width:70%;margin-top:50px;">
-            {% endif %}
-
-            {% if top %}
-            <table style="width:100%;margin-top:50px;">
-            {% endif %}
             
                 {% for list in books %}
 
