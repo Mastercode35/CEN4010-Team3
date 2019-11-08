@@ -298,35 +298,32 @@
                         </tr>
                         <tr>
                             {% for book in list %}
-                            <td style="text-align:center"><img src={{book.image_url}}
-                                    style="height:250px;width:170px" />
+                            <td style="text-align:center">
+                                <img src={{book.image_url}}
+                                     style="height:250px;width:170px" />
                             </td>
                             {% endfor %}
                         </tr>
                         <tr>
                             {% for book in list %}
-                            <td style="text-align: center; padding-top:5px;">Written By: {{book.last_name}},
-                                {{book.first_name}}</td>
-                            {% endfor %}
-                        </tr>
-                        <tr>
-                            {% for book in list %}
-                            <td style="text-align:center; font-size:125%; padding:7px; color:gold;">{{book.rating}} STAR RATING!
+                            <td style="text-align: center; padding-top:5px;">
+                                Written By: {{book.last_name}},
+                                {{book.first_name}}
                             </td>
                             {% endfor %}
                         </tr>
-                        <!--
                         <tr>
                             {% for book in list %}
-                            <td style="text-align:center; font-size:125%; padding:7px">
-                                <a href="/bookstore/book_review/{{book.id}}"> Rate/Review</a>
+                            <td style="text-align:center; font-size:125%; padding:7px; color:gold;">
+                                {{book.rating}} STAR RATING!
                             </td>
                             {% endfor %}
                         </tr>
-                    -->
+
                         <tr>
                             {% for book in list %}
-                            <td style="text-align:center; font-size:125%">${{book.price}}
+                            <td style="text-align:center; font-size:125%">
+                                ${{book.price}}
                             </td>
                             {% endfor %}
                         </tr>
@@ -334,6 +331,13 @@
                             {% for book in list %}
                             <td style="padding-bottom:5px; padding-top:7px; text-align:center; font-size:125%">
                                 <a href="/bookstore/book_info/{{book.id}}"> Learn More </a>
+                            </td>
+                            {% endfor %}
+                        </tr>
+                        <tr>
+                            {% for book in list %}
+                            <td style="text-align:center; font-size:110%; padding:7px">
+                                <a href="/bookstore/book_review/{{book.id}}"> Rate/Review</a>
                             </td>
                             {% endfor %}
                         </tr>

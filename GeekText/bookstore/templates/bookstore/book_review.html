@@ -2,7 +2,7 @@
 
 {% block content %}
     -->
-<!DOCTYPE html>
+<html>
 
 <head>
     <title>Home</title>
@@ -79,15 +79,7 @@
 
 </head>
 
-<script>
-    var rev = true;
-    function write() {
-
-        var rev = true
-    }
-
-</script>
-<body style="background-color:mintcream">
+<body style="background-color:white">
     <div id="logo" class=cl>
         {% load staticfiles %}
         <a href="/bookstore"><img src={% static "bookstore/Logo.jpg" %} style="width:14%; height:100%"></a>
@@ -142,13 +134,13 @@
         }
 
         .left {
-            width: 30%;
+            width: 50%;
             padding-left: 100px;
-            padding-top: 100px;
         }
 
         .right {
-            width: 70%;
+            width: 50%;
+            padding-top: 70px;
         }
 
         /* Clear floats after the columns */
@@ -164,15 +156,14 @@
         }
     </style>
 
+    {% for book in book %}
     <div class="row">
-
-        {% for book in books %}
         <div style=" position:center">
 
             <table style="width:100%;">
 
                 <tr>
-                    <th style="text-align:center; font-size:125%">{{book.book_title}}</th>
+                    <th style="text-align:center; padding:10px; font-size:125%">{{book.book_title}}</th>
                 </tr>
                 <tr>
                     <td style="text-align:center"><img src={{book.image_url}} style="height:300px;width:200px" /></td>
@@ -181,7 +172,7 @@
                     <td style="text-align: center;">Written By: {{book.last_name}}, {{book.first_name}}</td>
                 </tr>
                 <tr>
-                    <td style="text-align:center; font-size:125%; padding:7px">{{book.rating}} STAR RATING! </td>
+                    <td style="text-align:center; font-size:125%; padding:7px;color:goldenrod">{{book.rating}} STAR RATING! </td>
 
                 </tr>
                 <tr>
@@ -193,36 +184,78 @@
                     </td>
                 </tr>
                 <tr>
-                    <th style="padding-bottom:30px; padding-top:10px; text-align:center; font-size:125%">
+                    <th style="padding-bottom:10px; padding-top:10px; text-align:center; font-size:125%">
                         <a href="/bookstore/something"> Add To Cart </a>
                     </th>
                 </tr>
 
             </table>
-
         </div>
-        <div class="row">
-            <div style="margin-left:10%;margin-bottom:3%; font-size:125%">
-
-                <button style="font-size:18px ; color:white; background-color:darkslategray" class="btn glyphicon glyphicon-inverse" type="submit" onclick="location.href='/book/{{book.id}}/review';">
-                    Review
-                    <span class="glyphicon glyphicon-pencil"></span>
-                </button>
-                 {% if review %}
-                  <form action="/review_message_field/" method="post">
-                    {% csrf_token %}
-                    {{ form }}
-                    <input type="submit" value="Submit">
-                  </form>
-                {%endif%}
-
-            </div>
-
-        </div>
-
     </div>
     {% endfor %}
+    {% for book in book %}
+    <div class="row">
+        <div style="margin-left:3%;margin-bottom:3%; font-size:125%">
+
+            <div class="column left">
+
+                {% if review %}
+                <form action="/book/{{book.id}}/review/{{"Anonymous"}}" method="post" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <div style="width:100%; height:100%">
+                        <b style="color:blue; font-size:200%">What did you think?!</b>
+                        <div>
+                            <b>Rate</b>
+                            <input type="radio" name="rating" required value="5">5
+                            <input type="radio" name="rating" value="4">4
+                            <input type="radio" name="rating" value="3">3
+                            <input type="radio" name="rating" value="2">2
+                            <input type="radio" name="rating" value="1">1
+                        </div>
+                        <div><label for="review_message_field">Message: </label></div>
+                        <textarea name="review_message_field" maxlength="300" style="background-color:gainsboro; width:100%; height:70%">
+                         </textarea>
+                        <div><input id="review_message_field" type="submit" /></div>
+                    </div>
+                </form>
+                {%endif%}
+                {% if not review %}
+                <div>
+                    <div> <b style="color:#136281; font-size:200%">What did you think?!</b></div>
+                    <button style="font-size:18px ; color:white; background-color:darkslategray" class="btn glyphicon glyphicon-inverse" type="submit" onclick="location.href='/book/{{book.id}}/review/{{"Anonymous"}}';">
+                        Review
+                        <span class="glyphicon glyphicon-pencil"></span>
+                    </button>
+                </div>
+                {%endif%}
+            </div>
+
+            {%if comments %}
+            <div class="column right">
+                <form>
+                    <fieldset>
+                        <legend>Reviews:</legend>
+                        {% for comment in comments %}
+                        <fieldset>
+                            <legend></legend>
+                            <div style="outline:solid">
+                                <div style="background-color:lightgrey">
+                                    <div style="text-align:left;padding:5px;font-size:90%;color:darkgoldenrod"> {{comment.rating}} rating</div>
+                                    <div style="text-align:left;padding-left:5px;  font-size:90%; text-wrap:normal">user:{{comment.username_id}}</div>
+                                </div>
+                                <div style="text-align:left;padding-left:5px; font-size:100%">{{comment.comment}}</div>
+                            </div>
+                        </fieldset>
+                        {%endfor%}
+                    </fieldset>
+                </form>
+            </div>
+            {%endif%}
+        </div>
+    </div>
+    {% endfor %}
+
 </body>
 
-</!html>
+</html>
 <!--{% endblock %} -->
