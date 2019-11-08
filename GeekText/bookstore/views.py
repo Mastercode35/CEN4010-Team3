@@ -10,7 +10,9 @@ from django.views.generic.list import ListView
 from django.views.generic.edit import FormView
 
 #Model Imports for Database Extraction
-from .models import Book ,Genre,CommentRating
+from django.db import connection
+from .models import Book ,Genre
+from .forms import ReviewFrom
 
 def feed(request):
     posts = Book.objects.all()
@@ -30,8 +32,20 @@ def book_search_top(request):
             'SELECT * FROM bookstore_genre'
     )
 
+    books = []
+    temp = []
+
+    for book in books_list:
+        if len(temp) == 3:
+            books.append(temp)
+            temp = []
+        
+        temp.append(book)
+
+    books.append(temp)
+
     return render(request, 'bookstore/book_search.html', 
-        {'books': books_list,
+        {'books': books,
          'genres': genre_list,
          'title':'Book Search Page',
          'top': True,
@@ -112,8 +126,20 @@ def genre_search_sort(request, books_page, genre, sort):
             'SELECT * FROM bookstore_genre'
     )
 
+    books = []
+    temp = []
+
+    for book in books_list:
+        if len(temp) == 3:
+            books.append(temp)
+            temp = []
+        
+        temp.append(book)
+
+    books.append(temp)
+
     return render(request, 'bookstore/book_search.html', 
-        {'books': books_list,
+        {'books': books,
          'genres': genre_list,
          'genre':genre,
          'sort': sort,
@@ -127,62 +153,50 @@ def genre_search_sort(request, books_page, genre, sort):
          'title':'Book Search Page',
          'year':datetime.now().year,}
     )
+
+
 def rate_review(request,book_id):
 
     book=Book.objects.raw(
             'SELECT * FROM bookstore_book b, bookstore_wrote w, bookstore_author a WHERE (w.author_id = a.id) AND (w.book_id = b.id) AND (w.sequence = 1) AND (b.id ={0})'.format(book_id)
         )
     
-    comments= CommentRating.objects.raw(
-             'SELECT * FROM bookstore_commentrating bc WHERE (bc.book_id={0})'.format(book_id)
-        )
-
     
     return render(request, 'bookstore/book_review.html', 
-        {'book': book,
-         'comments':comments,
+        {'books': book,
          'title':'Book Review Page',
          'year':datetime.now().year,}
     )
-def rate_review_field(request,book_id, username):
-    
-    book=Book.objects.raw(
+
+
+def rate_review_field(request,book_id):
+     book=Book.objects.raw(
             'SELECT * FROM bookstore_book b, bookstore_wrote w, bookstore_author a WHERE (w.author_id = a.id) AND (w.book_id = b.id) AND (w.sequence = 1) AND (b.id ={0})'.format(book_id)
         )
-   
-    if request.method == 'POST':
-        rate= request.POST['rating']
-        msg=request.POST['review_message_field']
-        b1=CommentRating(comment=msg,rating=rate,book_id=book_id, username_id=username)
-        b1.save()
-       
-    comments= CommentRating.objects.raw(
-         'SELECT * FROM bookstore_commentrating bc WHERE (bc.book_id={0})'.format(book_id)
-         )
-    return render(request, 'bookstore/book_review.html', 
-    {   'book': book,
-        'comments':comments,
-        'title':'Book Review Page',
-        'review': True,
-        'year':datetime.now().year,}
+     return render(request, 'bookstore/book_review.html', 
+        {'books': book,
+         'title':'Book Review Page',
+         'review': True,
+         'year':datetime.now().year,}
     )
-#def get_review_message_field(request,book_id):
- #   if request.method == 'POST':
-   #     rating= request.getParameter("rating")
-  #      for r in rating:
-    #        if r.checked:
-     #           break;
-    #comments= CommentRating.objects.raw(
-     #    'SELECT rating, comment FROM bookstore_commentrating bc WHERE (bc.book_id={0})'.format(book_id))
-    #CommentRating.objects.raw('INSERT INTO bookstore_commentrating (comment,rating,book_id,username_id) VALUES ({},{},{},{})'.format(request.getParameter("review_message_field").value,r.value, book_id,3)
-     #       )
-    #return render (request, 'bookstore/book_review.html',
-     #   { 'comments':comments,
-      #    'title':'Book Review Page',
-       #   'year':datetime.now().year
-        #}           
-   #  )
+
     
+def get_review_message_field(request):
+     if request.method == 'POST':
+        # create a form instance and populate it with data from the request:
+        form = ReviewFrom(request.POST)
+        # check whether it's valid:
+        if form.is_valid():
+            # process the data in form.cleaned_data as required
+            # ...
+            # redirect to a new URL:
+            return HttpResponseRedirect('/thanks/')
+
+    # if a GET (or any other method) we'll create a blank form
+     else:
+        form = ReviewFrom()
+     return render(request, 'book_review.html', {'form': form})
+
 
 def login(request):
     assert isinstance(request, HttpRequest)
