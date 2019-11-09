@@ -191,67 +191,81 @@
 
             </table>
         </div>
-    </div>
-    {% endfor %}
-    {% for book in book %}
-    <div class="row">
-        <div style="margin-left:3%;margin-bottom:3%; font-size:125%">
+            <!-------------------------------------------------------------------------------------------------------------------------------------------------------------->
+        <div style="position:center; align-self:center">
+            <table style="width:100%;margin-top:3%">
+              {% if loggedin and bought %}
+                {% if review == 'False' %}
+                <tr>
+                    <th style="color:#134f81;text-align:center; font-size:200%; position:relative">What did you think?!"</th>
+                </tr>
+                <tr>
+                    <th style=" text-align:center">
+                        <button style="font-size:18px; margin-top:2%; color:white; background-color:#134f81" class="btn glyphicon glyphicon-inverse" type="submit" onclick="location.href='/book/{{book.id}}/{{True}}';">
+                            Review
+                            <span class="glyphicon glyphicon-pencil"></span>
+                        </button>
 
-            <div class="column left">
-
-                {% if review %}
-                <form action="/book/{{book.id}}/review/{{"Anonymous"}}" method="post" enctype="multipart/form-data">
-                    {% csrf_token %}
-                    <div style="width:100%; height:100%">
-                        <b style="color:blue; font-size:200%">What did you think?!</b>
-                        <div>
-                            <b>Rate</b>
-                            <input type="radio" name="rating" required value="5">5
-                            <input type="radio" name="rating" value="4">4
-                            <input type="radio" name="rating" value="3">3
-                            <input type="radio" name="rating" value="2">2
-                            <input type="radio" name="rating" value="1">1
-                        </div>
-                        <div><label for="review_message_field">Message: </label></div>
-                        <textarea name="review_message_field" maxlength="300" style="background-color:gainsboro; width:100%; height:70%">
-                         </textarea>
-                        <div><input id="review_message_field" type="submit" /></div>
-                    </div>
-                </form>
+                    </th>
+                </tr>
                 {%endif%}
-                {% if not review %}
-                <div>
-                    <div> <b style="color:#136281; font-size:200%">What did you think?!</b></div>
-                    <button style="font-size:18px ; color:white; background-color:darkslategray" class="btn glyphicon glyphicon-inverse" type="submit" onclick="location.href='/book/{{book.id}}/review/{{"Anonymous"}}';">
-                        Review
-                        <span class="glyphicon glyphicon-pencil"></span>
-                    </button>
-                </div>
-                {%endif%}
-            </div>
-
-            {%if comments %}
-            <div class="column right">
-                <form>
-                    <fieldset>
-                        <legend>Reviews:</legend>
-                        {% for comment in comments %}
-                        <fieldset>
-                            <legend></legend>
-                            <div style="outline:solid">
-                                <div style="background-color:lightgrey">
-                                    <div style="text-align:left;padding:5px;font-size:90%;color:darkgoldenrod"> {{comment.rating}} rating</div>
-                                    <div style="text-align:left;padding-left:5px;  font-size:90%; text-wrap:normal">user:{{comment.username_id}}</div>
+                {% if review == 'True' %}
+                <tr>
+                    <th style="text-align:center; margin-left:30%;padding-left:1% ;margin-right:30%">
+                        <form action="/book/{{book.id}}/{{True}}" method="post" enctype="multipart/form-data">
+                            {% csrf_token %}
+                            <div style="width:100%; height:100%;">
+                                <b style="color:#134f81; font-size:200%">What did you think?!</b>
+                                <div>
+                                    <b>Rate</b>
+                                    <input type="radio" name="rating" required value="5">5
+                                    <input type="radio" name="rating" value="4">4
+                                    <input type="radio" name="rating" value="3">3
+                                    <input type="radio" name="rating" value="2">2
+                                    <input type="radio" name="rating" value="1">1
                                 </div>
-                                <div style="text-align:left;padding-left:5px; font-size:100%">{{comment.comment}}</div>
+                                <div>
+                                    <label style="font-weight:normal" for="review_message_field">Display Message as: </label>
+
+                                    <input type="radio" name="userid" required value="{{username}}">{{username}}
+                                    <input type="radio" name="userid" value="Anonymous">Anonymous
+                                </div>
+                                <textarea class="txtarea" name="review_message_field" maxlength="2000" style="background-color:white; width:40%" rows="5">
+                                </textarea>
+                                <div><input id="review_message_field" type="submit" /></div>
                             </div>
-                        </fieldset>
-                        {%endfor%}
-                    </fieldset>
-                </form>
-            </div>
-            {%endif%}
-        </div>
+                        </form>
+                    </th>
+                </tr>
+                {%endif%}
+
+              {%endif%}
+                <tr>
+                    <th style=" text-align:center">
+                        {%if comments %}
+
+                        <form>
+                            <fieldset style="margin-top:2%">
+                                <legend>Reviews:</legend>
+                                {% for comment in comments %}
+                                <fieldset>
+                                    <legend></legend>
+                                    <div style="outline:solid;margin-left:20%;margin-right:20%">
+                                        <div style="background-color:lightgrey;">
+                                            <div style="text-align:left;padding:5px;font-size:80%;color:darkgoldenrod"> {{comment.rating}} rating</div>
+                                            <div style="text-align:left;padding-left:5px; margin:1%; font-size:80%; text-wrap:normal">user:{{comment.username_id}}</div>
+                                        </div>
+                                        <div style="text-align:left;position:center;padding-left:5px;font-weight:normal;font-size:100%">{{comment.comment}}</div>
+                                    </div>
+                                </fieldset>
+                                {%endfor%}
+                            </fieldset>
+                        </form>
+                        {%endif%}
+                    </th>
+                </tr>
+            </table>
+        </div>                   
     </div>
     {% endfor %}
 
