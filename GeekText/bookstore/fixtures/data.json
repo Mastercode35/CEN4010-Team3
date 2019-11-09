@@ -18,6 +18,24 @@
     }
 },
 {
+    "model": "auth.user",
+    "pk": 2,
+    "fields": {
+        "password": "pbkdf2_sha256$150000$aw88XtPoymw6$i/2EOCz+OvjKnLZ4nYyRoqtLT4uhcYn2ra3ghJ8ppR4=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "guest",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2019-11-09T17:13:42Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
     "model": "sessions.session",
     "pk": "31kh986btse5hq2ship0ryimcz7wxssj",
     "fields": {
@@ -130,6 +148,19 @@
         "email_secondary": "",
         "password": "Dan",
         "start_date": "2019-10-17"
+    }
+},
+{
+    "model": "bookstore.customer",
+    "pk": "guest",
+    "fields": {
+        "first_name": "guest",
+        "last_name": "guest",
+        "nickname": "guest",
+        "email": "guest@guest.com",
+        "email_secondary": "",
+        "password": "p455word",
+        "start_date": "2019-11-09"
     }
 },
 {
@@ -286,6 +317,31 @@
         "email_secondary": "",
         "password": "SallyMcSchammy",
         "start_date": "2019-11-08"
+    }
+},
+{
+    "model": "bookstore.address",
+    "pk": 1,
+    "fields": {
+        "username": "guest",
+        "street": "9292 SW 127th Court",
+        "street_secondary": "",
+        "apt": "",
+        "city": "Miami",
+        "state": "FL",
+        "zip_code": 33185,
+        "country": "United States of America",
+        "address_type": "Home"
+    }
+},
+{
+    "model": "bookstore.creditcard",
+    "pk": 1,
+    "fields": {
+        "username": "guest",
+        "card_number": 8374920173849283,
+        "expiration_date": "2019-11-09",
+        "primary_flag": true
     }
 },
 {
@@ -1981,6 +2037,26 @@
     }
 },
 {
+    "model": "bookstore.commentrating",
+    "pk": 82,
+    "fields": {
+        "book": 1,
+        "username": "Anonymous",
+        "comment": "Good",
+        "rating": "5.0"
+    }
+},
+{
+    "model": "bookstore.commentrating",
+    "pk": 83,
+    "fields": {
+        "book": 16,
+        "username": "Anonymous",
+        "comment": "",
+        "rating": "2.0"
+    }
+},
+{
     "model": "bookstore.author",
     "pk": 2,
     "fields": {
@@ -2730,6 +2806,26 @@
         "book": 42,
         "author": 41,
         "sequence": 1
+    }
+},
+{
+    "model": "bookstore.sale",
+    "pk": 1,
+    "fields": {
+        "username": "guest",
+        "sale_date": "2019-11-09",
+        "delivery_address": 1,
+        "card_used": 1,
+        "sale_total": "15.87"
+    }
+},
+{
+    "model": "bookstore.saleitem",
+    "pk": 1,
+    "fields": {
+        "sale": 1,
+        "book": 17,
+        "quantity": 1
     }
 },
 {
@@ -7536,6 +7632,168 @@
         "object_repr": "Wrote object (48)",
         "action_flag": 1,
         "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 268,
+    "fields": {
+        "action_time": "2019-11-09T17:13:42.439Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "2",
+        "object_repr": "guest",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 269,
+    "fields": {
+        "action_time": "2019-11-09T17:13:55.051Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "2",
+        "object_repr": "guest",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 270,
+    "fields": {
+        "action_time": "2019-11-09T17:14:48.249Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "customer"
+        ],
+        "object_id": "guest",
+        "object_repr": "Customer object (guest)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 271,
+    "fields": {
+        "action_time": "2019-11-09T17:17:09.076Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "creditcard"
+        ],
+        "object_id": "1",
+        "object_repr": "CreditCard object (1)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 272,
+    "fields": {
+        "action_time": "2019-11-09T17:18:20.768Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "address"
+        ],
+        "object_id": "1",
+        "object_repr": "Address object (1)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 273,
+    "fields": {
+        "action_time": "2019-11-09T17:19:08.004Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "sale"
+        ],
+        "object_id": "1",
+        "object_repr": "Sale object (1)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 274,
+    "fields": {
+        "action_time": "2019-11-09T17:19:22.798Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "sale"
+        ],
+        "object_id": "1",
+        "object_repr": "Sale object (1)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"sale_total\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 275,
+    "fields": {
+        "action_time": "2019-11-09T17:19:41.696Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "saleitem"
+        ],
+        "object_id": "1",
+        "object_repr": "SaleItem object (1)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 276,
+    "fields": {
+        "action_time": "2019-11-09T17:20:08.761Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "sale"
+        ],
+        "object_id": "1",
+        "object_repr": "Sale object (1)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"sale_total\"]}}]"
     }
 }
 ]
