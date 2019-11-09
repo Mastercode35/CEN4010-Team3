@@ -30,7 +30,7 @@ class Address(models.Model):
 #Uses primarily Customer as a Foreign Key Table
 class CreditCard(models.Model):
     username = models.ForeignKey(Customer, on_delete=models.CASCADE, verbose_name = "customer card is related to")
-    card_number = models.IntegerField()
+    card_number = models.BigIntegerField()
     expiration_date = models.DateField()
     primary_flag = models.BooleanField()
 
@@ -116,7 +116,7 @@ class Sale(models.Model):
     sale_date = models.DateField(auto_now_add = True)
     delivery_address = models.ForeignKey(Address, on_delete = models.CASCADE)
     card_used = models.ForeignKey(CreditCard, on_delete = models.CASCADE)
-    sale_total = models.DecimalField(max_digits = 4, decimal_places = 2)
+    sale_total = models.DecimalField(max_digits = 6, decimal_places = 2)
 
 #Sale Items Table which contains each book found within each sale made
 #Foreign Key Tables: Sales (sale made) and Book (book sold in that sale)
