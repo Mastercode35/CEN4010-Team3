@@ -153,43 +153,37 @@ def genre_search_sort(request, books_page, genre, sort):
     )
 
 
-def rate_review(request,book_id):
 
-    book=Book.objects.raw(
-            'SELECT * FROM bookstore_book b, bookstore_wrote w, bookstore_author a WHERE (w.author_id = a.id) AND (w.book_id = b.id) AND (w.sequence = 1) AND (b.id ={0})'.format(book_id)
-        )
-    
-    comments= CommentRating.objects.raw(
-             'SELECT * FROM bookstore_commentrating bc WHERE (bc.book_id={0})'.format(book_id)
-        )
 
-    
-    return render(request, 'bookstore/book_review.html', 
-        {'book': book,
-         'comments':comments,
-         'title':'Book Review Page',
-         'year':datetime.now().year,}
-    )
-def rate_review_field(request,book_id, username):
+def rate_review_field(request,book_id,review):
     
     book=Book.objects.raw(
             'SELECT * FROM bookstore_book b, bookstore_wrote w, bookstore_author a WHERE (w.author_id = a.id) AND (w.book_id = b.id) AND (w.sequence = 1) AND (b.id ={0})'.format(book_id)
         )
-   
-    if request.method == 'POST':
-        rate= request.POST['rating']
-        msg=request.POST['review_message_field']
-        b1=CommentRating(comment=msg,rating=rate,book_id=book_id, username_id=username)
-        b1.save()
+    username="MUT"
+    loggedin = True
+    bought=True
+
+    if bought:
+        if request.method == 'POST':
+            user_select=request.POST['userid']
+            rate= request.POST['rating']
+            msg=request.POST['review_message_field']
+
+            b1=CommentRating(comment=msg,rating=rate,book_id=book_id, username_id=user_select)
+            b1.save()
        
     comments= CommentRating.objects.raw(
          'SELECT * FROM bookstore_commentrating bc WHERE (bc.book_id={0})'.format(book_id)
          )
     return render(request, 'bookstore/book_review.html', 
     {   'book': book,
+        'username': username,
+        'bought':bought,
         'comments':comments,
+        'loggedin':loggedin,
         'title':'Book Review Page',
-        'review': True,
+        'review': review,
         'year':datetime.now().year,}
     )
 

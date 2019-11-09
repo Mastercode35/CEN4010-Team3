@@ -16,7 +16,7 @@ urlpatterns = [
     #Book Search by Genre and Sorting Factor
     path('books/<books_page>/<genre>/<sort>', views.genre_search_sort, name='Genre Search and Sort'),
     #Book Reviews Page
-    path('book_review/<book_id>', views.rate_review, name='Rate and Review Book'),
+
     #Book review field
-    path('book/<book_id>/review/<username>', views.rate_review_field, name='Review Field'),
+    path('book/<book_id>/<review>', views.rate_review_field, name='Review Field'),
 ]
