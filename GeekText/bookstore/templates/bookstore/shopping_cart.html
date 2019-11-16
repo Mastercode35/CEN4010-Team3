@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+
+
+
+
+{% block content %}
+    
+    <html>
+
+        <head>
+            <title>Home</title>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+        
+            <style>
+                body,
+                html {
+                    height: 90%;
+                    margin: 0;
+                    font-family: Arial, Helvetica, sans-serif;
+                }
+        
+                .cl {
+                    background-color: black;
+                    background-size: cover;
+                    position: relative;
+                    padding-left: 42%;
+        
+                    height: 16%;
+                }
+        
+                .topnav {
+                    overflow: hidden;
+                    background-color: #333;
+                }
+
+                
+                                
+        
+                .topnav a {
+                    float: left;
+                    color: #f2f2f2;
+                    text-align: center;
+                    padding: 14px 16px;
+                    text-decoration: none;
+                    font-size: 14px;
+                }
+        
+                .topnav a:hover {
+                    background-color: #ddd;
+                    color: black;
+                }
+        
+                .topnav a.active {
+                    background-color: #4CAF50;
+                    color: white;
+                }
+        
+                .topnav-right {
+                    float: right;
+                }
+        
+                .lowerimg {
+                    width: 40%;
+                    height: 90%
+                }
+        
+                .lowerimglong {
+                    width: 30%;
+                    height: 100%
+                }
+        
+                .bg1 {
+                    background-image: url("books.jpg");
+                    height: 20%;
+                    /* Center and scale the image nicely */
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    position: relative;
+                }
+            </style>
+        </head>
+        
+        
+        <body>
+            <div id="logo" class=cl>
+                {% load staticfiles %}
+                <a href="/bookstore"><img src={% static "bookstore/Logo.jpg" %} style="width:14%; height:100%"></a>
+        
+            </div>
+            <!-- Menu -->
+        
+            <div class="topnav">
+                <a class="active" href="/bookstore">Home</a>
+                <a href="/bookstore/books/10-1/All/Featured">Books</a>
+                <a href="/bookstore/books/top">Top Sellers</a>
+                <div class="topnav-right">
+                    <a href="/bookstore/login">Log in</a>
+                    <a href="/bookstore">Profile</a>
+                    <a href="/bookstore">Wishlists</a>
+                    <a href="/bookstore/shopping_cart">Shopping Cart</a>
+                </div>
+            </div>
+        
+        
+            <div style="margin-top:40px; margin-left:10%; margin-right:20%;">
+        
+
+            </div>
+            <div>
+                <div style=" margin-top:40px;margin-right:8px;margin-left:5px">
+                    
+                </div>
+            </div>
+        </body>
+        
+        </html>
+
+<body>
+
+    
+
+    <!-- Start Banner Area -->
+    <section class="banner-area organic-breadcrumb">
+        <div class="container">
+            <div class="breadcrumb-banner d-flex flex-wrap align-items-center justify-content-end">
+                <div class="col-first">
+                    <h1>Billing Information</h1>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Banner Area -->
+
+    <!--================Checkout Area =================-->
+    <section class="checkout_area section_gap">
+
+        <form action="" method="SALE">
+
+           <div class="container">
+           
+            
+            <div class="billing_details">
+                <div class="row">
+                    <div class="col-lg-8">
+
+                        <form class="row contact_form" action="#" method="post" novalidate="novalidate">
+                            <h3 style="padding-left: 2%">Personal</h3>
+                            <div class="col-md-6 form-group p_star">
+                                <input type="text" class="form-control" id="first" name="f_name" placeholder="First Name">
+                                <span class="placeholder" data-placeholder="First name"></span>
+                            </div>
+                            <div class="col-md-6 form-group p_star">
+                                <input type="text" class="form-control" id="last" name="l_name" placeholder="Last Name">
+                                <span class="placeholder" data-placeholder="Last name"></span>
+                            </div>
+                            <div class="col-md-12 form-group">
+                                <input type="text" class="form-control" id="street" name="street" placeholder="Street Address">
+                            </div>
+                            <div class="col-md-12 form-group">
+                                <input type="text" class="form-control" id="street2" name="street2" placeholder="Secondary Street Address">
+                            </div>
+                            <div class="col-md-6 form-group p_star">
+                                <input type="text" class="form-control" id="state" name="state" placeholder="State">
+                                <span class="placeholder" data-placeholder="state"></span>
+                            </div>
+                            <div class="col-md-6 form-group p_star">
+                                <input type="text" class="form-control" id="city" name="city" placeholder="City">
+                                <span class="placeholder" data-placeholder="city"></span>
+                            </div>
+                            <div class="col-md-6 form-group p_star">
+                                <input type="text" class="form-control" id="zip" name="zip" placeholder="ZIP">
+                                <input style="padding-top: 2%" type="text" class="form-control" id="apt" name="apt" placeholder="Apt. Number">
+                                <span class="placeholder" data-placeholder="ZIP Code"></span>
+                            </div>
+                            <div class="col-md-12 form-group p_star">
+                                <select class="country_select" name="country">
+                                    <option value="US">US</option>
+                                </select>
+                                <select class="Address Type" name="address_type">
+                                    <option value="work">Work</option>
+                                    <option value="home">Home</option>
+                                </select>
+                            </div>
+
+
+
+
+                            <div class="col-md-12 form-group p_star">
+                            <h3>Card</h3>
+                                <input type="text" class="form-control" id="card_num" name="card_num" placeholder="Card Number">
+                                <span class="placeholder" data-placeholder="Address line 01"></span>
+                            </div>
+
+                            <div class="col-md-12 form-group p_star">
+                                <input type="text" class="form-control" id="ex_date" name="ex_date" placeholder="Expiration Date">
+                                <span class="placeholder" data-placeholder="Town/City"></span>
+                            </div>
+                            
+                            <div class="col-md-12 form-group">
+                                <input type="text" class="form-control" id="security_code" name="security_code" placeholder="Security Code">
+                            </div>
+                            
+                        </form>
+                    </div>
+                  
+                    
+                    
+                    
+                    
+                    
+                     <div class="col-lg-4">
+                        <div class="order_box" style=border-style:solid;border-color:black;margin-top:16%>
+                            
+                           <div style = background-color:rgb(99,199,90);padding-top:3.5%;padding-bottom:5%;border-style:solid;border-color:black> <h2 style = color:white;text-align:center>Your Cart</h2> </div>
+                            <ul class="list" style= border-style:solid;border-color:black;background-color:#333;color:white>
+                                {% for item in cart %}
+                                        <li><a href="#" style= color:white>{{item.book_title}}: <span>${{item.price}}</span></a></li>
+                                {% endfor %}
+                            </ul>
+                            <ul class="list list_2" style= background-color:black;padding-top:5%;padding-bottom:5%>
+
+
+                                <li><a href="#" name="TOTAL" style= color:white>Total <span>${{total}}</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <input type="submit" value="Submit"/>
+              <div s>
+              <input type="checkbox" name="primary" value="true" checked> Make this my primary card?<br>
+              </div>
+         </div>
+        </form>>
+    </section>
+    <!--================End Checkout Area =================-->
+
+
+
+
+    
+</body>
+
+</html>
+{% endblock %}
