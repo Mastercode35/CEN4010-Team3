@@ -162,8 +162,19 @@ def rate_review_field(request,book_id,review):
         )
     username="MUT"
     loggedin = True
-    bought=True
+    saleitem=SaleItem.objects.raw(
+         'SELECT * FROM bookstore_saleitem WHERE (book_id={0})'.format(book_id)
+         )
+    for s in saleitem:
 
+        sale=Sale.objects.raw(
+         usr='SELECT username_id FROM bookstore_sale WHERE (id={0})'.format(s.sale)
+         )
+        if usr==username:
+            bought=True;
+        else: bought=False;
+
+    
     if bought:
         if request.method == 'POST':
             user_select=request.POST['userid']
