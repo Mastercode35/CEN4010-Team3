@@ -16,10 +16,7 @@ urlpatterns = [
     #Book Search by Genre and Sorting Factor
     path('books/<books_page>/<genre>/<sort>', views.genre_search_sort, name='Genre Search and Sort'),
     #Book Reviews Page
-
-    #Book review field
     path('book/<book_id>/<review>', views.rate_review_field, name='Review Field'),
-
     #Shopping Cart
     path('shopping_cart', views.cart_order, name='Shopping Cart'),
 ]
