@@ -10,7 +10,7 @@ from django.views.generic.list import ListView
 from django.views.generic.edit import FormView
 
 #Model Imports for Database Extraction
-from .models import Book ,Genre,CommentRating, ShoppingCart, CreditCard, Address, Sale
+from .models import Book ,Genre,CommentRating, ShoppingCart, CreditCard, Address, Sale,SaleItem
 
 def feed(request):
     posts = Book.objects.all()
@@ -160,19 +160,20 @@ def rate_review_field(request,book_id,review):
     book=Book.objects.raw(
             'SELECT * FROM bookstore_book b, bookstore_wrote w, bookstore_author a WHERE (w.author_id = a.id) AND (w.book_id = b.id) AND (w.sequence = 1) AND (b.id ={0})'.format(book_id)
         )
-    username="MUT"
+    username="guest"
+    bought=False
     loggedin = True
-    saleitem=SaleItem.objects.raw(
+    saleitem= SaleItem.objects.raw(
          'SELECT * FROM bookstore_saleitem WHERE (book_id={0})'.format(book_id)
          )
     for s in saleitem:
 
-        sale=Sale.objects.raw(
-         usr='SELECT username_id FROM bookstore_sale WHERE (id={0})'.format(s.sale)
-         )
+      #  usr=Sale.objects.raw(
+       #  'SELECT username_id FROM bookstore_sale WHERE (id={0})'.format(s.sale)
+        # )
+        usr=s.sale.username
         if usr==username:
             bought=True;
-        else: bought=False;
 
     
     if bought:
