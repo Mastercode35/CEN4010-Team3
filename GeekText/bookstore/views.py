@@ -163,17 +163,16 @@ def rate_review_field(request,book_id,review):
     username="guest"
     bought=False
     loggedin = True
-    saleitem= SaleItem.objects.raw(
-         'SELECT * FROM bookstore_saleitem WHERE (book_id={0})'.format(book_id)
+    sale= Sale.objects.raw(
+         'SELECT s.id FROM bookstore_saleitem si, bookstore_sale s WHERE (si.book_id={0}) AND (si.sale_id=s.id)'.format(book_id)
          )
-    for s in saleitem:
-
-      #  usr=Sale.objects.raw(
-       #  'SELECT username_id FROM bookstore_sale WHERE (id={0})'.format(s.sale)
-        # )
-        usr=s.sale.username
-        if usr==username:
-            bought=True;
+    for s in sale:
+        
+        u=(s.username.username)
+        
+        if u==username:  
+            print("%s",u)
+            bought=True
 
     
     if bought:
