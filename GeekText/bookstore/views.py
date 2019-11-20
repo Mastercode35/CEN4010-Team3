@@ -16,11 +16,6 @@ def feed(request):
     posts = Book.objects.all()
     return render(request, 'feed.xml', {'posts': posts})
 
-#This function will render the book_info page for individual books
-def book_info(request, book_id):
-    return None
-
-
 def book_search_top(request):
     books_list = Book.objects.raw(
             'SELECT * FROM bookstore_book b, bookstore_wrote w, bookstore_author a WHERE (w.author_id = a.id) AND (w.book_id = b.id) AND (w.sequence = 1) ORDER BY b.sales_rank LIMIT 10'
@@ -49,6 +44,22 @@ def book_search_top(request):
          'top': True,
          'year':datetime.now().year,}
     )
+
+#This function will render the book_info page for individual books
+def book_info(request, book_id):
+     book=Book.objects.raw(
+            'SELECT * FROM bookstore_book b, bookstore_wrote w, bookstore_author a WHERE (w.author_id = a.id) AND (w.book_id = b.id) AND (w.sequence = 1) AND (b.id ={0})'.format(book_id)
+        )
+     info= Book.objects.raw(
+            'SELECT * FROM bookstore_book WHERE(id ={0})'.format(book_id) 
+         )
+
+     return render (request,'bookstore/learnmore.html',
+        {  'book': book,
+           'info':info,
+           'title':'Book Info Page',
+           'year':datetime.now().year}   
+     )
 
 
 def genre_search_sort(request, books_page, genre, sort):
