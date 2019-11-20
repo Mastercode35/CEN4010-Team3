@@ -48,7 +48,7 @@ class Book(models.Model):
     isbn = models.CharField(max_length = 15)
     book_title = models.CharField(max_length = 100)
     book_genre = models.ForeignKey(Genre, on_delete=models.CASCADE, verbose_name = "book genre")
-    book_description = models.CharField(max_length = 2000, blank = True)
+    book_description = models.CharField(max_length = 2000, )
     publisher = models.ForeignKey(Publisher, on_delete=models.CASCADE, verbose_name = "publisher")
     publish_date = models.DateField()
     image_url = models.CharField(max_length = 200, blank = True)
