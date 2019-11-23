@@ -25,7 +25,10 @@ def feed(request):
     posts = Book.objects.all()
     return render(request, 'feed.xml', {'posts': posts})
 
-#This function will render the book_info page for individual books
+#This function will render the book_info
+#
+#
+# page for individual books
 def book_info(request, book_id):
      book=Book.objects.raw(
             'SELECT * FROM bookstore_book b, bookstore_wrote w, bookstore_author a WHERE (w.author_id = a.id) AND (w.book_id = b.id) AND (w.sequence = 1) AND (b.id ={0})'.format(book_id)
@@ -181,8 +184,8 @@ def rate_review_field(request,book_id,review):
     book=Book.objects.raw(
             'SELECT * FROM bookstore_book b, bookstore_wrote w, bookstore_author a WHERE (w.author_id = a.id) AND (w.book_id = b.id) AND (w.sequence = 1) AND (b.id ={0})'.format(book_id)
         )
-   # username=request.user 
-    username="guest" # for demo purposes
+    username=request.user 
+    #username="guest" # for demo purposes
     bought=False
     loggedin = True
     saleitem= SaleItem.objects.raw(
