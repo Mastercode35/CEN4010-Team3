@@ -1,7 +1,7 @@
 
 <html>
 <head>
-    <title>Login</title>
+    <title>Signup</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -92,7 +92,7 @@
         <div class="col-md-8">
             <section id="loginForm">
                 {% csrf_token %}
-                <h4>Use a local account to log in.</h4>
+                <h4>Welcome to the Knowledge Revolution Comrade!</h4>
 
                 <form action="." method="post" class="form-horizontal">
                     {% csrf_token %}
@@ -101,8 +101,7 @@
                     <div class="form-group" style="padding: 20px">
 		    {% csrf_token %}
   		    {{ form.as_p }}
-		    <button type="submit">Login</button>
-                    </div>
+		    <button type="submit"></button>Join</div>
                 </form>
             </section>
         </div>

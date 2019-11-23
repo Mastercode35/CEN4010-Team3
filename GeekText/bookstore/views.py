@@ -8,6 +8,15 @@ from django.contrib.auth.models import User
 from django.views.generic.base import TemplateView
 from django.views.generic.list import ListView
 from django.views.generic.edit import FormView
+from .forms import CustomUserCreationForm
+from django.contrib.auth.decorators import login_required
+from django.contrib import messages
+from django.urls import reverse_lazy
+from django.views import generic
+from bookstore.models import Customer
+from django.core.exceptions import ValidationError
+from django.http import HttpResponseNotFound, Http404,  HttpResponseRedirect
+
 
 #Model Imports for Database Extraction
 from .models import Book ,Genre,CommentRating, ShoppingCart, CreditCard, Address, Sale,SaleItem
@@ -15,6 +24,23 @@ from .models import Book ,Genre,CommentRating, ShoppingCart, CreditCard, Address
 def feed(request):
     posts = Book.objects.all()
     return render(request, 'feed.xml', {'posts': posts})
+
+#This function will render the book_info page for individual books
+def book_info(request, book_id):
+     book=Book.objects.raw(
+            'SELECT * FROM bookstore_book b, bookstore_wrote w, bookstore_author a WHERE (w.author_id = a.id) AND (w.book_id = b.id) AND (w.sequence = 1) AND (b.id ={0})'.format(book_id)
+        )
+     info= Book.objects.raw(
+            'SELECT * FROM bookstore_book WHERE(id ={0})'.format(book_id) 
+         )
+
+     return render (request,'bookstore/learnmore.html',
+        {  'book': book,
+           'info':info,
+           'title':'Book Info Page',
+           'year':datetime.now().year}   
+     )
+
 
 def book_search_top(request):
     books_list = Book.objects.raw(
@@ -44,22 +70,6 @@ def book_search_top(request):
          'top': True,
          'year':datetime.now().year,}
     )
-
-#This function will render the book_info page for individual books
-def book_info(request, book_id):
-     book=Book.objects.raw(
-            'SELECT * FROM bookstore_book b, bookstore_wrote w, bookstore_author a WHERE (w.author_id = a.id) AND (w.book_id = b.id) AND (w.sequence = 1) AND (b.id ={0})'.format(book_id)
-        )
-     info= Book.objects.raw(
-            'SELECT * FROM bookstore_book WHERE(id ={0})'.format(book_id) 
-         )
-
-     return render (request,'bookstore/learnmore.html',
-        {  'book': book,
-           'info':info,
-           'title':'Book Info Page',
-           'year':datetime.now().year}   
-     )
 
 
 def genre_search_sort(request, books_page, genre, sort):
@@ -174,16 +184,17 @@ def rate_review_field(request,book_id,review):
     username="guest"
     bought=False
     loggedin = True
-    sale= Sale.objects.raw(
-         'SELECT s.id FROM bookstore_saleitem si, bookstore_sale s WHERE (si.book_id={0}) AND (si.sale_id=s.id)'.format(book_id)
+    saleitem= SaleItem.objects.raw(
+         'SELECT * FROM bookstore_saleitem WHERE (book_id={0})'.format(book_id)
          )
-    for s in sale:
-        
-        u=(s.username.username)
-        
-        if u==username:  
-            print("%s",u)
-            bought=True
+    for s in saleitem:
+
+      #  usr=Sale.objects.raw(
+       #  'SELECT username_id FROM bookstore_sale WHERE (id={0})'.format(s.sale)
+        # )
+        usr=s.sale.username
+        if usr==username:
+            bought=True;
 
     
     if bought:
@@ -299,5 +310,16 @@ def create_sale(request):
         }
     )
 
-
+def SignUp(request):
+    if request.method == 'POST':
+        f = CustomUserCreationForm(request.POST)
+        if f.is_valid():
+            f.save()
+            messages.success(request, 'Account created successfully')
+            return HttpResponseRedirect("/login/login/")
+ 
+    else:
+        f = CustomUserCreationForm()
+ 
+    return render(request, 'bookstore/signup.html', {'form': f})
 

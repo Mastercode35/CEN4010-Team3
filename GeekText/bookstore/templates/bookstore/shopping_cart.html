@@ -100,10 +100,15 @@
                 <a href="/bookstore/books/10-1/All/Featured">Books</a>
                 <a href="/bookstore/books/top">Top Sellers</a>
                 <div class="topnav-right">
-                    <a href="/bookstore/login">Log in</a>
-                    <a href="/bookstore">Profile</a>
-                    <a href="/bookstore">Wishlists</a>
-                    <a href="/bookstore/shopping_cart">Shopping Cart</a>
+                {% if user.is_authenticated %}
+                    <a href="/bookstore">Log Out</a>
+                        <a href="/bookstore">Profile</a>
+                        <a href="/bookstore">Wishlists</a>
+                        <a href="/bookstore/shopping_cart">Shopping Cart</a>
+                {% else %}
+                        <a href="login/login/">Log In</a>
+                    <a href="signup/">Sign Up</a>
+                {% endif %}
                 </div>
             </div>
         
