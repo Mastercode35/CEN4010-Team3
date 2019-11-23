@@ -14,7 +14,7 @@ urlpatterns = [
     #SignUp
     path('signup/', views.SignUp, name='signup'),
     #Individual Book Pages
-    path('books/book_info/<book_id>', views.book_info, name = "Book Info"),
+    path('bookstore/book_info/<book_id>', views.book_info, name = "Book Info"),
     #Book Search for Top Sellers
     path('books/top', views.book_search_top, name='Book Search Top Sellers'),
     #Book Search by Genre and Sorting Factor
