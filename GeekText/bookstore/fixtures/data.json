@@ -4,7 +4,7 @@
     "pk": 1,
     "fields": {
         "password": "pbkdf2_sha256$150000$bKkUF9C4gbS7$tMTPD1P9ZIoEnIBhd10uAycJn4zKdIjw/iGqBxS0fBs=",
-        "last_login": "2019-11-08T16:51:48.737Z",
+        "last_login": "2019-11-23T05:05:38.344Z",
         "is_superuser": true,
         "username": "team3",
         "first_name": "",
@@ -41,6 +41,14 @@
     "fields": {
         "session_data": "ZjkxN2UyMDMzNWVkN2JlZGM0NzZkNGE3ZDA4MTM1MzdiZWMyYjMwYjp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJkZDhmYjVhMDY0NDljODhjYTQwNDgzZmM2MGUwZmFiZjllNmI0OTc0In0=",
         "expire_date": "2019-11-02T00:43:11.151Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "4i58370bycx6xvaywkcrw1p1j24gumjq",
+    "fields": {
+        "session_data": "ZjkxN2UyMDMzNWVkN2JlZGM0NzZkNGE3ZDA4MTM1MzdiZWMyYjMwYjp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJkZDhmYjVhMDY0NDljODhjYTQwNDgzZmM2MGUwZmFiZjllNmI0OTc0In0=",
+        "expire_date": "2019-12-07T05:05:38.348Z"
     }
 },
 {
@@ -2806,6 +2814,33 @@
         "book": 42,
         "author": 41,
         "sequence": 1
+    }
+},
+{
+    "model": "bookstore.wrote",
+    "pk": 49,
+    "fields": {
+        "book": 17,
+        "author": 21,
+        "sequence": 1
+    }
+},
+{
+    "model": "bookstore.shoppingcart",
+    "pk": 1,
+    "fields": {
+        "username": "guest",
+        "book": 22,
+        "quantity": 1
+    }
+},
+{
+    "model": "bookstore.shoppingcart",
+    "pk": 2,
+    "fields": {
+        "username": "guest",
+        "book": 5,
+        "quantity": 2
     }
 },
 {
@@ -7794,6 +7829,60 @@
         "object_repr": "Sale object (1)",
         "action_flag": 2,
         "change_message": "[{\"changed\": {\"fields\": [\"sale_total\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 277,
+    "fields": {
+        "action_time": "2019-11-23T05:12:57.078Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "wrote"
+        ],
+        "object_id": "49",
+        "object_repr": "Wrote object (49)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 278,
+    "fields": {
+        "action_time": "2019-11-23T05:21:42.155Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "shoppingcart"
+        ],
+        "object_id": "1",
+        "object_repr": "ShoppingCart object (1)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 279,
+    "fields": {
+        "action_time": "2019-11-23T05:21:50.336Z",
+        "user": [
+            "team3"
+        ],
+        "content_type": [
+            "bookstore",
+            "shoppingcart"
+        ],
+        "object_id": "2",
+        "object_repr": "ShoppingCart object (2)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
     }
 }
 ]
