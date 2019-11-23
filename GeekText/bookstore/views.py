@@ -92,24 +92,36 @@ def genre_search_sort(request, books_page, genre, sort):
     if genre != 'All':
         temp = temp + "AND (b.book_genre_id = {0})".format(genre)
     
-    #If Sort by Book Title
+    #If Sort by Book Title Ascending
     if sort == 'Title':
-        temp = temp + "Order By b.book_title ASC"
-    #If Sort by book author name (last name)
+        temp = temp + "Order By b.book_title"
+    #If Sort by Book Title Descending 
+    if sort == 'TitleDesc':
+        temp = temp + "Order By b.book_title DESC"
+    #If Sort by book author name (last name ascending)
     elif sort == 'Author':
-        temp = temp + "Order By a.last_name ASC"
+        temp = temp + "Order By a.last_name"
+    #If Sort by book author name (last name descendning)
+    elif sort == 'AuthorDesc':
+        temp = temp + "Order By a.last_name DESC"
     #If Sort by Price (Least to Greatest)
     elif sort == 'PriceAsc':
-        temp = temp + "Order By b.price ASC"
+        temp = temp + "Order By b.price"
     #If Sort by Price (Greatest to Least)
     elif sort == 'PriceDesc':
         temp = temp + "Order By b.price DESC"
     #If sort by Rating (Highest to Lowest)
     elif sort == 'Rating':
         temp = temp + "Order By b.rating DESC"
+    #If sort by Rating (Lowest to Highest)
+    elif sort == 'RatingAsc':
+        temp = temp + "Order By b.rating"
     #If sort by Date Published
     elif sort == 'PublishDate':
-        temp = temp + "Order By b.publish_date ASC"
+        temp = temp + "Order By b.publish_date"
+    #If sort by Date Published
+    elif sort == 'PublishDateDesc':
+        temp = temp + "Order By b.publish_date DESC"
 
     parts = books_page.split('-')
     bpp = int(parts[0])
