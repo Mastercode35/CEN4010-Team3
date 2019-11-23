@@ -177,7 +177,7 @@
         </div>
         <div style="position:center; align-self:center">
             <table style="width:100%;margin-top:3%">
-              {% if loggedin and bought %}
+              {% if  user.is_authenticated and bought %}
                 {% if review == 'False' %}
                 <tr>
                     <th style="color:#134f81;text-align:center; font-size:200%; position:relative">What did you think?!"</th>
