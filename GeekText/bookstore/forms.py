@@ -24,6 +24,39 @@ class BootstrapAuthenticationForm(AuthenticationForm):
 class ReviewForm (forms1.Form):
     review_message_field=forms1.CharField(label='review_message_field', max_length=300)
 
+
+class ShoppingForm(forms1.Form):
+
+    card_number = forms1.IntegerField(label='card_num')
+    expiration_date = forms1.DateField(label='ex_date')
+
+    primary_flag = forms1.BooleanField(label='primary')
+
+
+
+
+
+    city = forms1.CharField(label='city')
+    state = forms1.CharField(label='state')
+    zip_code = forms1.IntegerField(label='zip')
+    street = forms1.CharField(label='street')
+    street_secondary = forms1.CharField(label='street2')
+    country = forms1.CharField(label='address_type')
+    apt = forms1.CharField(label='apt')
+    f_name = forms1.CharField(label='f_name')
+    l_name = forms1.CharField(label='l_name')
+    address_type = forms1.CharField(label = 'address_type')
+
+    sale_total = forms1.CharField(label='TOTAL')
+
+
+
+
+
+
+
+
+
 class CustomUserCreationForm(forms.Form):
     username = forms.CharField(label='Enter Username', min_length=4, max_length=150)
     email = forms.EmailField(label='Enter email')
@@ -36,6 +69,8 @@ class CustomUserCreationForm(forms.Form):
         if r.count():
             raise  ValidationError("Username already exists")
         return username
+
+
  
     def clean_email(self):
         email = self.cleaned_data['email'].lower()

@@ -144,9 +144,10 @@
     <!-- End Banner Area -->
 
     <!--================Checkout Area =================-->
+    {% if user.is_authenticated %}
     <section class="checkout_area section_gap">
 
-        <form action="" method="SALE">
+        <form action="shopping_cart" method="SALE">
 
            <div class="container">
            
@@ -155,7 +156,7 @@
                 <div class="row">
                     <div class="col-lg-8">
 
-                        <form class="row contact_form" action="#" method="post" novalidate="novalidate">
+
                             <h3 style="padding-left: 2%">Personal</h3>
                             <div class="col-md-6 form-group p_star">
                                 <input type="text" class="form-control" id="first" name="f_name" placeholder="First Name">
@@ -212,7 +213,7 @@
                                 <input type="text" class="form-control" id="security_code" name="security_code" placeholder="Security Code">
                             </div>
                             
-                        </form>
+
                     </div>
                   
                     
@@ -226,7 +227,7 @@
                            <div style = background-color:rgb(99,199,90);padding-top:3.5%;padding-bottom:5%;border-style:solid;border-color:black> <h2 style = color:white;text-align:center>Your Cart</h2> </div>
                             <ul class="list" style= border-style:solid;border-color:black;background-color:#333;color:white>
                                 {% for item in cart %}
-                                        <li><a href="#" style= color:white>{{item.book_title}}: <span>${{item.price}}</span></a></li>
+                                        <li><a href="#" style= color:white>{{item.book_title}}: <span>${{item.price}}  Quantity:        {{item.quantity}}</span></a></li>
                                 {% endfor %}
                             </ul>
                             <ul class="list list_2" style= background-color:black;padding-top:5%;padding-bottom:5%>
@@ -238,13 +239,14 @@
                     </div>
                 </div>
             </div>
-            <input type="submit" value="Submit"/>
-              <div s>
+               <button type="submit">Submit</button>
+              <div>
               <input type="checkbox" name="primary" value="true" checked> Make this my primary card?<br>
               </div>
          </div>
         </form>>
     </section>
+    {%endif%}
     <!--================End Checkout Area =================-->
 
 

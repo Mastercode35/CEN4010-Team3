@@ -23,5 +23,6 @@ urlpatterns = [
     path('book/<book_id>/<review>', views.rate_review_field, name='Review Field'),
     #Shopping Cart
     path('shopping_cart', views.cart_order, name='Shopping Cart'),
+    url('shopping_cart', views.create_sale, name="submit")
 
 ]

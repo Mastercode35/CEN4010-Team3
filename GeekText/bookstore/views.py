@@ -13,13 +13,13 @@ from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 from django.urls import reverse_lazy
 from django.views import generic
-from bookstore.models import Customer
+from .models import Customer
 from django.core.exceptions import ValidationError
 from django.http import HttpResponseNotFound, Http404,  HttpResponseRedirect
 
 
 #Model Imports for Database Extraction
-from .models import Book ,Genre,CommentRating, ShoppingCart, CreditCard, Address, Sale,SaleItem
+from .models import Book ,Genre,CommentRating, ShoppingCart, CreditCard, Address, Sale, SaleItem
 
 def feed(request):
     posts = Book.objects.all()
@@ -244,6 +244,8 @@ def login(request):
         }
     )
 
+
+
 def index(request):
     assert isinstance(request, HttpRequest)
     return render(
@@ -255,18 +257,77 @@ def index(request):
         }
     )
 
+
+
+def create_sale(request):
+
+    if request.method == 'SALE':
+        if request.SALE.get('submit'):
+            card = CreditCard()
+            card.card_number = request.SALE['card_num']
+            card.expiration_date = request.SALE['ex_date']
+            if request.SALE['primary']:
+                card.primary_flag = True
+            else: card.primary_flag = False
+            card.save()
+
+            delivery_address = Address()
+            delivery_address.city = request.SALE['city']
+            delivery_address.state = request.SALE['state']
+            delivery_address.zip_code = request.SALE['zip']
+            delivery_address.street = request.SALE['street']
+            delivery_address.street_secondary = request.SALE['street2']
+            delivery_address.country = request.SALE['country']
+            delivery_address.address_type = request.SALE['address_type']
+            delivery_address.apt = request.SALE['apt']
+            delivery_address.username = (request.SALE['f_name'] + ' ' + request.SALE['l_name'])
+            delivery_address.save()
+
+            sale = Sale()
+            sale.delivery_address = delivery_address
+            sale.card_used = card
+            sale.sale_total = request.SALE['TOTAL']
+            sale.username = request.user.username
+            sale.save()
+
+            user = request.user
+            user_cart = ShoppingCart.objects.raw("SELECT * FROM bookstore_shoppingcart c, bookstore_book b WHERE (c.username_id = %s) AND (b.id = c.book_id)",[user.username])
+            for i in user_cart:
+                SALE_ITEM = SaleItem()
+                SALE_ITEM.sale = sale
+                SALE_ITEM.book = i
+                SALE_ITEM.quantity = i.quantity
+                SALE_ITEM.save()
+    return render(
+        request,
+        'bookstore/index.html',
+        {
+
+
+
+            'title': 'submit',
+            'year': datetime.now().year,
+         }
+    )
+
+
+
+
+
 def cart_order(request):
 
 
     assert isinstance(request, HttpRequest)
-
-    user_cart = ShoppingCart.objects.raw("SELECT * FROM bookstore_shoppingcart c, bookstore_book b WHERE (c.username_id = 'guest') AND (b.id = c.book_id)")
+    user = request.user
+    user_cart = ShoppingCart.objects.raw("SELECT * FROM bookstore_shoppingcart c, bookstore_book b WHERE (c.username_id = %s) AND (b.id = c.book_id)", [user.username])
     length = len(user_cart)
     total_price = 0
 
     for i in user_cart:
 
-        total_price = total_price + i.price
+        total_price = total_price + (i.price * i.quantity)
+
+
 
 
     return render(
@@ -279,47 +340,6 @@ def cart_order(request):
         'title': 'Shopping Cart',
         'year': datetime.now().year,
     }
-    )
-
-def create_sale(request):
-    assert isinstance(request, HttpRequest)
-    if request.method == 'SALE':
-        if request.SALE.get('card_num') and request.SALE.get('ex_date') and request.SALE.get('security_code') and request.SALE.get('f_name') and request.SALE.get('l_name') and request.SALE.get('street') and request.SALE.get('state'):
-            card = CreditCard()
-            card.card_number = request.SALE.get('card_num')
-            card.expiration_date = request.SALE.get('ex_date')
-            if request.SALE.get('primary'):
-                card.primary_flag = True
-            else: card.primary_flag = False
-            card.save()
-
-            delivery_address = Address()
-            delivery_address.city = request.SALE.get('city')
-            delivery_address.state = request.SALE.get('state')
-            delivery_address.zip_code = request.SALE.get('zip')
-            delivery_address.street = request.SALE.get('street')
-            delivery_address.street_secondary = request.SALE.get('street2')
-            delivery_address.country = request.SALE.get('country')
-            delivery_address.address_type = request.SALE.get('address_type')
-            delivery_address.apt = request.SALE.get('apt')
-            delivery_address.username = 'guest'
-            delivery_address.save()
-
-            sale = Sale()
-            sale.delivery_address = delivery_address
-            sale.card_used = card
-            sale.sale_total = request.SALE.get('TOTAL')
-            sale.username = 'guest'
-            sale.save()
-
-    return render(
-        request,
-        'bookstore/shopping_cart.html',
-        {
-
-            'title': 'Shopping Cart',
-            'year': datetime.now().year,
-        }
     )
 
 def SignUp(request):
